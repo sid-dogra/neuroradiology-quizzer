@@ -8,7 +8,7 @@ same 1 mm conformed coordinate space. The display image is exported from
 FreeSurfer `orig.mgz` for more raw-MPRAGE-like contrast while preserving overlay
 alignment.
 
-- Structures in manifest: 96
+- Structures in manifest: 57
 - Structures with overlays: 57
 
 The current overlays are a generated review set unless `overlay.sourceKind` is

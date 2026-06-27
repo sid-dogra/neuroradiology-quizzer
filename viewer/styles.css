@@ -372,10 +372,6 @@ input[type="range"] {
   border-color: var(--accent);
 }
 
-.structure-item.is-disabled {
-  opacity: 0.66;
-}
-
 .structure-toggle {
   min-width: 0;
   display: grid;

@@ -409,9 +409,10 @@ def build_public_study(
                     **stats,
                 }
 
-        if overlay:
-            overlay_count += 1
+        if not overlay:
+            continue
 
+        overlay_count += 1
         structures.append(structure_entry(target, label_row, points.get(target_id), overlay))
 
     manifest = {
@@ -451,7 +452,14 @@ def build_public_study(
         "summary": {
             "structureCount": len(structures),
             "overlayCount": overlay_count,
-            "missingOverlayCount": len(structures) - overlay_count,
+            "missingOverlayCount": 0,
+            "targetStructureCount": len(
+                [
+                    target
+                    for target in target_data["structures"]
+                    if target.get("includeInViewer") is not False
+                ]
+            ),
             "acceptedOverlayCount": sum(
                 1
                 for structure in structures

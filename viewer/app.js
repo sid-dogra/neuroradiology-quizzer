@@ -49,7 +49,6 @@ const els = {
   systemFilters: document.querySelector("#systemFilters"),
   searchInput: document.querySelector("#searchInput"),
   visibleCount: document.querySelector("#visibleCount"),
-  overlayCount: document.querySelector("#overlayCount"),
   selectedCount: document.querySelector("#selectedCount"),
   viewerStatus: document.querySelector("#viewerStatus"),
   activeStructure: document.querySelector("#activeStructure"),
@@ -142,6 +141,14 @@ function structureById(id) {
   return state.study?.structures.find(structure => structure.id === id) || null;
 }
 
+function hasUsableOverlay(structure) {
+  return Boolean(structure?.hasOverlay && structure?.overlay?.url);
+}
+
+function availableStructures() {
+  return (state.study?.structures || []).filter(hasUsableOverlay);
+}
+
 function matchesLevel(structure) {
   return structure.audienceLevel === state.level;
 }
@@ -175,26 +182,21 @@ function filteredStructures() {
   if (!state.study) {
     return [];
   }
-  return state.study.structures.filter(
+  return availableStructures().filter(
     structure => matchesLevel(structure) && matchesSystem(structure) && matchesSearch(structure)
   ).sort((a, b) => a.displayName.localeCompare(b.displayName, undefined, { sensitivity: "base" }));
 }
 
 function quizPool() {
-  return filteredStructures().filter(structure => structure.hasOverlay);
+  return filteredStructures();
 }
 
 function selectedStructures() {
-  if (!state.study) {
-    return [];
-  }
-  return state.study.structures.filter(
-    structure => state.selectedIds.has(structure.id) && structure.hasOverlay
-  );
+  return availableStructures().filter(structure => state.selectedIds.has(structure.id));
 }
 
 function editableStructures() {
-  return filteredStructures().filter(structure => structure.hasOverlay);
+  return filteredStructures();
 }
 
 async function loadStudy() {
@@ -676,7 +678,7 @@ function jumpToActiveStructure() {
 }
 
 function renderSystemFilters() {
-  const structuresForLevel = state.study.structures.filter(matchesLevel);
+  const structuresForLevel = availableStructures().filter(matchesLevel);
   const systems = Array.from(new Set(structuresForLevel.flatMap(structure => structure.systems))).sort();
 
   if (state.system !== "all" && !systems.includes(state.system)) {
@@ -704,9 +706,7 @@ function renderSystemFilters() {
 
 function renderCounts() {
   const visible = filteredStructures();
-  const overlayCount = visible.filter(structure => structure.hasOverlay).length;
   els.visibleCount.textContent = visible.length.toString();
-  els.overlayCount.textContent = overlayCount.toString();
   els.selectedCount.textContent = selectedStructures().length.toString();
 }
 
@@ -729,14 +729,12 @@ function renderBrowse() {
     const item = document.createElement("article");
     item.className = "structure-item";
     item.classList.toggle("is-selected", state.selectedIds.has(structure.id));
-    item.classList.toggle("is-disabled", !structure.hasOverlay);
 
     const checked = state.selectedIds.has(structure.id) ? "checked" : "";
-    const disabled = structure.hasOverlay ? "" : "disabled";
 
     item.innerHTML = `
       <label class="structure-toggle">
-        <input type="checkbox" data-toggle-id="${escapeHtml(structure.id)}" ${checked} ${disabled} />
+        <input type="checkbox" data-toggle-id="${escapeHtml(structure.id)}" ${checked} />
         <span class="color-chip" style="--chip-color: ${escapeHtml(structure.color)}"></span>
         <span class="structure-main">
           <span class="structure-name">${escapeHtml(structure.displayName)}</span>
@@ -757,7 +755,7 @@ function renderBrowseDetails() {
     return;
   }
   els.browseDetails.innerHTML = detailsHtml(active, true);
-  els.activeStructure.textContent = active.hasOverlay ? active.displayName : "No annotation selected";
+  els.activeStructure.textContent = active.displayName;
   els.activeSource.textContent = "";
 }
 
