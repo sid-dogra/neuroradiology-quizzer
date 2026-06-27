@@ -1,6 +1,6 @@
 # Viewer
 
-This folder contains the static browser viewer for the annotated brain MRI project.
+This folder contains the static browser viewer for Neuroradiology Quizzer.
 It uses NiiVue in the browser to load a T1 `.nii.gz` and per-structure `.nii.gz`
 annotation overlays from `public/studies/`.
 

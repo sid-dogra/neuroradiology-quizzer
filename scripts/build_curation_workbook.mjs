@@ -103,7 +103,7 @@ async function main() {
   }
 
   instructions.getRange("A1:H1").merge();
-  instructions.getRange("A1").values = [["Brain MRI Curation Workbook"]];
+  instructions.getRange("A1").values = [["Neuroradiology Quizzer Curation Workbook"]];
   applyTitleStyle(instructions.getRange("A1:H1"));
   instructions.getRange("A3:H9").values = [
     ["What to edit", "Use the yellow columns in Structures to include/remove targets, change beginner/advanced level, and leave review notes.", "", "", "", "", "", ""],

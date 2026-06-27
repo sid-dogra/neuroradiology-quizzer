@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "finalized_review_bundle",
-  "generatedAt": "2026-06-27T18:25:02+00:00",
+  "generatedAt": "2026-06-27T23:27:51+00:00",
   "sourceFiles": [
     {
       "source": "data/raw/t1_mprage.nii.gz",
@@ -92,5 +92,6 @@
       "bytes": 2183491
     }
   ],
-  "acceptedAnnotationsDir": "data/finalized/accepted_annotations"
+  "acceptedAnnotationsDir": "data/finalized/accepted_annotations",
+  "curationDir": "data/finalized/curation"
 }

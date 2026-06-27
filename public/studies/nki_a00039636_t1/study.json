@@ -1,10 +1,10 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-27T23:14:26+00:00",
+  "generatedAt": "2026-06-27T23:31:49+00:00",
   "study": {
     "id": "nki_a00039636_t1",
-    "title": "Annotated Brain MRI Review Build",
+    "title": "Neuroradiology Quizzer Review Build",
     "modality": "MR",
     "sequence": "3D T1 MPRAGE",
     "curationNote": "Human-editable target database for the finalized review bundle. Set includeInViewer=false to temporarily remove a structure from the viewer. Use quizQuestions for optional revealable teaching prompts.",
@@ -3382,9 +3382,9 @@
         "url": "annotations/029_medulla_oblongata.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 33509,
-        "sha256": "ac47cbbb11dea63d64d690a1840a82cbf1af894a92230210c6a33fa97cd87aa7",
-        "voxelCount": 4040,
+        "bytes": 17300,
+        "sha256": "e961c1d497e1c8b7418fb6ce976b9eec5d402d304945378d27d0efb340083937",
+        "voxelCount": 4170,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -3400,7 +3400,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 124,
-            "areaVoxelCount": 301,
+            "areaVoxelCount": 311,
             "voxel": {
               "i": 124,
               "j": 99,
@@ -6863,11 +6863,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/073_trigone_atrium_of_the_lateral_ventricle.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 76314,
-        "sha256": "7268c86d84242d93dbb6f3d0e129ab032d78152d4b8b547d6769eb22a7ad553c",
-        "voxelCount": 4273,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 17138,
+        "sha256": "a557c7209c362c5f76eae1695cf062322469288036beae6634ad2e071a2511ef",
+        "voxelCount": 1121,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -6876,38 +6876,38 @@
             256
           ],
           "centroidVoxel": {
-            "i": 115,
-            "j": 116,
-            "k": 165
+            "i": 105,
+            "j": 86,
+            "k": 156
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 123,
-            "areaVoxelCount": 332,
+            "sliceIndex": 102,
+            "areaVoxelCount": 145,
             "voxel": {
-              "i": 123,
-              "j": 136,
-              "k": 165
+              "i": 102,
+              "j": 82,
+              "k": 154
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 133,
-            "areaVoxelCount": 102,
+            "sliceIndex": 84,
+            "areaVoxelCount": 75,
             "voxel": {
-              "i": 122,
-              "j": 133,
-              "k": 167
+              "i": 104,
+              "j": 84,
+              "k": 156
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 171,
-            "areaVoxelCount": 294,
+            "sliceIndex": 152,
+            "areaVoxelCount": 90,
             "voxel": {
-              "i": 119,
-              "j": 123,
-              "k": 171
+              "i": 102,
+              "j": 83,
+              "k": 152
             }
           }
         }
@@ -8274,11 +8274,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/086_superior_temporal_gyrus.nii.gz",
-        "sourceKind": "full_gyrus_composite",
+        "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 80207,
-        "sha256": "499e65051e61fe16776f85ed95fd9b6416f42e88b9d1b5cbc6a9f1f8b42135ae",
-        "voxelCount": 16178,
+        "bytes": 80206,
+        "sha256": "3d546432c165676f0ebda506f478cf64315a71b5ce565ebcd3e021cabbcbfff0",
+        "voxelCount": 15968,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -8288,8 +8288,8 @@
           ],
           "centroidVoxel": {
             "i": 80,
-            "j": 122,
-            "k": 148
+            "j": 123,
+            "k": 147
           },
           "sagittal": {
             "axis": 0,
@@ -8403,10 +8403,10 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/087_middle_temporal_gyrus.nii.gz",
-        "sourceKind": "full_gyrus_composite",
+        "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 79197,
-        "sha256": "b44616ddc5aa45e7faa1fc5c7cf2b535b013bcd0f7e47125b6f372808560d2ad",
+        "bytes": 79198,
+        "sha256": "239cacf3d6f8d5ec43d79d738a1d644a1b27e674a60e6ad9d6e344d037196c4c",
         "voxelCount": 13743,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
@@ -8532,10 +8532,10 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/088_inferior_temporal_gyrus.nii.gz",
-        "sourceKind": "full_gyrus_composite",
+        "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 80910,
-        "sha256": "50b86bb8266c56a065a40f2cc97d064f4fe87bea43e2815176507585fba260af",
+        "bytes": 80912,
+        "sha256": "cbfb6607515d022ade8ff8bc9133f4ade48407110dbf8d5d60a6abacacbb7aef",
         "voxelCount": 18474,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
@@ -9431,7 +9431,7 @@
     "structureCount": 96,
     "overlayCount": 57,
     "missingOverlayCount": 39,
-    "acceptedOverlayCount": 6
+    "acceptedOverlayCount": 7
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",

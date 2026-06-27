@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.org/annotated-brain-mri/anatomy-annotations.schema.json",
-  "title": "Annotated Brain MRI Anatomy Metadata",
+  "$id": "https://example.org/neuroradiology-quizzer/anatomy-annotations.schema.json",
+  "title": "Neuroradiology Quizzer Anatomy Metadata",
   "type": "object",
   "required": ["version", "study", "structures"],
   "additionalProperties": false,
@@ -210,4 +210,3 @@
     }
   }
 }
-

@@ -111,7 +111,7 @@ def build_manifest(input_dir: Path, url_prefix: str) -> dict[str, Any]:
             study_uid,
             {
                 "StudyInstanceUID": study_uid,
-                "StudyDescription": str(getattr(dataset, "StudyDescription", "Annotated Brain MRI")),
+                "StudyDescription": str(getattr(dataset, "StudyDescription", "Neuroradiology Quizzer")),
                 "StudyDate": str(getattr(dataset, "StudyDate", "")),
                 "StudyTime": str(getattr(dataset, "StudyTime", "")),
                 "PatientName": str(getattr(dataset, "PatientName", "Anonymous")),
@@ -188,4 +188,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

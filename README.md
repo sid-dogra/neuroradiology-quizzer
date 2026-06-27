@@ -1,8 +1,8 @@
-# Annotated Brain MRI
+# Neuroradiology Quizzer
 
-Interactive educational brain MRI atlas and quiz project.
+Interactive educational neuroradiology atlas and quiz project.
 
-This repository is structured around a simple rule: raw imaging and local processing outputs stay private, while publishable viewer assets, anatomy metadata, and documentation are versioned.
+This repository is structured around a simple rule: raw imaging and local processing outputs stay private, while publishable viewer assets, anatomy metadata, and documentation are versioned. The current annotation source of truth is `data/finalized/`; the public viewer build should use that folder, not `data/working/`, unless you intentionally re-sync generated candidates.
 
 ## Project Goals
 
