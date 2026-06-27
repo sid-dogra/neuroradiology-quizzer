@@ -33,6 +33,8 @@ DEFAULT_DISPLAY_IMAGE = (
     / "mri"
     / "orig.mgz"
 )
+AXIAL_FOREGROUND_THRESHOLD = 20
+AXIAL_FOREGROUND_MIN_VOXELS = 100
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -108,24 +110,83 @@ def make_binary_nifti(
     return image
 
 
-def save_display_image(source: Path, destination: Path) -> dict[str, Any]:
-    image = nib.load(str(source))
+def crop_affine(
+    affine: np.ndarray,
+    crop_slices: tuple[slice, slice, slice],
+) -> np.ndarray:
+    starts = np.array([axis_slice.start or 0 for axis_slice in crop_slices], dtype=float)
+    output = np.array(affine, copy=True)
+    output[:3, 3] = affine[:3, :3] @ starts + affine[:3, 3]
+    return output
+
+
+def cropped_image(
+    image: nib.spatialimages.SpatialImage,
+    crop_slices: tuple[slice, slice, slice],
+) -> nib.Nifti1Image:
+    data = np.asarray(image.dataobj)
+    cropped = data[crop_slices]
+    output = nib.Nifti1Image(cropped, crop_affine(image.affine, crop_slices))
+    output.header.set_zooms(image.header.get_zooms()[:3])
+    output.header.set_data_dtype(image.get_data_dtype())
+    return output
+
+
+def display_crop_slices(
+    image: nib.spatialimages.SpatialImage,
+) -> tuple[tuple[slice, slice, slice], dict[str, Any]]:
+    data = np.asarray(image.dataobj)
+    if data.ndim != 3:
+        raise ValueError(f"Expected 3D display image, got shape {data.shape}")
+
+    foreground = data > AXIAL_FOREGROUND_THRESHOLD
+    axial_counts = foreground.sum(axis=(0, 1))
+    useful_slices = np.where(axial_counts >= AXIAL_FOREGROUND_MIN_VOXELS)[0]
+    if useful_slices.size == 0:
+        crop_slices = (slice(None), slice(None), slice(None))
+        start = 0
+        stop = data.shape[2]
+    else:
+        start = int(useful_slices[0])
+        stop = int(useful_slices[-1]) + 1
+        crop_slices = (slice(None), slice(None), slice(start, stop))
+
+    info = {
+        "coordinateSpace": "canonical_RAS_voxel",
+        "axis": "axial",
+        "startInclusive": start,
+        "stopExclusive": stop,
+        "removedBefore": start,
+        "removedAfter": int(data.shape[2] - stop),
+        "foregroundThreshold": AXIAL_FOREGROUND_THRESHOLD,
+        "minimumForegroundVoxels": AXIAL_FOREGROUND_MIN_VOXELS,
+        "originalShape": [int(value) for value in data.shape],
+    }
+    return crop_slices, info
+
+
+def save_display_image(
+    source: Path,
+    destination: Path,
+) -> tuple[dict[str, Any], tuple[slice, slice, slice], dict[str, Any]]:
+    image = nib.as_closest_canonical(nib.load(str(source)))
     data = np.asarray(image.dataobj)
     if data.ndim != 3:
         raise ValueError(f"Expected 3D display image, got shape {data.shape} from {source}")
 
-    output = nib.Nifti1Image(data, image.affine)
-    output.header.set_zooms(image.header.get_zooms()[:3])
-    output.header.set_data_dtype(image.get_data_dtype())
+    crop_slices, crop_info = display_crop_slices(image)
+    output = cropped_image(image, crop_slices)
     destination.parent.mkdir(parents=True, exist_ok=True)
     nib.save(output, str(destination))
+    output_data = np.asarray(output.dataobj)
     return {
         "bytes": destination.stat().st_size,
         "sha256": sha256(destination),
-        "shape": [int(value) for value in data.shape],
-        "voxelSizeMm": [float(value) for value in image.header.get_zooms()[:3]],
-        "orientation": "".join(nib.aff2axcodes(image.affine)),
-    }
+        "shape": [int(value) for value in output_data.shape],
+        "voxelSizeMm": [float(value) for value in output.header.get_zooms()[:3]],
+        "orientation": "".join(nib.aff2axcodes(output.affine)),
+        "crop": crop_info,
+    }, crop_slices, crop_info
 
 
 def best_slices(mask: np.ndarray) -> dict[str, Any]:
@@ -231,9 +292,34 @@ def choose_existing_mask(
     return None
 
 
-def copy_mask(source: Path, destination: Path) -> dict[str, Any]:
+def crop_mask_to_reference(
+    source: Path,
+    reference: nib.spatialimages.SpatialImage,
+    crop_slices: tuple[slice, slice, slice],
+) -> np.ndarray:
+    image = nib.as_closest_canonical(nib.load(str(source)))
+    data = np.asarray(image.dataobj) != 0
+    if data.shape == reference.shape:
+        return data
+
+    cropped = data[crop_slices]
+    if cropped.shape != reference.shape:
+        raise ValueError(
+            f"Mask shape {data.shape} from {source} does not match reference "
+            f"shape {reference.shape} after crop {cropped.shape}"
+        )
+    return cropped
+
+
+def copy_mask(
+    source: Path,
+    destination: Path,
+    reference: nib.spatialimages.SpatialImage,
+    crop_slices: tuple[slice, slice, slice],
+) -> dict[str, Any]:
     destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, destination)
+    mask = crop_mask_to_reference(source, reference, crop_slices)
+    nib.save(make_binary_nifti(reference, mask), str(destination))
     return mask_stats(destination)
 
 
@@ -242,8 +328,9 @@ def split_label_mask(
     reference: nib.spatialimages.SpatialImage,
     label_value: int,
     destination: Path,
+    crop_slices: tuple[slice, slice, slice],
 ) -> dict[str, Any] | None:
-    mask = segmentation_data == label_value
+    mask = (segmentation_data == label_value)[crop_slices]
     if not np.any(mask):
         return None
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -316,7 +403,8 @@ This bundle is intended for GitHub Pages review of the Neuroradiology Quizzer pr
 It contains the FreeSurfer-conformed T1 image and per-structure NIfTI overlays in the
 same 1 mm conformed coordinate space. The display image is exported from
 FreeSurfer `orig.mgz` for more raw-MPRAGE-like contrast while preserving overlay
-alignment.
+alignment. The public NIfTI files are cropped in the axial direction to remove
+blank padding while keeping overlay and display-image grids identical.
 
 - Structures in manifest: {structure_count}
 - Structures with overlays: {overlay_count}
@@ -343,7 +431,7 @@ def build_public_study(
     clean_output(output_dir)
 
     t1_destination = output_dir / "t1_display_freesurfer_orig.nii.gz"
-    display_stats = save_display_image(display_image, t1_destination)
+    display_stats, crop_slices, crop_info = save_display_image(display_image, t1_destination)
 
     target_data = load_json(structure_json)
     labels = labels_by_id(load_tsv(label_table))
@@ -355,7 +443,7 @@ def build_public_study(
     rough_index = build_mask_index([generated_dir / "rough_support_masks"])
 
     reference = nib.load(str(t1_destination))
-    segmentation = nib.load(str(segmentation_path))
+    segmentation = nib.as_closest_canonical(nib.load(str(segmentation_path)))
     segmentation_data = np.asarray(segmentation.dataobj)
 
     structures: list[dict[str, Any]] = []
@@ -385,7 +473,7 @@ def build_public_study(
 
         if chosen:
             source_kind, source_mask = chosen
-            stats = copy_mask(source_mask, mask_destination)
+            stats = copy_mask(source_mask, mask_destination, reference, crop_slices)
             overlay = {
                 "url": relative_path(mask_destination, output_dir),
                 "sourceKind": source_kind,
@@ -400,6 +488,7 @@ def build_public_study(
                 reference,
                 label_value,
                 mask_destination,
+                crop_slices,
             )
             if stats:
                 overlay = {
@@ -435,6 +524,7 @@ def build_public_study(
             "orientation": display_stats["orientation"],
             "bytes": display_stats["bytes"],
             "sha256": display_stats["sha256"],
+            "crop": crop_info,
         },
         "audienceLevels": [
             {

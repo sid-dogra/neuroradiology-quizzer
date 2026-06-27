@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-27T23:41:18+00:00",
+  "generatedAt": "2026-06-27T23:46:18+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -18,16 +18,31 @@
     "shape": [
       256,
       256,
-      256
+      160
     ],
     "voxelSizeMm": [
       1.0,
       1.0,
       1.0
     ],
-    "orientation": "LIA",
-    "bytes": 3440289,
-    "sha256": "5dc0ca4c99cc55421d37321ef516a63a6c1379d6299cb00cf67244e1981e19a9"
+    "orientation": "RAS",
+    "bytes": 3362959,
+    "sha256": "fd809a5aed1c4f1cb5f83819d657c6cfce913eb94feba0f5772444974aaa1886",
+    "crop": {
+      "coordinateSpace": "canonical_RAS_voxel",
+      "axis": "axial",
+      "startInclusive": 82,
+      "stopExclusive": 242,
+      "removedBefore": 82,
+      "removedAfter": 14,
+      "foregroundThreshold": 20,
+      "minimumForegroundVoxels": 100,
+      "originalShape": [
+        256,
+        256,
+        256
+      ]
+    }
   },
   "audienceLevels": [
     {
@@ -93,20 +108,20 @@
         "url": "annotations/001_lateral_ventricle.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 76316,
-        "sha256": "fbcbc089ff0a8fe027079f08a94c3fb5905a66dfbf1913ca887fc186ddf06fe9",
+        "bytes": 48390,
+        "sha256": "45ab8feea28403fcd0ec03238a57b24251dc703ebb6b5f65866b4fa77e62b1b3",
         "voxelCount": 4273,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 115,
             "j": 116,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -115,7 +130,7 @@
             "voxel": {
               "i": 123,
               "j": 136,
-              "k": 165
+              "k": 83
             }
           },
           "coronal": {
@@ -125,17 +140,17 @@
             "voxel": {
               "i": 122,
               "j": 133,
-              "k": 167
+              "k": 85
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 171,
+            "sliceIndex": 89,
             "areaVoxelCount": 294,
             "voxel": {
               "i": 119,
               "j": 123,
-              "k": 171
+              "k": 89
             }
           }
         }
@@ -212,20 +227,20 @@
         "url": "annotations/002_thalamus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 76161,
-        "sha256": "aa94d73436ac19940b4f1b85c4faa1c07567a97066d8f66e2fd3306740c2cf46",
+        "bytes": 48590,
+        "sha256": "051936a6f8be42682d67c834858546c3b0755f8ced8f53fb9dd712f50bc65c95",
         "voxelCount": 8486,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 117,
             "j": 112,
-            "k": 158
+            "k": 76
           },
           "sagittal": {
             "axis": 0,
@@ -234,7 +249,7 @@
             "voxel": {
               "i": 119,
               "j": 114,
-              "k": 159
+              "k": 77
             }
           },
           "coronal": {
@@ -244,17 +259,17 @@
             "voxel": {
               "i": 117,
               "j": 113,
-              "k": 159
+              "k": 77
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 157,
+            "sliceIndex": 75,
             "areaVoxelCount": 549,
             "voxel": {
               "i": 117,
               "j": 112,
-              "k": 157
+              "k": 75
             }
           }
         }
@@ -331,20 +346,20 @@
         "url": "annotations/003_caudate.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 75260,
-        "sha256": "aa464bb96ee9470064a77db4cd61384e93b6722920fbe8e6d2b78c1f240fa723",
+        "bytes": 47483,
+        "sha256": "964f40db866f064dcac53c92d22ea078aa61467e37a3559c7c58655f2beb7adb",
         "voxelCount": 3268,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 115,
             "j": 139,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -353,7 +368,7 @@
             "voxel": {
               "i": 114,
               "j": 138,
-              "k": 166
+              "k": 84
             }
           },
           "coronal": {
@@ -363,17 +378,17 @@
             "voxel": {
               "i": 116,
               "j": 144,
-              "k": 162
+              "k": 80
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 171,
+            "sliceIndex": 89,
             "areaVoxelCount": 220,
             "voxel": {
               "i": 113,
               "j": 127,
-              "k": 171
+              "k": 89
             }
           }
         }
@@ -449,20 +464,20 @@
         "url": "annotations/004_putamen.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 75655,
-        "sha256": "cb2cfd295ffa431d14e2859ebcbf436358fe349cdfbfbdd0abf41d1a1ec9bce8",
+        "bytes": 48035,
+        "sha256": "a9e48030d201087c2ae13214c98c808a3ecf57da97bd057bb9cefe1f1c606c73",
         "voxelCount": 5006,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 103,
             "j": 130,
-            "k": 155
+            "k": 73
           },
           "sagittal": {
             "axis": 0,
@@ -471,7 +486,7 @@
             "voxel": {
               "i": 102,
               "j": 126,
-              "k": 157
+              "k": 75
             }
           },
           "coronal": {
@@ -481,17 +496,17 @@
             "voxel": {
               "i": 107,
               "j": 138,
-              "k": 154
+              "k": 72
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 151,
+            "sliceIndex": 69,
             "areaVoxelCount": 338,
             "voxel": {
               "i": 103,
               "j": 132,
-              "k": 151
+              "k": 69
             }
           }
         }
@@ -568,20 +583,20 @@
         "url": "annotations/005_globus_pallidus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 74258,
-        "sha256": "8f3decf2368cd38b32538ba45775e2e85e21a84723f90d820ec1b98754c268ba",
+        "bytes": 46782,
+        "sha256": "8e194f49714d8fd42e94653dcc4d149b1cd52a28f2c8a944ba7942ac16445409",
         "voxelCount": 1857,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 109,
             "j": 127,
-            "k": 154
+            "k": 72
           },
           "sagittal": {
             "axis": 0,
@@ -590,7 +605,7 @@
             "voxel": {
               "i": 107,
               "j": 123,
-              "k": 154
+              "k": 72
             }
           },
           "coronal": {
@@ -600,17 +615,17 @@
             "voxel": {
               "i": 110,
               "j": 128,
-              "k": 154
+              "k": 72
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 153,
+            "sliceIndex": 71,
             "areaVoxelCount": 199,
             "voxel": {
               "i": 109,
               "j": 127,
-              "k": 153
+              "k": 71
             }
           }
         }
@@ -690,20 +705,20 @@
         "url": "annotations/006_third_ventricle.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 74190,
-        "sha256": "d2ea623d4e00c20822bca43c28b85d9269caa07d6b8c9f149013800352fe2f29",
+        "bytes": 46713,
+        "sha256": "b90728e3c4e4dbb979e1a36e2a773b95b528de3f3d059ad63d2a04d9acb84784",
         "voxelCount": 1045,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 127,
             "j": 123,
-            "k": 151
+            "k": 69
           },
           "sagittal": {
             "axis": 0,
@@ -712,7 +727,7 @@
             "voxel": {
               "i": 127,
               "j": 123,
-              "k": 151
+              "k": 69
             }
           },
           "coronal": {
@@ -722,17 +737,17 @@
             "voxel": {
               "i": 127,
               "j": 131,
-              "k": 152
+              "k": 70
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 152,
+            "sliceIndex": 70,
             "areaVoxelCount": 109,
             "voxel": {
               "i": 127,
               "j": 121,
-              "k": 152
+              "k": 70
             }
           }
         }
@@ -813,20 +828,20 @@
         "url": "annotations/007_fourth_ventricle.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 74587,
-        "sha256": "fd52d31011ecfe9af11c8dc4fef34c6a65c95076af7f04dd99e9a5d98c17be4f",
+        "bytes": 47267,
+        "sha256": "3d79b01d90120ea79a3388080ae7b995265252cf952853aa3757b31133730549",
         "voxelCount": 2552,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 93,
-            "k": 120
+            "k": 38
           },
           "sagittal": {
             "axis": 0,
@@ -835,7 +850,7 @@
             "voxel": {
               "i": 128,
               "j": 94,
-              "k": 121
+              "k": 39
             }
           },
           "coronal": {
@@ -845,17 +860,17 @@
             "voxel": {
               "i": 128,
               "j": 93,
-              "k": 117
+              "k": 35
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 122,
+            "sliceIndex": 40,
             "areaVoxelCount": 206,
             "voxel": {
               "i": 128,
               "j": 90,
-              "k": 122
+              "k": 40
             }
           }
         }
@@ -931,20 +946,20 @@
         "url": "annotations/008_hippocampus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 75310,
-        "sha256": "1c7b5b2ee9191f597a57a46d30a9a9be413d63f97f523d6ac3525e896bfe4d14",
+        "bytes": 47604,
+        "sha256": "43d2e377acf653482265077ba207ed5ce0f6ae0ac6d380b5b5e705d6f35d0098",
         "voxelCount": 4213,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 105,
             "j": 110,
-            "k": 142
+            "k": 60
           },
           "sagittal": {
             "axis": 0,
@@ -953,7 +968,7 @@
             "voxel": {
               "i": 104,
               "j": 109,
-              "k": 142
+              "k": 60
             }
           },
           "coronal": {
@@ -963,17 +978,17 @@
             "voxel": {
               "i": 106,
               "j": 121,
-              "k": 138
+              "k": 56
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 142,
+            "sliceIndex": 60,
             "areaVoxelCount": 354,
             "voxel": {
               "i": 103,
               "j": 111,
-              "k": 142
+              "k": 60
             }
           }
         }
@@ -1048,20 +1063,20 @@
         "url": "annotations/009_amygdala.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 74171,
-        "sha256": "f4969091546e962984d940e1f08eebdde113f0180dac11c8a6bc5e15c5cff940",
+        "bytes": 46643,
+        "sha256": "c95b4e5bf0e50c053c8bd30b031f0cb2d4a59ce5a26f51035e94951e89769e18",
         "voxelCount": 1563,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 107,
             "j": 129,
-            "k": 139
+            "k": 57
           },
           "sagittal": {
             "axis": 0,
@@ -1070,7 +1085,7 @@
             "voxel": {
               "i": 106,
               "j": 128,
-              "k": 139
+              "k": 57
             }
           },
           "coronal": {
@@ -1080,17 +1095,17 @@
             "voxel": {
               "i": 107,
               "j": 130,
-              "k": 137
+              "k": 55
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 140,
+            "sliceIndex": 58,
             "areaVoxelCount": 146,
             "voxel": {
               "i": 108,
               "j": 129,
-              "k": 140
+              "k": 58
             }
           }
         }
@@ -1167,20 +1182,20 @@
         "url": "annotations/010_nucleus_accumbens.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 73685,
-        "sha256": "af8b917001ddef69771cee5198bb448f8b461aa5a6b9d9f7264913075f25b0fa",
+        "bytes": 46175,
+        "sha256": "ab3e29aa2bb3cafa4e7982ee4d88848743a1d67fc13bbb5691388e5499999d01",
         "voxelCount": 457,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 120,
             "j": 142,
-            "k": 151
+            "k": 69
           },
           "sagittal": {
             "axis": 0,
@@ -1189,7 +1204,7 @@
             "voxel": {
               "i": 120,
               "j": 142,
-              "k": 151
+              "k": 69
             }
           },
           "coronal": {
@@ -1199,17 +1214,17 @@
             "voxel": {
               "i": 120,
               "j": 140,
-              "k": 150
+              "k": 68
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 152,
+            "sliceIndex": 70,
             "areaVoxelCount": 73,
             "voxel": {
               "i": 120,
               "j": 143,
-              "k": 152
+              "k": 70
             }
           }
         }
@@ -1288,20 +1303,20 @@
         "url": "annotations/011_choroid_plexus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 73811,
-        "sha256": "69bca4d725c076f396ce231b7c6e1b1b31a4fad182178737a7c4ead93300a103",
+        "bytes": 46312,
+        "sha256": "5548ac559bfd58401fc72bbfec5d97a64bf9e710b3ae8c3f214e1e323fc5b9fb",
         "voxelCount": 265,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 108,
             "j": 96,
-            "k": 159
+            "k": 77
           },
           "sagittal": {
             "axis": 0,
@@ -1310,7 +1325,7 @@
             "voxel": {
               "i": 104,
               "j": 90,
-              "k": 156
+              "k": 74
             }
           },
           "coronal": {
@@ -1320,17 +1335,17 @@
             "voxel": {
               "i": 105,
               "j": 92,
-              "k": 156
+              "k": 74
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 157,
+            "sliceIndex": 75,
             "areaVoxelCount": 28,
             "voxel": {
               "i": 105,
               "j": 90,
-              "k": 157
+              "k": 75
             }
           }
         }
@@ -1407,20 +1422,20 @@
         "url": "annotations/012_optic_chiasm.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 73468,
-        "sha256": "b9714f19b200c89f0f1e18ae4b8e58a3c96e7cd356de51ad7f44e4e9c36ffae4",
+        "bytes": 45987,
+        "sha256": "1a8a72708eb13e42161157fde8795131c053013c5dc47fd8a587c94cec323f8c",
         "voxelCount": 129,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 137,
-            "k": 141
+            "k": 59
           },
           "sagittal": {
             "axis": 0,
@@ -1429,7 +1444,7 @@
             "voxel": {
               "i": 129,
               "j": 138,
-              "k": 141
+              "k": 59
             }
           },
           "coronal": {
@@ -1439,17 +1454,17 @@
             "voxel": {
               "i": 128,
               "j": 137,
-              "k": 142
+              "k": 60
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 141,
+            "sliceIndex": 59,
             "areaVoxelCount": 53,
             "voxel": {
               "i": 128,
               "j": 137,
-              "k": 141
+              "k": 59
             }
           }
         }
@@ -1524,20 +1539,20 @@
         "url": "annotations/013_cuneus.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 34943,
-        "sha256": "92301b01dda00bbf9360665c85e87d236a47b0241a9e29f8b317b692a29e1f72",
+        "bytes": 49141,
+        "sha256": "9748c26f88bc39437870f894e9d3f27e2703c5d59fcfdffe1d585121657c7d92",
         "voxelCount": 6664,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 122,
             "j": 46,
-            "k": 154
+            "k": 72
           },
           "sagittal": {
             "axis": 0,
@@ -1546,7 +1561,7 @@
             "voxel": {
               "i": 121,
               "j": 44,
-              "k": 153
+              "k": 71
             }
           },
           "coronal": {
@@ -1556,17 +1571,17 @@
             "voxel": {
               "i": 124,
               "j": 39,
-              "k": 149
+              "k": 67
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 156,
+            "sliceIndex": 74,
             "areaVoxelCount": 375,
             "voxel": {
               "i": 120,
               "j": 49,
-              "k": 156
+              "k": 74
             }
           }
         }
@@ -1643,20 +1658,20 @@
         "url": "annotations/014_entorhinal_cortex.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75178,
-        "sha256": "0a6db731cc267e301f91b5bb1448c51adc848a5a9b86ccbe4fe6d2cc8a8f93f1",
+        "bytes": 47580,
+        "sha256": "ad3e8d210af994d1da0819fd47974394c066004374a09f36f60413b1703caf7f",
         "voxelCount": 3210,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 103,
             "j": 131,
-            "k": 127
+            "k": 45
           },
           "sagittal": {
             "axis": 0,
@@ -1665,7 +1680,7 @@
             "voxel": {
               "i": 105,
               "j": 131,
-              "k": 126
+              "k": 44
             }
           },
           "coronal": {
@@ -1675,17 +1690,17 @@
             "voxel": {
               "i": 103,
               "j": 136,
-              "k": 127
+              "k": 45
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 127,
+            "sliceIndex": 45,
             "areaVoxelCount": 305,
             "voxel": {
               "i": 103,
               "j": 130,
-              "k": 127
+              "k": 45
             }
           }
         }
@@ -1761,20 +1776,20 @@
         "url": "annotations/015_fusiform_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 80453,
-        "sha256": "d8c4260aeda5408b533ef5ed4194fa76be28524cf67cfc95c7104729dc2340bc",
+        "bytes": 52246,
+        "sha256": "0eba40cde44df5e0781f397cd8d542a3448a34be9ac0a701333a647525a90a99",
         "voxelCount": 16576,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 98,
             "j": 91,
-            "k": 134
+            "k": 52
           },
           "sagittal": {
             "axis": 0,
@@ -1783,7 +1798,7 @@
             "voxel": {
               "i": 95,
               "j": 97,
-              "k": 134
+              "k": 52
             }
           },
           "coronal": {
@@ -1793,17 +1808,17 @@
             "voxel": {
               "i": 100,
               "j": 71,
-              "k": 138
+              "k": 56
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 136,
+            "sliceIndex": 54,
             "areaVoxelCount": 1086,
             "voxel": {
               "i": 98,
               "j": 86,
-              "k": 136
+              "k": 54
             }
           }
         }
@@ -1879,20 +1894,20 @@
         "url": "annotations/016_lingual_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 77899,
-        "sha256": "06a3bc874673cf7c5bc277319fe81555430b1ec7fe9597ae189bca7df448f766",
+        "bytes": 49990,
+        "sha256": "7f9c86e108d3c33505e7b7cdc64e66ddf6a107f8247adc349f1e1e366b72e858",
         "voxelCount": 9058,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 116,
             "j": 68,
-            "k": 146
+            "k": 64
           },
           "sagittal": {
             "axis": 0,
@@ -1901,7 +1916,7 @@
             "voxel": {
               "i": 124,
               "j": 61,
-              "k": 146
+              "k": 64
             }
           },
           "coronal": {
@@ -1911,17 +1926,17 @@
             "voxel": {
               "i": 119,
               "j": 60,
-              "k": 146
+              "k": 64
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 147,
+            "sliceIndex": 65,
             "areaVoxelCount": 900,
             "voxel": {
               "i": 112,
               "j": 71,
-              "k": 147
+              "k": 65
             }
           }
         }
@@ -1997,20 +2012,20 @@
         "url": "annotations/017_pars_opercularis.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75982,
-        "sha256": "6880997e86445f3b5cc683176b168d8542848f938a1218a70726d565e458416b",
+        "bytes": 48586,
+        "sha256": "3fc7af9af0b25be87ee207e0b550a128a46dbd4a737b271c74547d6af073d10e",
         "voxelCount": 7419,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 85,
             "j": 138,
-            "k": 169
+            "k": 87
           },
           "sagittal": {
             "axis": 0,
@@ -2019,7 +2034,7 @@
             "voxel": {
               "i": 85,
               "j": 137,
-              "k": 168
+              "k": 86
             }
           },
           "coronal": {
@@ -2029,17 +2044,17 @@
             "voxel": {
               "i": 84,
               "j": 138,
-              "k": 169
+              "k": 87
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 173,
+            "sliceIndex": 91,
             "areaVoxelCount": 456,
             "voxel": {
               "i": 85,
               "j": 138,
-              "k": 173
+              "k": 91
             }
           }
         }
@@ -2115,20 +2130,20 @@
         "url": "annotations/018_pars_orbitalis.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75575,
-        "sha256": "29f8c7618986cfc6fa8ecadb98100fd8625b0a80a72437fa6896118cf6d370b4",
+        "bytes": 47936,
+        "sha256": "f83d2718b16e4fa9270f9bbe057ecfe60dffe59512ea5f8c0690bf7ac713aaea",
         "voxelCount": 4127,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 87,
             "j": 164,
-            "k": 149
+            "k": 67
           },
           "sagittal": {
             "axis": 0,
@@ -2137,7 +2152,7 @@
             "voxel": {
               "i": 85,
               "j": 160,
-              "k": 149
+              "k": 67
             }
           },
           "coronal": {
@@ -2147,17 +2162,17 @@
             "voxel": {
               "i": 87,
               "j": 168,
-              "k": 151
+              "k": 69
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 149,
+            "sliceIndex": 67,
             "areaVoxelCount": 427,
             "voxel": {
               "i": 87,
               "j": 165,
-              "k": 149
+              "k": 67
             }
           }
         }
@@ -2233,20 +2248,20 @@
         "url": "annotations/019_pars_triangularis.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 76421,
-        "sha256": "8b3b82a843912fa3265e44bb995e0f88baf3a532f99f23979901949e270676df",
+        "bytes": 48829,
+        "sha256": "5afdc57c53400c666eed43f5d31c0c1aefb2a77ec3779192a1ee36af94e9bf2a",
         "voxelCount": 6996,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 86,
             "j": 154,
-            "k": 163
+            "k": 81
           },
           "sagittal": {
             "axis": 0,
@@ -2255,7 +2270,7 @@
             "voxel": {
               "i": 80,
               "j": 156,
-              "k": 161
+              "k": 79
             }
           },
           "coronal": {
@@ -2265,17 +2280,17 @@
             "voxel": {
               "i": 88,
               "j": 150,
-              "k": 164
+              "k": 82
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 165,
+            "sliceIndex": 83,
             "areaVoxelCount": 475,
             "voxel": {
               "i": 84,
               "j": 155,
-              "k": 165
+              "k": 83
             }
           }
         }
@@ -2351,20 +2366,20 @@
         "url": "annotations/020_postcentral_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 79815,
-        "sha256": "b5c0db27cb5a880914d8680be38ff2d37132e93f655c4975b7e4ab30a36d0fbd",
+        "bytes": 52570,
+        "sha256": "6121dfff2d39d9d5b45b6e904f95a732324539a2b73e44b3af768f39597fbbc3",
         "voxelCount": 14803,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 87,
             "j": 101,
-            "k": 189
+            "k": 107
           },
           "sagittal": {
             "axis": 0,
@@ -2373,7 +2388,7 @@
             "voxel": {
               "i": 89,
               "j": 100,
-              "k": 190
+              "k": 108
             }
           },
           "coronal": {
@@ -2383,17 +2398,17 @@
             "voxel": {
               "i": 77,
               "j": 113,
-              "k": 176
+              "k": 94
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 201,
+            "sliceIndex": 119,
             "areaVoxelCount": 481,
             "voxel": {
               "i": 91,
               "j": 95,
-              "k": 201
+              "k": 119
             }
           }
         }
@@ -2470,20 +2485,20 @@
         "url": "annotations/021_posterior_cingulate_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 76572,
-        "sha256": "51639fdca7be09f498ad9143120f877e03a9fe350178334b59a4be71a0ee165d",
+        "bytes": 49114,
+        "sha256": "fe06b089ce0fa231d6a22239d06859368f4c20ad6e526128eeb90f4ac23103e6",
         "voxelCount": 7380,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 119,
             "j": 107,
-            "k": 179
+            "k": 97
           },
           "sagittal": {
             "axis": 0,
@@ -2492,7 +2507,7 @@
             "voxel": {
               "i": 123,
               "j": 110,
-              "k": 180
+              "k": 98
             }
           },
           "coronal": {
@@ -2502,17 +2517,17 @@
             "voxel": {
               "i": 118,
               "j": 100,
-              "k": 176
+              "k": 94
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 178,
+            "sliceIndex": 96,
             "areaVoxelCount": 532,
             "voxel": {
               "i": 118,
               "j": 105,
-              "k": 178
+              "k": 96
             }
           }
         }
@@ -2588,20 +2603,20 @@
         "url": "annotations/022_precentral_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 82090,
-        "sha256": "13418208a413587434f7093c7633636a6e1b9dadc0ca847f89c879107d1b7368",
+        "bytes": 54786,
+        "sha256": "3fa754858f89c0fe5dc7f7e30abfd5c3fcb915cf60fd60ba07b77967d31d72e5",
         "voxelCount": 24629,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 93,
             "j": 112,
-            "k": 189
+            "k": 107
           },
           "sagittal": {
             "axis": 0,
@@ -2610,7 +2625,7 @@
             "voxel": {
               "i": 85,
               "j": 121,
-              "k": 184
+              "k": 102
             }
           },
           "coronal": {
@@ -2620,17 +2635,17 @@
             "voxel": {
               "i": 83,
               "j": 121,
-              "k": 180
+              "k": 98
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 190,
+            "sliceIndex": 108,
             "areaVoxelCount": 672,
             "voxel": {
               "i": 92,
               "j": 114,
-              "k": 190
+              "k": 108
             }
           }
         }
@@ -2702,20 +2717,20 @@
         "url": "annotations/023_precuneus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 81212,
-        "sha256": "c03f36c197a7deac9afb48ab223d1286f6bf1c9893644da3c0d32f52247ad56e",
+        "bytes": 53670,
+        "sha256": "c5e9be889d0fc61e77bccbbedebd8bd9c3a58d23e5d1d4a0a9d6c7d9d76f5def",
         "voxelCount": 18044,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 117,
             "j": 71,
-            "k": 174
+            "k": 92
           },
           "sagittal": {
             "axis": 0,
@@ -2724,7 +2739,7 @@
             "voxel": {
               "i": 124,
               "j": 68,
-              "k": 177
+              "k": 95
             }
           },
           "coronal": {
@@ -2734,17 +2749,17 @@
             "voxel": {
               "i": 116,
               "j": 74,
-              "k": 172
+              "k": 90
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 170,
+            "sliceIndex": 88,
             "areaVoxelCount": 514,
             "voxel": {
               "i": 118,
               "j": 67,
-              "k": 170
+              "k": 88
             }
           }
         }
@@ -2820,20 +2835,20 @@
         "url": "annotations/024_superior_frontal_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 88773,
-        "sha256": "e4745f47d01264d0a380ae1f58b7896a68346f1612ab2fad328d684849c9d50b",
+        "bytes": 59950,
+        "sha256": "37e355a9f7cdd18bfef864e54e9e8f5c5fbea26f46bf5430e3c31a5016afc2c0",
         "voxelCount": 41234,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 115,
             "j": 148,
-            "k": 193
+            "k": 111
           },
           "sagittal": {
             "axis": 0,
@@ -2842,7 +2857,7 @@
             "voxel": {
               "i": 115,
               "j": 149,
-              "k": 190
+              "k": 108
             }
           },
           "coronal": {
@@ -2852,17 +2867,17 @@
             "voxel": {
               "i": 115,
               "j": 160,
-              "k": 190
+              "k": 108
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 197,
+            "sliceIndex": 115,
             "areaVoxelCount": 1142,
             "voxel": {
               "i": 116,
               "j": 141,
-              "k": 197
+              "k": 115
             }
           }
         }
@@ -2938,20 +2953,20 @@
         "url": "annotations/025_supramarginal_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 80080,
-        "sha256": "237aea531e539b233a82af1bf3a7c00271f5b9d8cac82a0bbd1aa25d70b8ca06",
+        "bytes": 52764,
+        "sha256": "26bbbea4fb9bdbd611be3f39613e74dbdd294ffd02c2c1d4ab8afc8f951c27a7",
         "voxelCount": 17560,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 80,
             "j": 93,
-            "k": 178
+            "k": 96
           },
           "sagittal": {
             "axis": 0,
@@ -2960,7 +2975,7 @@
             "voxel": {
               "i": 79,
               "j": 93,
-              "k": 178
+              "k": 96
             }
           },
           "coronal": {
@@ -2970,17 +2985,17 @@
             "voxel": {
               "i": 80,
               "j": 97,
-              "k": 178
+              "k": 96
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 177,
+            "sliceIndex": 95,
             "areaVoxelCount": 765,
             "voxel": {
               "i": 80,
               "j": 92,
-              "k": 177
+              "k": 95
             }
           }
         }
@@ -3068,20 +3083,20 @@
         "url": "annotations/026_temporal_pole.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75066,
-        "sha256": "a15d106486dc543dda399a4094b6a5de42a47c320e1f2ec4ff33bf82decabbcb",
+        "bytes": 47614,
+        "sha256": "db7719c92655990d9798e6d3090d4e944b5a586f9bcaff3ed4af7bca07e0d249",
         "voxelCount": 3672,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 100,
             "j": 149,
-            "k": 126
+            "k": 44
           },
           "sagittal": {
             "axis": 0,
@@ -3090,7 +3105,7 @@
             "voxel": {
               "i": 95,
               "j": 151,
-              "k": 126
+              "k": 44
             }
           },
           "coronal": {
@@ -3100,17 +3115,17 @@
             "voxel": {
               "i": 100,
               "j": 149,
-              "k": 124
+              "k": 42
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 128,
+            "sliceIndex": 46,
             "areaVoxelCount": 364,
             "voxel": {
               "i": 99,
               "j": 149,
-              "k": 128
+              "k": 46
             }
           }
         }
@@ -3208,20 +3223,20 @@
         "url": "annotations/027_insular_cortex.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 80124,
-        "sha256": "9f4019ac8dd58fc5913853841af30b223b9812e97f03136cc49dc1923ef59cb6",
+        "bytes": 52172,
+        "sha256": "4864f9a75df8e57e2ec2f033fa04eee7f3e9aa47bfc140adcf6468af5108f3ff",
         "voxelCount": 15182,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 96,
             "j": 128,
-            "k": 155
+            "k": 73
           },
           "sagittal": {
             "axis": 0,
@@ -3230,7 +3245,7 @@
             "voxel": {
               "i": 96,
               "j": 126,
-              "k": 155
+              "k": 73
             }
           },
           "coronal": {
@@ -3240,17 +3255,17 @@
             "voxel": {
               "i": 97,
               "j": 139,
-              "k": 151
+              "k": 69
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 146,
+            "sliceIndex": 64,
             "areaVoxelCount": 504,
             "voxel": {
               "i": 96,
               "j": 133,
-              "k": 146
+              "k": 64
             }
           }
         }
@@ -3329,20 +3344,20 @@
         "url": "annotations/029_medulla_oblongata.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 17300,
-        "sha256": "e961c1d497e1c8b7418fb6ce976b9eec5d402d304945378d27d0efb340083937",
+        "bytes": 47623,
+        "sha256": "bc6d8b7bf50de556e2f9441ef3481341af1dfeffd391bd8544b0039e8ac7d7cf",
         "voxelCount": 4170,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 99,
-            "k": 105
+            "k": 23
           },
           "sagittal": {
             "axis": 0,
@@ -3351,7 +3366,7 @@
             "voxel": {
               "i": 124,
               "j": 99,
-              "k": 104
+              "k": 22
             }
           },
           "coronal": {
@@ -3361,17 +3376,17 @@
             "voxel": {
               "i": 128,
               "j": 97,
-              "k": 105
+              "k": 23
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 110,
+            "sliceIndex": 28,
             "areaVoxelCount": 236,
             "voxel": {
               "i": 128,
               "j": 100,
-              "k": 110
+              "k": 28
             }
           }
         }
@@ -3461,20 +3476,20 @@
         "url": "annotations/032_cerebellum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 39062,
-        "sha256": "2ede74db8c456b1051050bdd0a8166085f83306ff7060be38a7ddfa62b241f7b",
+        "bytes": 57084,
+        "sha256": "b3a6a01df5cbd0cbc542535b4b0dbfbf9c19c29619d825d360e2556c524f1eee",
         "voxelCount": 58055,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 106,
             "j": 78,
-            "k": 118
+            "k": 36
           },
           "sagittal": {
             "axis": 0,
@@ -3483,7 +3498,7 @@
             "voxel": {
               "i": 112,
               "j": 78,
-              "k": 118
+              "k": 36
             }
           },
           "coronal": {
@@ -3493,17 +3508,17 @@
             "voxel": {
               "i": 107,
               "j": 82,
-              "k": 118
+              "k": 36
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 121,
+            "sliceIndex": 39,
             "areaVoxelCount": 2069,
             "voxel": {
               "i": 102,
               "j": 74,
-              "k": 121
+              "k": 39
             }
           }
         }
@@ -3582,20 +3597,20 @@
         "url": "annotations/040_pons.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 34350,
-        "sha256": "93c4de2023eaf6fb575728ad30df980e490305a4f2a0608b8b76d7ddae112ef5",
+        "bytes": 49193,
+        "sha256": "a290a3816110a1f28889f349823911cba0c247d624c194198f8d9b56e957d5a9",
         "voxelCount": 10506,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 109,
-            "k": 124
+            "k": 42
           },
           "sagittal": {
             "axis": 0,
@@ -3604,7 +3619,7 @@
             "voxel": {
               "i": 122,
               "j": 108,
-              "k": 124
+              "k": 42
             }
           },
           "coronal": {
@@ -3614,17 +3629,17 @@
             "voxel": {
               "i": 128,
               "j": 112,
-              "k": 124
+              "k": 42
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 130,
+            "sliceIndex": 48,
             "areaVoxelCount": 630,
             "voxel": {
               "i": 128,
               "j": 111,
-              "k": 130
+              "k": 48
             }
           }
         }
@@ -3701,20 +3716,20 @@
         "url": "annotations/041_gyrus_rectus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75130,
-        "sha256": "4196c9a8b20ae8faac18f43eb252d37f3362d95200aa4125cca622c3ff929d0c",
+        "bytes": 47338,
+        "sha256": "054db32ac80c633cff2213e8b93d92413837254fb2d49d75703ccd614454b103",
         "voxelCount": 2039,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 124,
             "j": 172,
-            "k": 144
+            "k": 62
           },
           "sagittal": {
             "axis": 0,
@@ -3723,7 +3738,7 @@
             "voxel": {
               "i": 124,
               "j": 175,
-              "k": 145
+              "k": 63
             }
           },
           "coronal": {
@@ -3733,17 +3748,17 @@
             "voxel": {
               "i": 124,
               "j": 182,
-              "k": 148
+              "k": 66
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 143,
+            "sliceIndex": 61,
             "areaVoxelCount": 210,
             "voxel": {
               "i": 123,
               "j": 168,
-              "k": 143
+              "k": 61
             }
           }
         }
@@ -3841,20 +3856,20 @@
         "url": "annotations/044_uncus.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 77299,
-        "sha256": "fe1695d1e334371242b3b0dbf7e1c79ae2c82491f13bd573dc3f573b47aba5bd",
+        "bytes": 49258,
+        "sha256": "7994d632b107fd3aa769b3b9bd5fcc42a738bb0a81bd47b8cf8a6d83200d30f1",
         "voxelCount": 5399,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 106,
             "j": 121,
-            "k": 133
+            "k": 51
           },
           "sagittal": {
             "axis": 0,
@@ -3863,7 +3878,7 @@
             "voxel": {
               "i": 107,
               "j": 124,
-              "k": 132
+              "k": 50
             }
           },
           "coronal": {
@@ -3873,17 +3888,17 @@
             "voxel": {
               "i": 106,
               "j": 131,
-              "k": 134
+              "k": 52
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 139,
+            "sliceIndex": 57,
             "areaVoxelCount": 290,
             "voxel": {
               "i": 107,
               "j": 112,
-              "k": 139
+              "k": 57
             }
           }
         }
@@ -3974,20 +3989,20 @@
         "url": "annotations/045_temporal_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 32866,
-        "sha256": "146827e9600c71a18a64d1d6ecf1017badb55fabe78803a579206cf57c2faa60",
+        "bytes": 46085,
+        "sha256": "9d40e8dbac2e4d95634fc99a922f5c4fde4f766257eecb7cf4d8e882097aa848",
         "voxelCount": 134,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 100,
             "j": 123,
-            "k": 138
+            "k": 56
           },
           "sagittal": {
             "axis": 0,
@@ -3996,7 +4011,7 @@
             "voxel": {
               "i": 99,
               "j": 124,
-              "k": 138
+              "k": 56
             }
           },
           "coronal": {
@@ -4006,17 +4021,17 @@
             "voxel": {
               "i": 100,
               "j": 124,
-              "k": 138
+              "k": 56
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 140,
+            "sliceIndex": 58,
             "areaVoxelCount": 26,
             "voxel": {
               "i": 100,
               "j": 120,
-              "k": 140
+              "k": 58
             }
           }
         }
@@ -4114,20 +4129,20 @@
         "url": "annotations/051_sylvian_fissure.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 74937,
-        "sha256": "03ee36472c6ba34ecf6fae2624a2535ea5b7e22a237f74c4a3950822594641a1",
+        "bytes": 47608,
+        "sha256": "5b229b2dbf0a3362a301d9fad19b16d0c2303f8aa11fc62f4d0a0697c2827bce",
         "voxelCount": 2128,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 88,
             "j": 121,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -4136,7 +4151,7 @@
             "voxel": {
               "i": 90,
               "j": 121,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -4146,17 +4161,17 @@
             "voxel": {
               "i": 85,
               "j": 98,
-              "k": 168
+              "k": 86
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 164,
+            "sliceIndex": 82,
             "areaVoxelCount": 200,
             "voxel": {
               "i": 91,
               "j": 112,
-              "k": 164
+              "k": 82
             }
           }
         }
@@ -4235,20 +4250,20 @@
         "url": "annotations/054_midbrain.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 79322,
-        "sha256": "f5abe3063b77dfe1886a81469f0e876521cbb649f02539a01f3aa3a13334edff",
+        "bytes": 52658,
+        "sha256": "d70cd26619d88e2f9b85fb96f14d2e6a3becae84cd5c5ef89bf76817546628b1",
         "voxelCount": 19933,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 106,
-            "k": 124
+            "k": 42
           },
           "sagittal": {
             "axis": 0,
@@ -4257,7 +4272,7 @@
             "voxel": {
               "i": 124,
               "j": 105,
-              "k": 123
+              "k": 41
             }
           },
           "coronal": {
@@ -4267,17 +4282,17 @@
             "voxel": {
               "i": 128,
               "j": 101,
-              "k": 122
+              "k": 40
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 127,
+            "sliceIndex": 45,
             "areaVoxelCount": 633,
             "voxel": {
               "i": 128,
               "j": 110,
-              "k": 127
+              "k": 45
             }
           }
         }
@@ -4357,20 +4372,20 @@
         "url": "annotations/060_genu_of_the_corpus_callosum.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 73689,
-        "sha256": "79edf9b2cac30ad2c33c407bf72fbba3d0f9e63a3e0e9d1435de2e05b8a0960e",
+        "bytes": 46260,
+        "sha256": "d250bc9632a809d31cbffe21d9c74cfb9ae3eb19eb89a4d043e9ffbbfc5ea1f3",
         "voxelCount": 784,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 127,
             "j": 153,
-            "k": 163
+            "k": 81
           },
           "sagittal": {
             "axis": 0,
@@ -4379,7 +4394,7 @@
             "voxel": {
               "i": 126,
               "j": 153,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -4389,17 +4404,17 @@
             "voxel": {
               "i": 127,
               "j": 149,
-              "k": 164
+              "k": 82
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 160,
+            "sliceIndex": 78,
             "areaVoxelCount": 68,
             "voxel": {
               "i": 127,
               "j": 154,
-              "k": 160
+              "k": 78
             }
           }
         }
@@ -4479,20 +4494,20 @@
         "url": "annotations/061_frontal_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 17192,
-        "sha256": "2d2a4b3840236e386579e30c3505f0cf8e7c7f12c253eaa3f4106deaa26291d1",
+        "bytes": 46713,
+        "sha256": "23627288ae461fb4e609c26caa85e6ac955a06f9c592d5e5a30cc06a44426850",
         "voxelCount": 1567,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 122,
             "j": 140,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -4501,7 +4516,7 @@
             "voxel": {
               "i": 123,
               "j": 138,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -4511,17 +4526,17 @@
             "voxel": {
               "i": 123,
               "j": 138,
-              "k": 164
+              "k": 82
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 169,
+            "sliceIndex": 87,
             "areaVoxelCount": 161,
             "voxel": {
               "i": 121,
               "j": 138,
-              "k": 169
+              "k": 87
             }
           }
         }
@@ -4611,20 +4626,20 @@
         "url": "annotations/065_lentiform_nucleus.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 75857,
-        "sha256": "58f7aa29d1c3699acdee2ba7093aadd029d40679fbe977bc8320894ac48423c5",
+        "bytes": 48284,
+        "sha256": "333853250f1e0f132c195f2b3df62004886786830eea30972b35e5b6d25f954d",
         "voxelCount": 6863,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 105,
             "j": 129,
-            "k": 155
+            "k": 73
           },
           "sagittal": {
             "axis": 0,
@@ -4633,7 +4648,7 @@
             "voxel": {
               "i": 104,
               "j": 129,
-              "k": 156
+              "k": 74
             }
           },
           "coronal": {
@@ -4643,17 +4658,17 @@
             "voxel": {
               "i": 105,
               "j": 130,
-              "k": 155
+              "k": 73
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 152,
+            "sliceIndex": 70,
             "areaVoxelCount": 525,
             "voxel": {
               "i": 105,
               "j": 130,
-              "k": 152
+              "k": 70
             }
           }
         }
@@ -4761,20 +4776,20 @@
         "url": "annotations/070_cingulate_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 83168,
-        "sha256": "e1da679010d7fd87c01e102b4154355ca9f3b7bd28d638c177c5bdd3d0678982",
+        "bytes": 55340,
+        "sha256": "89670241b090519e07dae8523998ae27a00867c9579b8088ef104975f52e0e5c",
         "voxelCount": 21368,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 120,
             "j": 120,
-            "k": 172
+            "k": 90
           },
           "sagittal": {
             "axis": 0,
@@ -4783,7 +4798,7 @@
             "voxel": {
               "i": 123,
               "j": 125,
-              "k": 173
+              "k": 91
             }
           },
           "coronal": {
@@ -4793,17 +4808,17 @@
             "voxel": {
               "i": 118,
               "j": 91,
-              "k": 167
+              "k": 85
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 178,
+            "sliceIndex": 96,
             "areaVoxelCount": 858,
             "voxel": {
               "i": 119,
               "j": 117,
-              "k": 178
+              "k": 96
             }
           }
         }
@@ -4882,20 +4897,20 @@
         "url": "annotations/072_forceps_minor.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 73689,
-        "sha256": "79edf9b2cac30ad2c33c407bf72fbba3d0f9e63a3e0e9d1435de2e05b8a0960e",
+        "bytes": 46260,
+        "sha256": "d250bc9632a809d31cbffe21d9c74cfb9ae3eb19eb89a4d043e9ffbbfc5ea1f3",
         "voxelCount": 784,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 127,
             "j": 153,
-            "k": 163
+            "k": 81
           },
           "sagittal": {
             "axis": 0,
@@ -4904,7 +4919,7 @@
             "voxel": {
               "i": 126,
               "j": 153,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -4914,17 +4929,17 @@
             "voxel": {
               "i": 127,
               "j": 149,
-              "k": 164
+              "k": 82
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 160,
+            "sliceIndex": 78,
             "areaVoxelCount": 68,
             "voxel": {
               "i": 127,
               "j": 154,
-              "k": 160
+              "k": 78
             }
           }
         }
@@ -5004,20 +5019,20 @@
         "url": "annotations/073_trigone_atrium_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 17138,
-        "sha256": "a557c7209c362c5f76eae1695cf062322469288036beae6634ad2e071a2511ef",
+        "bytes": 46625,
+        "sha256": "facf665f95af04e8912e624f06ca43a4e65ba6b779ca3d7a06351444b4062b99",
         "voxelCount": 1121,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 105,
             "j": 86,
-            "k": 156
+            "k": 74
           },
           "sagittal": {
             "axis": 0,
@@ -5026,7 +5041,7 @@
             "voxel": {
               "i": 102,
               "j": 82,
-              "k": 154
+              "k": 72
             }
           },
           "coronal": {
@@ -5036,17 +5051,17 @@
             "voxel": {
               "i": 104,
               "j": 84,
-              "k": 156
+              "k": 74
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 152,
+            "sliceIndex": 70,
             "areaVoxelCount": 90,
             "voxel": {
               "i": 102,
               "j": 83,
-              "k": 152
+              "k": 70
             }
           }
         }
@@ -5153,20 +5168,20 @@
         "url": "annotations/074_occipital_lobe.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 86737,
-        "sha256": "2ebca21e1d5b0a6ef4ba3ef2c243908f0f266471f7b870423bae76b4f7df022f",
+        "bytes": 59215,
+        "sha256": "cc0b65e3ea6c99cf5e573c5d17ca6466733d4ed557bd81f5a925d0f764d00f3d",
         "voxelCount": 18504,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 109,
             "j": 55,
-            "k": 143
+            "k": 61
           },
           "sagittal": {
             "axis": 0,
@@ -5175,7 +5190,7 @@
             "voxel": {
               "i": 122,
               "j": 53,
-              "k": 146
+              "k": 64
             }
           },
           "coronal": {
@@ -5185,17 +5200,17 @@
             "voxel": {
               "i": 111,
               "j": 49,
-              "k": 139
+              "k": 57
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 146,
+            "sliceIndex": 64,
             "areaVoxelCount": 816,
             "voxel": {
               "i": 108,
               "j": 60,
-              "k": 146
+              "k": 64
             }
           }
         }
@@ -5275,20 +5290,20 @@
         "url": "annotations/075_splenium_of_the_corpus_callosum.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 73794,
-        "sha256": "07e4bd31e2b87fc75a360cdf2b7d4b72e186c7fd06154626e9fc4f99d406241d",
+        "bytes": 46296,
+        "sha256": "63c23c80252f5fcb445a5ec8b2e05d23dfde55d013b6b74cbe87f2f9cc7180e9",
         "voxelCount": 905,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 97,
-            "k": 163
+            "k": 81
           },
           "sagittal": {
             "axis": 0,
@@ -5297,7 +5312,7 @@
             "voxel": {
               "i": 128,
               "j": 96,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -5307,17 +5322,17 @@
             "voxel": {
               "i": 128,
               "j": 95,
-              "k": 161
+              "k": 79
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 166,
+            "sliceIndex": 84,
             "areaVoxelCount": 76,
             "voxel": {
               "i": 128,
               "j": 97,
-              "k": 166
+              "k": 84
             }
           }
         }
@@ -5397,20 +5412,20 @@
         "url": "annotations/076_occipital_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 76314,
-        "sha256": "7268c86d84242d93dbb6f3d0e129ab032d78152d4b8b547d6769eb22a7ad553c",
+        "bytes": 48390,
+        "sha256": "45ab8feea28403fcd0ec03238a57b24251dc703ebb6b5f65866b4fa77e62b1b3",
         "voxelCount": 4273,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 115,
             "j": 116,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -5419,7 +5434,7 @@
             "voxel": {
               "i": 123,
               "j": 136,
-              "k": 165
+              "k": 83
             }
           },
           "coronal": {
@@ -5429,17 +5444,17 @@
             "voxel": {
               "i": 122,
               "j": 133,
-              "k": 167
+              "k": 85
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 171,
+            "sliceIndex": 89,
             "areaVoxelCount": 294,
             "voxel": {
               "i": 119,
               "j": 123,
-              "k": 171
+              "k": 89
             }
           }
         }
@@ -5519,20 +5534,20 @@
         "url": "annotations/077_body_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 76314,
-        "sha256": "7268c86d84242d93dbb6f3d0e129ab032d78152d4b8b547d6769eb22a7ad553c",
+        "bytes": 48390,
+        "sha256": "45ab8feea28403fcd0ec03238a57b24251dc703ebb6b5f65866b4fa77e62b1b3",
         "voxelCount": 4273,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 115,
             "j": 116,
-            "k": 165
+            "k": 83
           },
           "sagittal": {
             "axis": 0,
@@ -5541,7 +5556,7 @@
             "voxel": {
               "i": 123,
               "j": 136,
-              "k": 165
+              "k": 83
             }
           },
           "coronal": {
@@ -5551,17 +5566,17 @@
             "voxel": {
               "i": 122,
               "j": 133,
-              "k": 167
+              "k": 85
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 171,
+            "sliceIndex": 89,
             "areaVoxelCount": 294,
             "voxel": {
               "i": 119,
               "j": 123,
-              "k": 171
+              "k": 89
             }
           }
         }
@@ -5640,20 +5655,20 @@
         "url": "annotations/078_forceps_major.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 73794,
-        "sha256": "07e4bd31e2b87fc75a360cdf2b7d4b72e186c7fd06154626e9fc4f99d406241d",
+        "bytes": 46296,
+        "sha256": "63c23c80252f5fcb445a5ec8b2e05d23dfde55d013b6b74cbe87f2f9cc7180e9",
         "voxelCount": 905,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 128,
             "j": 97,
-            "k": 163
+            "k": 81
           },
           "sagittal": {
             "axis": 0,
@@ -5662,7 +5677,7 @@
             "voxel": {
               "i": 128,
               "j": 96,
-              "k": 163
+              "k": 81
             }
           },
           "coronal": {
@@ -5672,17 +5687,17 @@
             "voxel": {
               "i": 128,
               "j": 95,
-              "k": 161
+              "k": 79
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 166,
+            "sliceIndex": 84,
             "areaVoxelCount": 76,
             "voxel": {
               "i": 128,
               "j": 97,
-              "k": 166
+              "k": 84
             }
           }
         }
@@ -5781,20 +5796,20 @@
         "url": "annotations/079_body_of_the_corpus_callosum.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 74908,
-        "sha256": "5d96017342658d4e7fada3fc4bcd17230076ca2fce156b62216fc5a0bc49fa72",
+        "bytes": 47205,
+        "sha256": "7676762dc95b75089a5ad13c055b6d1b8bfd76073c337de4c4942e2cc12cea5e",
         "voxelCount": 2071,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 127,
             "j": 127,
-            "k": 171
+            "k": 89
           },
           "sagittal": {
             "axis": 0,
@@ -5803,7 +5818,7 @@
             "voxel": {
               "i": 127,
               "j": 129,
-              "k": 169
+              "k": 87
             }
           },
           "coronal": {
@@ -5813,17 +5828,17 @@
             "voxel": {
               "i": 127,
               "j": 147,
-              "k": 165
+              "k": 83
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 173,
+            "sliceIndex": 91,
             "areaVoxelCount": 184,
             "voxel": {
               "i": 127,
               "j": 128,
-              "k": 173
+              "k": 91
             }
           }
         }
@@ -5901,20 +5916,20 @@
         "url": "annotations/083_marginal_sulcus_pars_marginalis.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 73835,
-        "sha256": "31579967ab895cd1f566b6113b02df44b87bab58985b4a5bab9699b95b0292df",
+        "bytes": 46338,
+        "sha256": "8df6fcbdbe00e7b1a5b1e95a564080432b8917c18a5996a98518660bb8d117b1",
         "voxelCount": 522,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 114,
             "j": 91,
-            "k": 187
+            "k": 105
           },
           "sagittal": {
             "axis": 0,
@@ -5923,7 +5938,7 @@
             "voxel": {
               "i": 113,
               "j": 90,
-              "k": 188
+              "k": 106
             }
           },
           "coronal": {
@@ -5933,17 +5948,17 @@
             "voxel": {
               "i": 114,
               "j": 88,
-              "k": 188
+              "k": 106
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 185,
+            "sliceIndex": 103,
             "areaVoxelCount": 59,
             "voxel": {
               "i": 115,
               "j": 92,
-              "k": 185
+              "k": 103
             }
           }
         }
@@ -6030,20 +6045,20 @@
         "url": "annotations/085_angular_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 78106,
-        "sha256": "71a385ebfcaf7cb8809aaf8ff383560df286d5b2213a97db961a14e06a66e26f",
+        "bytes": 50770,
+        "sha256": "ecd36b06fbb1d21b1dcf832980663ae8c33db486164d430eb5a17c5ea09b1cdf",
         "voxelCount": 7079,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 85,
             "j": 66,
-            "k": 177
+            "k": 95
           },
           "sagittal": {
             "axis": 0,
@@ -6052,7 +6067,7 @@
             "voxel": {
               "i": 77,
               "j": 74,
-              "k": 176
+              "k": 94
             }
           },
           "coronal": {
@@ -6062,17 +6077,17 @@
             "voxel": {
               "i": 76,
               "j": 81,
-              "k": 174
+              "k": 92
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 183,
+            "sliceIndex": 101,
             "areaVoxelCount": 330,
             "voxel": {
               "i": 86,
               "j": 65,
-              "k": 183
+              "k": 101
             }
           }
         }
@@ -6159,20 +6174,20 @@
         "url": "annotations/086_superior_temporal_gyrus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 80206,
-        "sha256": "3d546432c165676f0ebda506f478cf64315a71b5ce565ebcd3e021cabbcbfff0",
+        "bytes": 52310,
+        "sha256": "6313f9ea01170b7ae7f4fe10079592ca963ae65e74229593e0e81d19fa24db3f",
         "voxelCount": 15968,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 80,
             "j": 123,
-            "k": 147
+            "k": 65
           },
           "sagittal": {
             "axis": 0,
@@ -6181,7 +6196,7 @@
             "voxel": {
               "i": 80,
               "j": 127,
-              "k": 146
+              "k": 64
             }
           },
           "coronal": {
@@ -6191,17 +6206,17 @@
             "voxel": {
               "i": 79,
               "j": 102,
-              "k": 157
+              "k": 75
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 150,
+            "sliceIndex": 68,
             "areaVoxelCount": 781,
             "voxel": {
               "i": 78,
               "j": 120,
-              "k": 150
+              "k": 68
             }
           }
         }
@@ -6288,20 +6303,20 @@
         "url": "annotations/087_middle_temporal_gyrus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 79198,
-        "sha256": "239cacf3d6f8d5ec43d79d738a1d644a1b27e674a60e6ad9d6e344d037196c4c",
+        "bytes": 51398,
+        "sha256": "c5da9db3a3db9a1969cc9712c410d28f5d2a15968b99b92c28379baaa49ef484",
         "voxelCount": 13743,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 75,
             "j": 107,
-            "k": 141
+            "k": 59
           },
           "sagittal": {
             "axis": 0,
@@ -6310,7 +6325,7 @@
             "voxel": {
               "i": 74,
               "j": 104,
-              "k": 143
+              "k": 61
             }
           },
           "coronal": {
@@ -6320,17 +6335,17 @@
             "voxel": {
               "i": 74,
               "j": 105,
-              "k": 143
+              "k": 61
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 141,
+            "sliceIndex": 59,
             "areaVoxelCount": 876,
             "voxel": {
               "i": 74,
               "j": 107,
-              "k": 141
+              "k": 59
             }
           }
         }
@@ -6417,20 +6432,20 @@
         "url": "annotations/088_inferior_temporal_gyrus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 80912,
-        "sha256": "cbfb6607515d022ade8ff8bc9133f4ade48407110dbf8d5d60a6abacacbb7aef",
+        "bytes": 53072,
+        "sha256": "0b075c603f55ec97d418eef64fe8ca8bfa235f4ad53d984e757b813f5c90e146",
         "voxelCount": 18474,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 81,
             "j": 103,
-            "k": 132
+            "k": 50
           },
           "sagittal": {
             "axis": 0,
@@ -6439,7 +6454,7 @@
             "voxel": {
               "i": 81,
               "j": 98,
-              "k": 133
+              "k": 51
             }
           },
           "coronal": {
@@ -6449,17 +6464,17 @@
             "voxel": {
               "i": 80,
               "j": 79,
-              "k": 138
+              "k": 56
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 135,
+            "sliceIndex": 53,
             "areaVoxelCount": 1022,
             "voxel": {
               "i": 78,
               "j": 95,
-              "k": 135
+              "k": 53
             }
           }
         }
@@ -6547,20 +6562,20 @@
         "url": "annotations/089_parahippocampal_gyrus.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 75330,
-        "sha256": "40dcc6d4484b64f865f6f9d9af7abd145f7027a556245e10768897b5c09a6524",
+        "bytes": 47539,
+        "sha256": "dbb9aa487ca3fe1f9f85ed0a3e2ceb55eda44fb36ad28bffad6f048d99d42f91",
         "voxelCount": 3156,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 105,
             "j": 103,
-            "k": 138
+            "k": 56
           },
           "sagittal": {
             "axis": 0,
@@ -6569,7 +6584,7 @@
             "voxel": {
               "i": 108,
               "j": 103,
-              "k": 138
+              "k": 56
             }
           },
           "coronal": {
@@ -6579,17 +6594,17 @@
             "voxel": {
               "i": 106,
               "j": 93,
-              "k": 143
+              "k": 61
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 140,
+            "sliceIndex": 58,
             "areaVoxelCount": 291,
             "voxel": {
               "i": 105,
               "j": 100,
-              "k": 140
+              "k": 58
             }
           }
         }
@@ -6688,20 +6703,20 @@
         "url": "annotations/090_orbitofrontal_cortex.nii.gz",
         "sourceKind": "full_gyrus_composite",
         "reviewStatus": "needs_review",
-        "bytes": 81892,
-        "sha256": "793b5bad6d70623464f87b9ae5a6f6d5b3923848abe8ca9c0f62b5bd16628080",
+        "bytes": 54156,
+        "sha256": "8eaf2af963ed30d80ff32f9229e05e99694200afab75c04af62eb99343bbdfb8",
         "voxelCount": 23476,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 111,
             "j": 163,
-            "k": 148
+            "k": 66
           },
           "sagittal": {
             "axis": 0,
@@ -6710,7 +6725,7 @@
             "voxel": {
               "i": 116,
               "j": 166,
-              "k": 148
+              "k": 66
             }
           },
           "coronal": {
@@ -6720,17 +6735,17 @@
             "voxel": {
               "i": 105,
               "j": 155,
-              "k": 148
+              "k": 66
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 147,
+            "sliceIndex": 65,
             "areaVoxelCount": 1402,
             "voxel": {
               "i": 112,
               "j": 162,
-              "k": 147
+              "k": 65
             }
           }
         }
@@ -6817,20 +6832,20 @@
         "url": "annotations/091_calcarine_sulcus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 74644,
-        "sha256": "b50fdde9008653476dba3fa1d0568b97aee06f2d4b16467ea676801140478484",
+        "bytes": 47239,
+        "sha256": "c518b9e25e40401551110c4b5b7228e6ff957ddd689ca40cfa89e4ddfa1772fe",
         "voxelCount": 1329,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 119,
             "j": 62,
-            "k": 152
+            "k": 70
           },
           "sagittal": {
             "axis": 0,
@@ -6839,7 +6854,7 @@
             "voxel": {
               "i": 121,
               "j": 53,
-              "k": 151
+              "k": 69
             }
           },
           "coronal": {
@@ -6849,17 +6864,17 @@
             "voxel": {
               "i": 112,
               "j": 70,
-              "k": 154
+              "k": 72
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 152,
+            "sliceIndex": 70,
             "areaVoxelCount": 129,
             "voxel": {
               "i": 115,
               "j": 69,
-              "k": 152
+              "k": 70
             }
           }
         }
@@ -6936,20 +6951,20 @@
         "url": "annotations/092_parieto_occipital_sulcus.nii.gz",
         "sourceKind": "freesurfer_seed_split",
         "reviewStatus": "needs_review",
-        "bytes": 73595,
-        "sha256": "6f37c424d202fe4ac9b693ed7e850baec02c96f14ca8a2fc26c8ad731705ff53",
+        "bytes": 46106,
+        "sha256": "eeafd461733236ab5703f08530ecf2b714967d93181552c01e23e1e0e2504130",
         "voxelCount": 173,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 116,
             "j": 50,
-            "k": 171
+            "k": 89
           },
           "sagittal": {
             "axis": 0,
@@ -6958,7 +6973,7 @@
             "voxel": {
               "i": 116,
               "j": 47,
-              "k": 174
+              "k": 92
             }
           },
           "coronal": {
@@ -6968,17 +6983,17 @@
             "voxel": {
               "i": 116,
               "j": 48,
-              "k": 171
+              "k": 89
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 175,
+            "sliceIndex": 93,
             "areaVoxelCount": 21,
             "voxel": {
               "i": 116,
               "j": 48,
-              "k": 175
+              "k": 93
             }
           }
         }
@@ -7077,20 +7092,20 @@
         "url": "annotations/093_cingulate_sulcus.nii.gz",
         "sourceKind": "rough_support",
         "reviewStatus": "needs_review",
-        "bytes": 78646,
-        "sha256": "1c9b0d34c4812064233f72fdcd567bbc9c8c13936ea877ffb88b7940fce02fe3",
+        "bytes": 51037,
+        "sha256": "c4e1fe700b90711ed85fa59eda4f68bef112f04bca22d73a60a972fbb657ca89",
         "voxelCount": 7206,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
             256,
             256,
-            256
+            160
           ],
           "centroidVoxel": {
             "i": 119,
             "j": 143,
-            "k": 177
+            "k": 95
           },
           "sagittal": {
             "axis": 0,
@@ -7099,7 +7114,7 @@
             "voxel": {
               "i": 123,
               "j": 154,
-              "k": 173
+              "k": 91
             }
           },
           "coronal": {
@@ -7109,17 +7124,17 @@
             "voxel": {
               "i": 120,
               "j": 169,
-              "k": 166
+              "k": 84
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 184,
+            "sliceIndex": 102,
             "areaVoxelCount": 254,
             "voxel": {
               "i": 118,
               "j": 122,
-              "k": 184
+              "k": 102
             }
           }
         }

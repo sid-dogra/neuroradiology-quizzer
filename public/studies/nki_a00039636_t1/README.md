@@ -6,7 +6,8 @@ This bundle is intended for GitHub Pages review of the Neuroradiology Quizzer pr
 It contains the FreeSurfer-conformed T1 image and per-structure NIfTI overlays in the
 same 1 mm conformed coordinate space. The display image is exported from
 FreeSurfer `orig.mgz` for more raw-MPRAGE-like contrast while preserving overlay
-alignment.
+alignment. The public NIfTI files are cropped in the axial direction to remove
+blank padding while keeping overlay and display-image grids identical.
 
 - Structures in manifest: 57
 - Structures with overlays: 57
