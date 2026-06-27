@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-27T22:28:51+00:00",
+  "generatedAt": "2026-06-27T23:14:26+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Annotated Brain MRI Review Build",
@@ -5858,9 +5858,9 @@
         "url": "annotations/061_frontal_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 33606,
-        "sha256": "41d77e0dc9db6686d712c81f371e19fd33f31330bacf613e8517446615a9b003",
-        "voxelCount": 2049,
+        "bytes": 17192,
+        "sha256": "2d2a4b3840236e386579e30c3505f0cf8e7c7f12c253eaa3f4106deaa26291d1",
+        "voxelCount": 1567,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5869,37 +5869,37 @@
             256
           ],
           "centroidVoxel": {
-            "i": 121,
-            "j": 138,
-            "k": 167
+            "i": 122,
+            "j": 140,
+            "k": 165
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 123,
-            "areaVoxelCount": 298,
+            "areaVoxelCount": 268,
+            "voxel": {
+              "i": 123,
+              "j": 138,
+              "k": 163
+            }
+          },
+          "coronal": {
+            "axis": 1,
+            "sliceIndex": 138,
+            "areaVoxelCount": 79,
             "voxel": {
               "i": 123,
               "j": 138,
               "k": 164
             }
           },
-          "coronal": {
-            "axis": 1,
-            "sliceIndex": 133,
-            "areaVoxelCount": 107,
-            "voxel": {
-              "i": 122,
-              "j": 133,
-              "k": 167
-            }
-          },
           "axial": {
             "axis": 2,
             "sliceIndex": 169,
-            "areaVoxelCount": 147,
+            "areaVoxelCount": 161,
             "voxel": {
-              "i": 122,
-              "j": 135,
+              "i": 121,
+              "j": 138,
               "k": 169
             }
           }
