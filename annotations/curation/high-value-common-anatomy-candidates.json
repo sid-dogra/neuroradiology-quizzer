@@ -1,0 +1,132 @@
+{
+  "version": "0.1.0",
+  "kind": "high_value_common_anatomy_candidate_list",
+  "sourceContext": "Common radiology/neuroanatomy targets added after reviewing the first Target tab and Radiopaedia-style landmark list.",
+  "curationNotes": [
+    "These are learner-facing anatomy targets, not necessarily exact FreeSurfer display names.",
+    "For paired anatomy, prefer the left side as the teaching annotation unless bilateral context is needed.",
+    "Cortical gyri/sulci can often use FreeSurfer/Destrieux labels as seeds, but the viewer should show standard anatomy names."
+  ],
+  "structures": [
+    {
+      "id": "angular_gyrus",
+      "preferredName": "Angular gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: G_pariet_inf-Angular", "aparc: inferiorparietal"],
+      "reviewNotes": "High-yield parietal language/network landmark; pair with supramarginal gyrus."
+    },
+    {
+      "id": "superior_temporal_gyrus",
+      "preferredName": "Superior temporal gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: superiortemporal", "aparc_a2009s: G_temp_sup-Lateral"],
+      "reviewNotes": "Common temporal lobe landmark along the Sylvian fissure."
+    },
+    {
+      "id": "middle_temporal_gyrus",
+      "preferredName": "Middle temporal gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: middletemporal", "aparc_a2009s: G_temporal_middle"],
+      "reviewNotes": "Common temporal lobe landmark."
+    },
+    {
+      "id": "inferior_temporal_gyrus",
+      "preferredName": "Inferior temporal gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: inferiortemporal", "aparc_a2009s: G_temporal_inf"],
+      "reviewNotes": "Useful inferior temporal landmark."
+    },
+    {
+      "id": "parahippocampal_gyrus",
+      "preferredName": "Parahippocampal gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex", "limbic"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: parahippocampal", "aparc_a2009s: G_oc-temp_med-Parahip"],
+      "reviewNotes": "Important medial temporal landmark adjacent to hippocampus and uncus."
+    },
+    {
+      "id": "orbitofrontal_cortex",
+      "preferredName": "Orbitofrontal cortex",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex", "skull_base"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aparc: lateralorbitofrontal", "aparc: medialorbitofrontal", "aparc_a2009s: G_orbital"],
+      "reviewNotes": "Learner-facing broad region; may be represented by medial/lateral orbitofrontal parcels."
+    },
+    {
+      "id": "calcarine_sulcus",
+      "preferredName": "Calcarine sulcus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: S_calcarine", "aparc: pericalcarine"],
+      "reviewNotes": "High-yield visual cortex landmark on sagittal/axial views."
+    },
+    {
+      "id": "parieto_occipital_sulcus",
+      "preferredName": "Parieto-occipital sulcus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: S_parieto_occipital"],
+      "reviewNotes": "Useful midline sagittal landmark separating parietal and occipital lobes."
+    },
+    {
+      "id": "cingulate_sulcus",
+      "preferredName": "Cingulate sulcus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex", "limbic"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aparc_a2009s: S_cingul-Marginalis", "aparc_a2009s: G_and_S_cingul-Ant", "aparc_a2009s: G_and_S_cingul-Mid-Ant"],
+      "reviewNotes": "Useful for cingulate/paracentral region orientation; may need manual target."
+    },
+    {
+      "id": "anterior_commissure",
+      "preferredName": "Anterior commissure",
+      "lateralityPolicy": "midline",
+      "systems": ["white_matter", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Classic small midline landmark; useful with AC-PC plane concepts."
+    },
+    {
+      "id": "posterior_commissure",
+      "preferredName": "Posterior commissure",
+      "lateralityPolicy": "midline",
+      "systems": ["white_matter", "midline", "brainstem"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small midline landmark near pineal/aqueduct region."
+    },
+    {
+      "id": "cisterna_magna",
+      "preferredName": "Cisterna magna",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "cerebellum", "brainstem"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Common posterior fossa CSF landmark inferior to the cerebellum."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "kind": "deferred_target_policy",
+  "deferredStudies": [
+    {
+      "id": "vascular_and_venous_sinuses",
+      "title": "Vascular and Dural Venous Sinus Anatomy",
+      "reason": "Save vessels and venous sinuses for a separate study/module rather than the first T1 anatomy annotation pass.",
+      "systems": ["vascular"]
+    }
+  ]
+}

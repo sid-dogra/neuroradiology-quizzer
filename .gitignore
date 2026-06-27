@@ -1,0 +1,54 @@
+# Operating system noise
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node/build outputs
+node_modules
+scripts/node_modules
+dist/
+build/
+.cache/
+outputs/
+
+# Local/private imaging data
+data/raw/**
+data/working/**
+data/processed/**
+!data/raw/.gitkeep
+!data/working/.gitkeep
+!data/processed/.gitkeep
+
+# Common large or sensitive medical imaging artifacts
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+*.mgz
+*.mgh
+*.nrrd
+*.nhdr
+*.seg.nrrd
+*.label
+*.annot
+*.stats
+
+# Allow intentionally published web assets under public/
+!public/**/*.dcm
+!public/**/*.nii
+!public/**/*.nii.gz
+!public/**/*.json
+!public/**/*.md
+!public/**/*.tsv
+!public/**/*.txt
+!public/**/.gitkeep
+
+# FreeSurfer subjects and logs are local-only unless explicitly exported
+subjects/
+freesurfer/
+scripts/logs/

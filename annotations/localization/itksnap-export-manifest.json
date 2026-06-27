@@ -1,0 +1,1536 @@
+{
+  "version": "0.1.0",
+  "kind": "itksnap_working_set",
+  "generatedAt": "2026-06-27T18:20:08+00:00",
+  "coordinateSpace": {
+    "image": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/T1.mgz",
+    "shape": [
+      256,
+      256,
+      256
+    ],
+    "voxelSizeMm": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "orientation": "LIA",
+    "affine": [
+      [
+        -1.0,
+        0.0,
+        0.0,
+        127.5
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -107.023
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        123.977
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "note": "FreeSurfer conformed T1.mgz voxel/world coordinates; working localization space, not final viewer export space."
+  },
+  "files": {
+    "mainImage": "data/working/itksnap/t1_conformed.nii.gz",
+    "autoSegmentation": "data/working/itksnap/auto_seed_segmentation.nii.gz",
+    "blankSegmentation": "data/working/itksnap/blank_segmentation.nii.gz",
+    "labelTable": "data/working/itksnap/labels.tsv",
+    "itksnapLabelDescription": "data/working/itksnap/itksnap_label_descriptions.txt",
+    "pointsTable": "data/working/itksnap/points.tsv",
+    "roughSupportMasksDir": "data/working/itksnap/rough_support_masks",
+    "fullGyrusMasksDir": "data/working/itksnap/full_gyrus_masks"
+  },
+  "summary": {
+    "totalTargets": 96,
+    "autoMaskTargets": 37,
+    "roughMaskTargets": 28,
+    "fullGyrusCompositeTargets": 23,
+    "manualTargets": 31,
+    "editTargets": 28,
+    "autoMaskConflictVoxels": 8910
+  },
+  "autoMaskTargets": [
+    {
+      "id": "lateral_ventricle",
+      "preferredName": "Lateral Ventricle",
+      "labelValue": 1,
+      "voxelCount": 4273
+    },
+    {
+      "id": "thalamus",
+      "preferredName": "Thalamus",
+      "labelValue": 2,
+      "voxelCount": 8486
+    },
+    {
+      "id": "caudate",
+      "preferredName": "Caudate",
+      "labelValue": 3,
+      "voxelCount": 3268
+    },
+    {
+      "id": "putamen",
+      "preferredName": "Putamen",
+      "labelValue": 4,
+      "voxelCount": 5006
+    },
+    {
+      "id": "globus_pallidus",
+      "preferredName": "Globus pallidus",
+      "labelValue": 5,
+      "voxelCount": 1857
+    },
+    {
+      "id": "third_ventricle",
+      "preferredName": "Third ventricle",
+      "labelValue": 6,
+      "voxelCount": 1045
+    },
+    {
+      "id": "fourth_ventricle",
+      "preferredName": "Fourth ventricle",
+      "labelValue": 7,
+      "voxelCount": 2552
+    },
+    {
+      "id": "hippocampus",
+      "preferredName": "Hippocampus",
+      "labelValue": 8,
+      "voxelCount": 4213
+    },
+    {
+      "id": "amygdala",
+      "preferredName": "Amygdala",
+      "labelValue": 9,
+      "voxelCount": 1563
+    },
+    {
+      "id": "nucleus_accumbens",
+      "preferredName": "Nucleus accumbens",
+      "labelValue": 10,
+      "voxelCount": 457
+    },
+    {
+      "id": "choroid_plexus",
+      "preferredName": "Choroid plexus",
+      "labelValue": 11,
+      "voxelCount": 265
+    },
+    {
+      "id": "optic_chiasm",
+      "preferredName": "Optic chiasm",
+      "labelValue": 12,
+      "voxelCount": 129
+    },
+    {
+      "id": "cuneus",
+      "preferredName": "Cuneus",
+      "labelValue": 13,
+      "voxelCount": 3817
+    },
+    {
+      "id": "entorhinal_cortex",
+      "preferredName": "Entorhinal cortex",
+      "labelValue": 14,
+      "voxelCount": 3210
+    },
+    {
+      "id": "fusiform_gyrus",
+      "preferredName": "Fusiform gyrus",
+      "labelValue": 15,
+      "voxelCount": 16576
+    },
+    {
+      "id": "lingual_gyrus",
+      "preferredName": "Lingual gyrus",
+      "labelValue": 16,
+      "voxelCount": 9058
+    },
+    {
+      "id": "pars_opercularis",
+      "preferredName": "Pars opercularis",
+      "labelValue": 17,
+      "voxelCount": 7419
+    },
+    {
+      "id": "pars_orbitalis",
+      "preferredName": "Pars orbitalis",
+      "labelValue": 18,
+      "voxelCount": 4127
+    },
+    {
+      "id": "pars_triangularis",
+      "preferredName": "Pars triangularis",
+      "labelValue": 19,
+      "voxelCount": 6996
+    },
+    {
+      "id": "postcentral_gyrus",
+      "preferredName": "Postcentral gyrus",
+      "labelValue": 20,
+      "voxelCount": 14803
+    },
+    {
+      "id": "posterior_cingulate_gyrus",
+      "preferredName": "Posterior cingulate gyrus",
+      "labelValue": 21,
+      "voxelCount": 7380
+    },
+    {
+      "id": "precentral_gyrus",
+      "preferredName": "Precentral gyrus",
+      "labelValue": 22,
+      "voxelCount": 24629
+    },
+    {
+      "id": "precuneus",
+      "preferredName": "precuneus",
+      "labelValue": 23,
+      "voxelCount": 18044
+    },
+    {
+      "id": "superior_frontal_gyrus",
+      "preferredName": "Superior frontal gyrus",
+      "labelValue": 24,
+      "voxelCount": 41234
+    },
+    {
+      "id": "supramarginal_gyrus",
+      "preferredName": "Supramarginal gyrus",
+      "labelValue": 25,
+      "voxelCount": 17560
+    },
+    {
+      "id": "temporal_pole",
+      "preferredName": "Temporal pole",
+      "labelValue": 26,
+      "voxelCount": 3672
+    },
+    {
+      "id": "insular_cortex",
+      "preferredName": "Insular cortex",
+      "labelValue": 27,
+      "voxelCount": 15182
+    },
+    {
+      "id": "gyrus_rectus",
+      "preferredName": "Gyrus rectus",
+      "labelValue": 41,
+      "voxelCount": 2039
+    },
+    {
+      "id": "central_sulcus",
+      "preferredName": "Central sulcus",
+      "labelValue": 81,
+      "voxelCount": 3223
+    },
+    {
+      "id": "marginal_sulcus_pars_marginalis",
+      "preferredName": "Marginal sulcus (pars marginalis)",
+      "labelValue": 83,
+      "voxelCount": 1304
+    },
+    {
+      "id": "angular_gyrus",
+      "preferredName": "Angular gyrus",
+      "labelValue": 85,
+      "voxelCount": 7079
+    },
+    {
+      "id": "superior_temporal_gyrus",
+      "preferredName": "Superior temporal gyrus",
+      "labelValue": 86,
+      "voxelCount": 16178
+    },
+    {
+      "id": "middle_temporal_gyrus",
+      "preferredName": "Middle temporal gyrus",
+      "labelValue": 87,
+      "voxelCount": 13743
+    },
+    {
+      "id": "inferior_temporal_gyrus",
+      "preferredName": "Inferior temporal gyrus",
+      "labelValue": 88,
+      "voxelCount": 18474
+    },
+    {
+      "id": "parahippocampal_gyrus",
+      "preferredName": "Parahippocampal gyrus",
+      "labelValue": 89,
+      "voxelCount": 3156
+    },
+    {
+      "id": "calcarine_sulcus",
+      "preferredName": "Calcarine sulcus",
+      "labelValue": 91,
+      "voxelCount": 2050
+    },
+    {
+      "id": "parieto_occipital_sulcus",
+      "preferredName": "Parieto-occipital sulcus",
+      "labelValue": 92,
+      "voxelCount": 2419
+    }
+  ],
+  "autoMaskConflictTargets": [
+    {
+      "id": "central_sulcus",
+      "preferredName": "Central sulcus",
+      "labelValue": 81,
+      "conflictVoxelCount": 3223,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 20,
+          "id": "postcentral_gyrus",
+          "preferredName": "Postcentral gyrus"
+        },
+        {
+          "labelValue": 22,
+          "id": "precentral_gyrus",
+          "preferredName": "Precentral gyrus"
+        }
+      ]
+    },
+    {
+      "id": "marginal_sulcus_pars_marginalis",
+      "preferredName": "Marginal sulcus (pars marginalis)",
+      "labelValue": 83,
+      "conflictVoxelCount": 782,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 21,
+          "id": "posterior_cingulate_gyrus",
+          "preferredName": "Posterior cingulate gyrus"
+        },
+        {
+          "labelValue": 23,
+          "id": "precuneus",
+          "preferredName": "precuneus"
+        }
+      ]
+    },
+    {
+      "id": "angular_gyrus",
+      "preferredName": "Angular gyrus",
+      "labelValue": 85,
+      "conflictVoxelCount": 1728,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 25,
+          "id": "supramarginal_gyrus",
+          "preferredName": "Supramarginal gyrus"
+        }
+      ]
+    },
+    {
+      "id": "superior_temporal_gyrus",
+      "preferredName": "Superior temporal gyrus",
+      "labelValue": 86,
+      "conflictVoxelCount": 210,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 85,
+          "id": "angular_gyrus",
+          "preferredName": "Angular gyrus"
+        }
+      ]
+    },
+    {
+      "id": "calcarine_sulcus",
+      "preferredName": "Calcarine sulcus",
+      "labelValue": 91,
+      "conflictVoxelCount": 721,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 16,
+          "id": "lingual_gyrus",
+          "preferredName": "Lingual gyrus"
+        },
+        {
+          "labelValue": 23,
+          "id": "precuneus",
+          "preferredName": "precuneus"
+        }
+      ]
+    },
+    {
+      "id": "parieto_occipital_sulcus",
+      "preferredName": "Parieto-occipital sulcus",
+      "labelValue": 92,
+      "conflictVoxelCount": 2246,
+      "overlapsExistingLabels": [
+        {
+          "labelValue": 13,
+          "id": "cuneus",
+          "preferredName": "Cuneus"
+        },
+        {
+          "labelValue": 23,
+          "id": "precuneus",
+          "preferredName": "precuneus"
+        },
+        {
+          "labelValue": 91,
+          "id": "calcarine_sulcus",
+          "preferredName": "Calcarine sulcus"
+        }
+      ]
+    }
+  ],
+  "roughMaskTargets": [
+    {
+      "id": "medulla_oblongata",
+      "preferredName": "Medulla oblongata",
+      "labelValue": 29,
+      "voxelCount": 19933,
+      "path": "data/working/itksnap/rough_support_masks/029_medulla_oblongata.nii.gz"
+    },
+    {
+      "id": "cerebellar_tonsil",
+      "preferredName": "Cerebellar tonsil",
+      "labelValue": 30,
+      "voxelCount": 50272,
+      "path": "data/working/itksnap/rough_support_masks/030_cerebellar_tonsil.nii.gz"
+    },
+    {
+      "id": "cerebellum",
+      "preferredName": "Cerebellum",
+      "labelValue": 32,
+      "voxelCount": 61613,
+      "path": "data/working/itksnap/rough_support_masks/032_cerebellum.nii.gz"
+    },
+    {
+      "id": "foramen_of_magendie",
+      "preferredName": "Foramen of Magendie",
+      "labelValue": 34,
+      "voxelCount": 2552,
+      "path": "data/working/itksnap/rough_support_masks/034_foramen_of_magendie.nii.gz"
+    },
+    {
+      "id": "foramen_of_luschka",
+      "preferredName": "Foramen of Luschka",
+      "labelValue": 37,
+      "voxelCount": 2552,
+      "path": "data/working/itksnap/rough_support_masks/037_foramen_of_luschka.nii.gz"
+    },
+    {
+      "id": "pons",
+      "preferredName": "Pons",
+      "labelValue": 40,
+      "voxelCount": 19933,
+      "path": "data/working/itksnap/rough_support_masks/040_pons.nii.gz"
+    },
+    {
+      "id": "uncus",
+      "preferredName": "Uncus",
+      "labelValue": 44,
+      "voxelCount": 5399,
+      "path": "data/working/itksnap/rough_support_masks/044_uncus.nii.gz"
+    },
+    {
+      "id": "temporal_horn_of_the_lateral_ventricle",
+      "preferredName": "Temporal horn of the lateral ventricle",
+      "labelValue": 45,
+      "voxelCount": 4342,
+      "path": "data/working/itksnap/rough_support_masks/045_temporal_horn_of_the_lateral_ventricle.nii.gz"
+    },
+    {
+      "id": "sylvian_fissure",
+      "preferredName": "Sylvian fissure",
+      "labelValue": 51,
+      "voxelCount": 2128,
+      "path": "data/working/itksnap/rough_support_masks/051_sylvian_fissure.nii.gz"
+    },
+    {
+      "id": "midbrain",
+      "preferredName": "Midbrain",
+      "labelValue": 54,
+      "voxelCount": 19933,
+      "path": "data/working/itksnap/rough_support_masks/054_midbrain.nii.gz"
+    },
+    {
+      "id": "interventricular_foramen_foramen_of_monro",
+      "preferredName": "Interventricular foramen (foramen of Monro)",
+      "labelValue": 59,
+      "voxelCount": 5318,
+      "path": "data/working/itksnap/rough_support_masks/059_interventricular_foramen_foramen_of_monro.nii.gz"
+    },
+    {
+      "id": "genu_of_the_corpus_callosum",
+      "preferredName": "Genu of the corpus callosum",
+      "labelValue": 60,
+      "voxelCount": 784,
+      "path": "data/working/itksnap/rough_support_masks/060_genu_of_the_corpus_callosum.nii.gz"
+    },
+    {
+      "id": "frontal_horn_of_the_lateral_ventricle",
+      "preferredName": "Frontal horn of the lateral ventricle",
+      "labelValue": 61,
+      "voxelCount": 4273,
+      "path": "data/working/itksnap/rough_support_masks/061_frontal_horn_of_the_lateral_ventricle.nii.gz"
+    },
+    {
+      "id": "head_of_the_caudate_nucleus",
+      "preferredName": "Head of the caudate nucleus",
+      "labelValue": 64,
+      "voxelCount": 3268,
+      "path": "data/working/itksnap/rough_support_masks/064_head_of_the_caudate_nucleus.nii.gz"
+    },
+    {
+      "id": "lentiform_nucleus",
+      "preferredName": "Lentiform nucleus",
+      "labelValue": 65,
+      "voxelCount": 6863,
+      "path": "data/working/itksnap/rough_support_masks/065_lentiform_nucleus.nii.gz"
+    },
+    {
+      "id": "cingulate_gyrus",
+      "preferredName": "Cingulate gyrus",
+      "labelValue": 70,
+      "voxelCount": 21368,
+      "path": "data/working/itksnap/rough_support_masks/070_cingulate_gyrus.nii.gz"
+    },
+    {
+      "id": "septum_pellucidum",
+      "preferredName": "Septum pellucidum",
+      "labelValue": 71,
+      "voxelCount": 8280,
+      "path": "data/working/itksnap/rough_support_masks/071_septum_pellucidum.nii.gz"
+    },
+    {
+      "id": "forceps_minor",
+      "preferredName": "Forceps minor",
+      "labelValue": 72,
+      "voxelCount": 784,
+      "path": "data/working/itksnap/rough_support_masks/072_forceps_minor.nii.gz"
+    },
+    {
+      "id": "trigone_atrium_of_the_lateral_ventricle",
+      "preferredName": "Trigone (atrium) of the lateral ventricle",
+      "labelValue": 73,
+      "voxelCount": 4273,
+      "path": "data/working/itksnap/rough_support_masks/073_trigone_atrium_of_the_lateral_ventricle.nii.gz"
+    },
+    {
+      "id": "occipital_lobe",
+      "preferredName": "Occipital lobe",
+      "labelValue": 74,
+      "voxelCount": 18504,
+      "path": "data/working/itksnap/rough_support_masks/074_occipital_lobe.nii.gz"
+    },
+    {
+      "id": "splenium_of_the_corpus_callosum",
+      "preferredName": "Splenium of the corpus callosum",
+      "labelValue": 75,
+      "voxelCount": 905,
+      "path": "data/working/itksnap/rough_support_masks/075_splenium_of_the_corpus_callosum.nii.gz"
+    },
+    {
+      "id": "occipital_horn_of_the_lateral_ventricle",
+      "preferredName": "Occipital horn of the lateral ventricle",
+      "labelValue": 76,
+      "voxelCount": 4273,
+      "path": "data/working/itksnap/rough_support_masks/076_occipital_horn_of_the_lateral_ventricle.nii.gz"
+    },
+    {
+      "id": "body_of_the_lateral_ventricle",
+      "preferredName": "Body of the lateral ventricle",
+      "labelValue": 77,
+      "voxelCount": 4273,
+      "path": "data/working/itksnap/rough_support_masks/077_body_of_the_lateral_ventricle.nii.gz"
+    },
+    {
+      "id": "forceps_major",
+      "preferredName": "Forceps major",
+      "labelValue": 78,
+      "voxelCount": 905,
+      "path": "data/working/itksnap/rough_support_masks/078_forceps_major.nii.gz"
+    },
+    {
+      "id": "body_of_the_corpus_callosum",
+      "preferredName": "Body of the corpus callosum",
+      "labelValue": 79,
+      "voxelCount": 2071,
+      "path": "data/working/itksnap/rough_support_masks/079_body_of_the_corpus_callosum.nii.gz"
+    },
+    {
+      "id": "hand_bump_of_the_precentral_gyrus",
+      "preferredName": "Hand bump of the precentral gyrus",
+      "labelValue": 82,
+      "voxelCount": 11970,
+      "path": "data/working/itksnap/rough_support_masks/082_hand_bump_of_the_precentral_gyrus.nii.gz"
+    },
+    {
+      "id": "orbitofrontal_cortex",
+      "preferredName": "Orbitofrontal cortex",
+      "labelValue": 90,
+      "voxelCount": 23476,
+      "path": "data/working/itksnap/rough_support_masks/090_orbitofrontal_cortex.nii.gz"
+    },
+    {
+      "id": "cingulate_sulcus",
+      "preferredName": "Cingulate sulcus",
+      "labelValue": 93,
+      "voxelCount": 7206,
+      "path": "data/working/itksnap/rough_support_masks/093_cingulate_sulcus.nii.gz"
+    }
+  ],
+  "fullGyrusCompositeTargets": [
+    {
+      "id": "cuneus",
+      "preferredName": "Cuneus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "cuneus",
+          "labelValue": 1005,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 1962,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3005,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 1855
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 3817,
+      "labelValue": 13,
+      "path": "data/working/itksnap/full_gyrus_masks/013_cuneus.nii.gz"
+    },
+    {
+      "id": "entorhinal_cortex",
+      "preferredName": "Entorhinal cortex",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "entorhinal",
+          "labelValue": 1006,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2111,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3006,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 1099
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 3210,
+      "labelValue": 14,
+      "path": "data/working/itksnap/full_gyrus_masks/014_entorhinal_cortex.nii.gz"
+    },
+    {
+      "id": "fusiform_gyrus",
+      "preferredName": "Fusiform gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "fusiform",
+          "labelValue": 1007,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 9896,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3007,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 6680
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 16576,
+      "labelValue": 15,
+      "path": "data/working/itksnap/full_gyrus_masks/015_fusiform_gyrus.nii.gz"
+    },
+    {
+      "id": "lingual_gyrus",
+      "preferredName": "Lingual gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "lingual",
+          "labelValue": 1013,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 4390,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3013,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 4668
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 9058,
+      "labelValue": 16,
+      "path": "data/working/itksnap/full_gyrus_masks/016_lingual_gyrus.nii.gz"
+    },
+    {
+      "id": "pars_opercularis",
+      "preferredName": "Pars opercularis",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "parsopercularis",
+          "labelValue": 1018,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 4260,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3018,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 3159
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 7419,
+      "labelValue": 17,
+      "path": "data/working/itksnap/full_gyrus_masks/017_pars_opercularis.nii.gz"
+    },
+    {
+      "id": "pars_orbitalis",
+      "preferredName": "Pars orbitalis",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "parsorbitalis",
+          "labelValue": 1019,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2775,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3019,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 1352
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 4127,
+      "labelValue": 18,
+      "path": "data/working/itksnap/full_gyrus_masks/018_pars_orbitalis.nii.gz"
+    },
+    {
+      "id": "pars_triangularis",
+      "preferredName": "Pars triangularis",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "parstriangularis",
+          "labelValue": 1020,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 3902,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3020,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 3094
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 6996,
+      "labelValue": 19,
+      "path": "data/working/itksnap/full_gyrus_masks/019_pars_triangularis.nii.gz"
+    },
+    {
+      "id": "postcentral_gyrus",
+      "preferredName": "Postcentral gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "postcentral",
+          "labelValue": 1022,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 8587,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3022,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 6216
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 14803,
+      "labelValue": 20,
+      "path": "data/working/itksnap/full_gyrus_masks/020_postcentral_gyrus.nii.gz"
+    },
+    {
+      "id": "posterior_cingulate_gyrus",
+      "preferredName": "Posterior cingulate gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "posteriorcingulate",
+          "labelValue": 1023,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2920,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3023,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 4460
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 7380,
+      "labelValue": 21,
+      "path": "data/working/itksnap/full_gyrus_masks/021_posterior_cingulate_gyrus.nii.gz"
+    },
+    {
+      "id": "precentral_gyrus",
+      "preferredName": "Precentral gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "precentral",
+          "labelValue": 1024,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 11885,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3024,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 12744
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 24629,
+      "labelValue": 22,
+      "path": "data/working/itksnap/full_gyrus_masks/022_precentral_gyrus.nii.gz"
+    },
+    {
+      "id": "precuneus",
+      "preferredName": "precuneus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "precuneus",
+          "labelValue": 1025,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 9315,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3025,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 8729
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 18044,
+      "labelValue": 23,
+      "path": "data/working/itksnap/full_gyrus_masks/023_precuneus.nii.gz"
+    },
+    {
+      "id": "superior_frontal_gyrus",
+      "preferredName": "Superior frontal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "superiorfrontal",
+          "labelValue": 1028,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 22314,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3028,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 18920
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 41234,
+      "labelValue": 24,
+      "path": "data/working/itksnap/full_gyrus_masks/024_superior_frontal_gyrus.nii.gz"
+    },
+    {
+      "id": "supramarginal_gyrus",
+      "preferredName": "Supramarginal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "supramarginal",
+          "labelValue": 1031,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 9947,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3031,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 7613
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 17560,
+      "labelValue": 25,
+      "path": "data/working/itksnap/full_gyrus_masks/025_supramarginal_gyrus.nii.gz"
+    },
+    {
+      "id": "temporal_pole",
+      "preferredName": "Temporal pole",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "temporalpole",
+          "labelValue": 1033,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2980,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3033,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 692
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 3672,
+      "labelValue": 26,
+      "path": "data/working/itksnap/full_gyrus_masks/026_temporal_pole.nii.gz"
+    },
+    {
+      "id": "insular_cortex",
+      "preferredName": "Insular cortex",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "insula",
+          "labelValue": 1035,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 6268,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3035,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 8914
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 15182,
+      "labelValue": 27,
+      "path": "data/working/itksnap/full_gyrus_masks/027_insular_cortex.nii.gz"
+    },
+    {
+      "id": "gyrus_rectus",
+      "preferredName": "Gyrus rectus",
+      "components": [
+        {
+          "atlas": "aparc_a2009s",
+          "sourceLabel": "G_rectus",
+          "labelValue": 11131,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc.a2009s+aseg.mgz",
+          "voxelCount": 2039
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": false,
+      "whiteMatterComponentCount": 0,
+      "voxelCount": 2039,
+      "labelValue": 41,
+      "path": "data/working/itksnap/full_gyrus_masks/041_gyrus_rectus.nii.gz"
+    },
+    {
+      "id": "cingulate_gyrus",
+      "preferredName": "Cingulate gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "caudalanteriorcingulate",
+          "labelValue": 1002,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 1919,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3002,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 2432
+          }
+        },
+        {
+          "atlas": "aparc",
+          "sourceLabel": "rostralanteriorcingulate",
+          "labelValue": 1026,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2317,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3026,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 2068
+          }
+        },
+        {
+          "atlas": "aparc",
+          "sourceLabel": "posteriorcingulate",
+          "labelValue": 1023,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2920,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3023,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 4460
+          }
+        },
+        {
+          "atlas": "aparc",
+          "sourceLabel": "isthmuscingulate",
+          "labelValue": 1010,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 2436,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3010,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 2816
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 4,
+      "voxelCount": 21368,
+      "labelValue": 70,
+      "path": "data/working/itksnap/full_gyrus_masks/070_cingulate_gyrus.nii.gz"
+    },
+    {
+      "id": "angular_gyrus",
+      "preferredName": "Angular gyrus",
+      "components": [
+        {
+          "atlas": "aparc_a2009s",
+          "sourceLabel": "G_pariet_inf-Angular",
+          "labelValue": 11125,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc.a2009s+aseg.mgz",
+          "voxelCount": 7079
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": false,
+      "whiteMatterComponentCount": 0,
+      "voxelCount": 7079,
+      "labelValue": 85,
+      "path": "data/working/itksnap/full_gyrus_masks/085_angular_gyrus.nii.gz"
+    },
+    {
+      "id": "superior_temporal_gyrus",
+      "preferredName": "Superior temporal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "superiortemporal",
+          "labelValue": 1030,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 9953,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3030,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 6225
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 16178,
+      "labelValue": 86,
+      "path": "data/working/itksnap/full_gyrus_masks/086_superior_temporal_gyrus.nii.gz"
+    },
+    {
+      "id": "middle_temporal_gyrus",
+      "preferredName": "Middle temporal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "middletemporal",
+          "labelValue": 1015,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 8404,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3015,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 5339
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 13743,
+      "labelValue": 87,
+      "path": "data/working/itksnap/full_gyrus_masks/087_middle_temporal_gyrus.nii.gz"
+    },
+    {
+      "id": "inferior_temporal_gyrus",
+      "preferredName": "Inferior temporal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "inferiortemporal",
+          "labelValue": 1009,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 11638,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3009,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 6836
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 18474,
+      "labelValue": 88,
+      "path": "data/working/itksnap/full_gyrus_masks/088_inferior_temporal_gyrus.nii.gz"
+    },
+    {
+      "id": "parahippocampal_gyrus",
+      "preferredName": "Parahippocampal gyrus",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "parahippocampal",
+          "labelValue": 1016,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 1725,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3016,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 1431
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 1,
+      "voxelCount": 3156,
+      "labelValue": 89,
+      "path": "data/working/itksnap/full_gyrus_masks/089_parahippocampal_gyrus.nii.gz"
+    },
+    {
+      "id": "orbitofrontal_cortex",
+      "preferredName": "Orbitofrontal cortex",
+      "components": [
+        {
+          "atlas": "aparc",
+          "sourceLabel": "lateralorbitofrontal",
+          "labelValue": 1012,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 7513,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3012,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 7151
+          }
+        },
+        {
+          "atlas": "aparc",
+          "sourceLabel": "medialorbitofrontal",
+          "labelValue": 1014,
+          "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz",
+          "voxelCount": 4802,
+          "whiteMatter": {
+            "atlas": "wmparc",
+            "labelValue": 3014,
+            "sourceVolume": "data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/wmparc.mgz",
+            "voxelCount": 4010
+          }
+        }
+      ],
+      "missingComponents": [],
+      "includesWhiteMatter": true,
+      "whiteMatterComponentCount": 2,
+      "voxelCount": 23476,
+      "labelValue": 90,
+      "path": "data/working/itksnap/full_gyrus_masks/090_orbitofrontal_cortex.nii.gz"
+    }
+  ],
+  "editTargets": [
+    {
+      "id": "medulla_oblongata",
+      "preferredName": "Medulla oblongata",
+      "labelValue": 29,
+      "hasRoughMask": true
+    },
+    {
+      "id": "cerebellar_tonsil",
+      "preferredName": "Cerebellar tonsil",
+      "labelValue": 30,
+      "hasRoughMask": true
+    },
+    {
+      "id": "cerebellum",
+      "preferredName": "Cerebellum",
+      "labelValue": 32,
+      "hasRoughMask": true
+    },
+    {
+      "id": "foramen_of_magendie",
+      "preferredName": "Foramen of Magendie",
+      "labelValue": 34,
+      "hasRoughMask": true
+    },
+    {
+      "id": "foramen_of_luschka",
+      "preferredName": "Foramen of Luschka",
+      "labelValue": 37,
+      "hasRoughMask": true
+    },
+    {
+      "id": "pons",
+      "preferredName": "Pons",
+      "labelValue": 40,
+      "hasRoughMask": true
+    },
+    {
+      "id": "uncus",
+      "preferredName": "Uncus",
+      "labelValue": 44,
+      "hasRoughMask": true
+    },
+    {
+      "id": "temporal_horn_of_the_lateral_ventricle",
+      "preferredName": "Temporal horn of the lateral ventricle",
+      "labelValue": 45,
+      "hasRoughMask": true
+    },
+    {
+      "id": "sylvian_fissure",
+      "preferredName": "Sylvian fissure",
+      "labelValue": 51,
+      "hasRoughMask": true
+    },
+    {
+      "id": "midbrain",
+      "preferredName": "Midbrain",
+      "labelValue": 54,
+      "hasRoughMask": true
+    },
+    {
+      "id": "interventricular_foramen_foramen_of_monro",
+      "preferredName": "Interventricular foramen (foramen of Monro)",
+      "labelValue": 59,
+      "hasRoughMask": true
+    },
+    {
+      "id": "genu_of_the_corpus_callosum",
+      "preferredName": "Genu of the corpus callosum",
+      "labelValue": 60,
+      "hasRoughMask": true
+    },
+    {
+      "id": "frontal_horn_of_the_lateral_ventricle",
+      "preferredName": "Frontal horn of the lateral ventricle",
+      "labelValue": 61,
+      "hasRoughMask": true
+    },
+    {
+      "id": "head_of_the_caudate_nucleus",
+      "preferredName": "Head of the caudate nucleus",
+      "labelValue": 64,
+      "hasRoughMask": true
+    },
+    {
+      "id": "lentiform_nucleus",
+      "preferredName": "Lentiform nucleus",
+      "labelValue": 65,
+      "hasRoughMask": true
+    },
+    {
+      "id": "cingulate_gyrus",
+      "preferredName": "Cingulate gyrus",
+      "labelValue": 70,
+      "hasRoughMask": true
+    },
+    {
+      "id": "septum_pellucidum",
+      "preferredName": "Septum pellucidum",
+      "labelValue": 71,
+      "hasRoughMask": true
+    },
+    {
+      "id": "forceps_minor",
+      "preferredName": "Forceps minor",
+      "labelValue": 72,
+      "hasRoughMask": true
+    },
+    {
+      "id": "trigone_atrium_of_the_lateral_ventricle",
+      "preferredName": "Trigone (atrium) of the lateral ventricle",
+      "labelValue": 73,
+      "hasRoughMask": true
+    },
+    {
+      "id": "occipital_lobe",
+      "preferredName": "Occipital lobe",
+      "labelValue": 74,
+      "hasRoughMask": true
+    },
+    {
+      "id": "splenium_of_the_corpus_callosum",
+      "preferredName": "Splenium of the corpus callosum",
+      "labelValue": 75,
+      "hasRoughMask": true
+    },
+    {
+      "id": "occipital_horn_of_the_lateral_ventricle",
+      "preferredName": "Occipital horn of the lateral ventricle",
+      "labelValue": 76,
+      "hasRoughMask": true
+    },
+    {
+      "id": "body_of_the_lateral_ventricle",
+      "preferredName": "Body of the lateral ventricle",
+      "labelValue": 77,
+      "hasRoughMask": true
+    },
+    {
+      "id": "forceps_major",
+      "preferredName": "Forceps major",
+      "labelValue": 78,
+      "hasRoughMask": true
+    },
+    {
+      "id": "body_of_the_corpus_callosum",
+      "preferredName": "Body of the corpus callosum",
+      "labelValue": 79,
+      "hasRoughMask": true
+    },
+    {
+      "id": "hand_bump_of_the_precentral_gyrus",
+      "preferredName": "Hand bump of the precentral gyrus",
+      "labelValue": 82,
+      "hasRoughMask": true
+    },
+    {
+      "id": "orbitofrontal_cortex",
+      "preferredName": "Orbitofrontal cortex",
+      "labelValue": 90,
+      "hasRoughMask": true
+    },
+    {
+      "id": "cingulate_sulcus",
+      "preferredName": "Cingulate sulcus",
+      "labelValue": 93,
+      "hasRoughMask": true
+    }
+  ],
+  "manualTargets": [
+    {
+      "id": "foramen_magnum",
+      "preferredName": "Foramen magnum",
+      "labelValue": 28
+    },
+    {
+      "id": "premedullary_cistern",
+      "preferredName": "Premedullary cistern",
+      "labelValue": 31
+    },
+    {
+      "id": "external_auditory_canal",
+      "preferredName": "External auditory canal",
+      "labelValue": 33
+    },
+    {
+      "id": "superior_orbital_fissure",
+      "preferredName": "Superior orbital fissure",
+      "labelValue": 35
+    },
+    {
+      "id": "meckel_s_cave",
+      "preferredName": "Meckel's cave",
+      "labelValue": 36
+    },
+    {
+      "id": "crista_galli",
+      "preferredName": "Crista galli",
+      "labelValue": 38
+    },
+    {
+      "id": "pituitary_fossa",
+      "preferredName": "Pituitary fossa",
+      "labelValue": 39
+    },
+    {
+      "id": "prepontine_cistern",
+      "preferredName": "Prepontine cistern",
+      "labelValue": 42
+    },
+    {
+      "id": "middle_cerebellar_peduncle",
+      "preferredName": "Middle cerebellar peduncle",
+      "labelValue": 43
+    },
+    {
+      "id": "nodule_of_the_cerebellum",
+      "preferredName": "Nodule of the cerebellum",
+      "labelValue": 46
+    },
+    {
+      "id": "suprasellar_cistern",
+      "preferredName": "Suprasellar cistern",
+      "labelValue": 47
+    },
+    {
+      "id": "tentorium_cerebelli",
+      "preferredName": "Tentorium cerebelli",
+      "labelValue": 48
+    },
+    {
+      "id": "interpeduncular_cistern",
+      "preferredName": "Interpeduncular cistern",
+      "labelValue": 49
+    },
+    {
+      "id": "cerebral_crus_cerebral_peduncle",
+      "preferredName": "Cerebral crus (cerebral peduncle)",
+      "labelValue": 50
+    },
+    {
+      "id": "mammillary_bodies",
+      "preferredName": "Mammillary bodies",
+      "labelValue": 52
+    },
+    {
+      "id": "median_interhemispheric_fissure",
+      "preferredName": "Median interhemispheric fissure",
+      "labelValue": 53
+    },
+    {
+      "id": "ambient_cistern",
+      "preferredName": "Ambient cistern",
+      "labelValue": 55
+    },
+    {
+      "id": "cerebral_aqueduct",
+      "preferredName": "Cerebral aqueduct",
+      "labelValue": 56
+    },
+    {
+      "id": "inferior_colliculus",
+      "preferredName": "Inferior colliculus",
+      "labelValue": 57
+    },
+    {
+      "id": "anterior_limb_of_the_internal_capsule",
+      "preferredName": "Anterior limb of the internal capsule",
+      "labelValue": 58
+    },
+    {
+      "id": "genu_of_the_internal_capsule",
+      "preferredName": "Genu of the internal capsule",
+      "labelValue": 62
+    },
+    {
+      "id": "quadrigeminal_cistern",
+      "preferredName": "Quadrigeminal cistern",
+      "labelValue": 63
+    },
+    {
+      "id": "pineal_gland",
+      "preferredName": "Pineal gland",
+      "labelValue": 66
+    },
+    {
+      "id": "vermis",
+      "preferredName": "Vermis",
+      "labelValue": 67
+    },
+    {
+      "id": "column_of_the_fornix",
+      "preferredName": "Column of the fornix",
+      "labelValue": 68
+    },
+    {
+      "id": "posterior_limb_of_the_internal_capsule",
+      "preferredName": "Posterior limb of the internal capsule",
+      "labelValue": 69
+    },
+    {
+      "id": "centrum_semiovale",
+      "preferredName": "Centrum semiovale",
+      "labelValue": 80
+    },
+    {
+      "id": "falx_cerebri",
+      "preferredName": "Falx cerebri",
+      "labelValue": 84
+    },
+    {
+      "id": "anterior_commissure",
+      "preferredName": "Anterior commissure",
+      "labelValue": 94
+    },
+    {
+      "id": "posterior_commissure",
+      "preferredName": "Posterior commissure",
+      "labelValue": 95
+    },
+    {
+      "id": "cisterna_magna",
+      "preferredName": "Cisterna magna",
+      "labelValue": 96
+    }
+  ]
+}

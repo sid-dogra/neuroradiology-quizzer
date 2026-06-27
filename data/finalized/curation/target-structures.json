@@ -1,0 +1,5554 @@
+{
+  "version": "0.1.0-curated",
+  "study": {
+    "id": "nki_a00039636_t1_mprage",
+    "title": "NKI Rockland sub-A00039636 T1 MPRAGE Curated Anatomy Targets",
+    "modality": "MR",
+    "sequence": "3D T1 MPRAGE",
+    "curationNote": "Human-editable target database for the finalized review bundle. Set includeInViewer=false to temporarily remove a structure from the viewer. Use quizQuestions for optional revealable teaching prompts."
+  },
+  "structures": [
+    {
+      "id": "lateral_ventricle",
+      "preferredName": "Lateral Ventricle",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Lateral Ventricle",
+        "lateral ventricle",
+        "Left Lateral Ventricle",
+        "left lateral ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "csf_spaces",
+        "ventricles"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Lateral Ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Lateral Ventricle.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "thalamus",
+      "preferredName": "Thalamus",
+      "aliases": [
+        "Left Thalamus",
+        "Left-Thalamus"
+      ],
+      "acceptedAnswers": [
+        "Thalamus",
+        "thalamus",
+        "Left Thalamus",
+        "left thalamus",
+        "Left-Thalamus"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Thalamus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Good stock label candidate.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Thalamus",
+          "value": 10
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "thalamus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Thalamus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 138,
+            "j": 97,
+            "k": 112
+          },
+          "worldMm": {
+            "x": -10.5,
+            "y": 4.977,
+            "z": 26.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "caudate",
+      "preferredName": "Caudate",
+      "aliases": [
+        "Left Caudate",
+        "Left-Caudate"
+      ],
+      "acceptedAnswers": [
+        "Caudate",
+        "caudate",
+        "Left Caudate",
+        "left caudate",
+        "Left-Caudate"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Caudate. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Caudate",
+          "value": 11
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "caudate_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Caudate.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 140,
+            "j": 90,
+            "k": 139
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 31.977,
+            "z": 33.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "putamen",
+      "preferredName": "Putamen",
+      "aliases": [
+        "Left Putamen",
+        "Left-Putamen"
+      ],
+      "acceptedAnswers": [
+        "Putamen",
+        "putamen",
+        "Left Putamen",
+        "left putamen",
+        "Left-Putamen"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Putamen. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Putamen",
+          "value": 12
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "putamen_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Putamen.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 152,
+            "j": 100,
+            "k": 130
+          },
+          "worldMm": {
+            "x": -24.5,
+            "y": 22.977,
+            "z": 23.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "globus_pallidus",
+      "preferredName": "Globus pallidus",
+      "aliases": [
+        "Left Pallidum",
+        "Left-Pallidum"
+      ],
+      "acceptedAnswers": [
+        "Globus pallidus",
+        "globus pallidus",
+        "Left Pallidum",
+        "left pallidum",
+        "Left-Pallidum"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Globus pallidus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Pallidum",
+          "value": 13
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "globus_pallidus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Globus pallidus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 146,
+            "j": 101,
+            "k": 127
+          },
+          "worldMm": {
+            "x": -18.5,
+            "y": 19.977,
+            "z": 22.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "third_ventricle",
+      "preferredName": "Third ventricle",
+      "aliases": [
+        "3rd Ventricle",
+        "3rd-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Third ventricle",
+        "third ventricle",
+        "3rd Ventricle",
+        "3rd ventricle",
+        "3rd-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Third ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Good stock label candidate.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "3rd-Ventricle",
+          "value": 14
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "third_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Third ventricle.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 128,
+            "j": 104,
+            "k": 123
+          },
+          "worldMm": {
+            "x": -0.5,
+            "y": 15.977,
+            "z": 19.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "fourth_ventricle",
+      "preferredName": "Fourth ventricle",
+      "aliases": [
+        "4th Ventricle",
+        "4th-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Fourth ventricle",
+        "fourth ventricle",
+        "4th Ventricle",
+        "4th ventricle",
+        "4th-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Fourth ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Good stock label candidate.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "4th-Ventricle",
+          "value": 15
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "fourth_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Fourth ventricle.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 127,
+            "j": 135,
+            "k": 93
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -14.023,
+            "z": -11.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "hippocampus",
+      "preferredName": "Hippocampus",
+      "aliases": [
+        "Left Hippocampus",
+        "Left-Hippocampus"
+      ],
+      "acceptedAnswers": [
+        "Hippocampus",
+        "hippocampus",
+        "Left Hippocampus",
+        "left hippocampus",
+        "Left-Hippocampus"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Hippocampus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Hippocampus",
+          "value": 17
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "hippocampus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Hippocampus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 150,
+            "j": 113,
+            "k": 110
+          },
+          "worldMm": {
+            "x": -22.5,
+            "y": 2.977,
+            "z": 10.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "amygdala",
+      "preferredName": "Amygdala",
+      "aliases": [
+        "Left Amygdala",
+        "Left-Amygdala"
+      ],
+      "acceptedAnswers": [
+        "Amygdala",
+        "amygdala",
+        "Left Amygdala",
+        "left amygdala",
+        "Left-Amygdala"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Amygdala. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Amygdala",
+          "value": 18
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "amygdala_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Amygdala.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 148,
+            "j": 116,
+            "k": 129
+          },
+          "worldMm": {
+            "x": -20.5,
+            "y": 21.977,
+            "z": 7.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "nucleus_accumbens",
+      "preferredName": "Nucleus accumbens",
+      "aliases": [
+        "Left Accumbens area",
+        "Left-Accumbens-area"
+      ],
+      "acceptedAnswers": [
+        "Nucleus accumbens",
+        "nucleus accumbens",
+        "Left Accumbens area",
+        "left accumbens area",
+        "Left-Accumbens-area"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Nucleus accumbens. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Accumbens-area",
+          "value": 26
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "nucleus_accumbens_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Nucleus accumbens.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 135,
+            "j": 104,
+            "k": 142
+          },
+          "worldMm": {
+            "x": -7.5,
+            "y": 34.977,
+            "z": 19.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "choroid_plexus",
+      "preferredName": "Choroid plexus",
+      "aliases": [
+        "Left choroid plexus",
+        "Left-choroid-plexus"
+      ],
+      "acceptedAnswers": [
+        "Choroid plexus",
+        "choroid plexus",
+        "Left choroid plexus",
+        "left choroid plexus",
+        "Left-choroid-plexus"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Choroid plexus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Good stock label candidate, with QC.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-choroid-plexus",
+          "value": 31
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "choroid_plexus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Choroid plexus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 147,
+            "j": 95,
+            "k": 96
+          },
+          "worldMm": {
+            "x": -19.5,
+            "y": -11.023,
+            "z": 28.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "optic_chiasm",
+      "preferredName": "Optic chiasm",
+      "aliases": [
+        "Optic Chiasm",
+        "Optic-Chiasm"
+      ],
+      "acceptedAnswers": [
+        "Optic chiasm",
+        "optic chiasm",
+        "Optic Chiasm",
+        "Optic-Chiasm"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cranial_nerves",
+        "skull_base"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Optic chiasm. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Optic-Chiasm",
+          "value": 85
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "optic_chiasm_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Optic chiasm.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 127,
+            "j": 114,
+            "k": 137
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": 29.977,
+            "z": 9.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "cuneus",
+      "preferredName": "Cuneus",
+      "aliases": [
+        "Left cuneus",
+        "cuneus"
+      ],
+      "acceptedAnswers": [
+        "Cuneus",
+        "cuneus",
+        "Left cuneus",
+        "left cuneus"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cuneus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "cuneus",
+          "value": 1005
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cuneus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cuneus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 132,
+            "j": 98,
+            "k": 46
+          },
+          "worldMm": {
+            "x": -4.5,
+            "y": -61.023,
+            "z": 25.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "entorhinal_cortex",
+      "preferredName": "Entorhinal cortex",
+      "aliases": [
+        "Left entorhinal",
+        "entorhinal"
+      ],
+      "acceptedAnswers": [
+        "Entorhinal cortex",
+        "entorhinal cortex",
+        "Left entorhinal",
+        "left entorhinal",
+        "entorhinal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Entorhinal cortex. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "entorhinal",
+          "value": 1006
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "entorhinal_cortex_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Entorhinal cortex.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 150,
+            "j": 129,
+            "k": 131
+          },
+          "worldMm": {
+            "x": -22.5,
+            "y": 23.977,
+            "z": -5.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "fusiform_gyrus",
+      "preferredName": "Fusiform gyrus",
+      "aliases": [
+        "Left fusiform",
+        "fusiform"
+      ],
+      "acceptedAnswers": [
+        "Fusiform gyrus",
+        "fusiform gyrus",
+        "Left fusiform",
+        "left fusiform",
+        "fusiform"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Fusiform gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "fusiform",
+          "value": 1007
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "fusiform_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Fusiform gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 156,
+            "j": 123,
+            "k": 94
+          },
+          "worldMm": {
+            "x": -28.5,
+            "y": -13.023,
+            "z": 0.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "lingual_gyrus",
+      "preferredName": "Lingual gyrus",
+      "aliases": [
+        "Left lingual",
+        "lingual"
+      ],
+      "acceptedAnswers": [
+        "Lingual gyrus",
+        "lingual gyrus",
+        "Left lingual",
+        "left lingual",
+        "lingual"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Lingual gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "lingual",
+          "value": 1013
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "lingual_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Lingual gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 137,
+            "j": 110,
+            "k": 69
+          },
+          "worldMm": {
+            "x": -9.5,
+            "y": -38.023,
+            "z": 13.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "pars_opercularis",
+      "preferredName": "Pars opercularis",
+      "aliases": [
+        "Left parsopercularis",
+        "parsopercularis"
+      ],
+      "acceptedAnswers": [
+        "Pars opercularis",
+        "pars opercularis",
+        "Left parsopercularis",
+        "left parsopercularis",
+        "parsopercularis"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Pars opercularis. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "parsopercularis",
+          "value": 1018
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pars_opercularis_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pars opercularis.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 172,
+            "j": 86,
+            "k": 138
+          },
+          "worldMm": {
+            "x": -44.5,
+            "y": 30.977,
+            "z": 37.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "pars_orbitalis",
+      "preferredName": "Pars orbitalis",
+      "aliases": [
+        "Left parsorbitalis",
+        "parsorbitalis"
+      ],
+      "acceptedAnswers": [
+        "Pars orbitalis",
+        "pars orbitalis",
+        "Left parsorbitalis",
+        "left parsorbitalis",
+        "parsorbitalis"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Pars orbitalis. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "parsorbitalis",
+          "value": 1019
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pars_orbitalis_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pars orbitalis.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 167,
+            "j": 107,
+            "k": 163
+          },
+          "worldMm": {
+            "x": -39.5,
+            "y": 55.977,
+            "z": 16.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "pars_triangularis",
+      "preferredName": "Pars triangularis",
+      "aliases": [
+        "Left parstriangularis",
+        "parstriangularis"
+      ],
+      "acceptedAnswers": [
+        "Pars triangularis",
+        "pars triangularis",
+        "Left parstriangularis",
+        "left parstriangularis",
+        "parstriangularis"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Pars triangularis. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "parstriangularis",
+          "value": 1020
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pars_triangularis_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pars triangularis.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 172,
+            "j": 93,
+            "k": 154
+          },
+          "worldMm": {
+            "x": -44.5,
+            "y": 46.977,
+            "z": 30.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "postcentral_gyrus",
+      "preferredName": "Postcentral gyrus",
+      "aliases": [
+        "Left postcentral",
+        "postcentral"
+      ],
+      "acceptedAnswers": [
+        "Postcentral gyrus",
+        "postcentral gyrus",
+        "Left postcentral",
+        "left postcentral",
+        "postcentral"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Postcentral gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "postcentral",
+          "value": 1022
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "postcentral_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Postcentral gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 169,
+            "j": 65,
+            "k": 100
+          },
+          "worldMm": {
+            "x": -41.5,
+            "y": -7.023,
+            "z": 58.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "posterior_cingulate_gyrus",
+      "preferredName": "Posterior cingulate gyrus",
+      "aliases": [
+        "Left posteriorcingulate",
+        "posteriorcingulate"
+      ],
+      "acceptedAnswers": [
+        "Posterior cingulate gyrus",
+        "posterior cingulate gyrus",
+        "Left posteriorcingulate",
+        "left posteriorcingulate",
+        "posteriorcingulate"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Posterior cingulate gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "posteriorcingulate",
+          "value": 1023
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "posterior_cingulate_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Posterior cingulate gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 134,
+            "j": 72,
+            "k": 106
+          },
+          "worldMm": {
+            "x": -6.5,
+            "y": -1.023,
+            "z": 51.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "precentral_gyrus",
+      "preferredName": "Precentral gyrus",
+      "aliases": [
+        "Left precentral",
+        "precentral"
+      ],
+      "acceptedAnswers": [
+        "Precentral gyrus",
+        "precentral gyrus",
+        "Left precentral",
+        "left precentral",
+        "precentral"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Precentral gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "precentral",
+          "value": 1024
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "precentral_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Precentral gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 165,
+            "j": 66,
+            "k": 114
+          },
+          "worldMm": {
+            "x": -37.5,
+            "y": 6.977,
+            "z": 57.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "precuneus",
+      "preferredName": "precuneus",
+      "aliases": [
+        "Left precuneus"
+      ],
+      "acceptedAnswers": [
+        "precuneus",
+        "Left precuneus",
+        "left precuneus"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for precuneus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "precuneus",
+          "value": 1025
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "precuneus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the precuneus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 135,
+            "j": 79,
+            "k": 70
+          },
+          "worldMm": {
+            "x": -7.5,
+            "y": -37.023,
+            "z": 44.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "superior_frontal_gyrus",
+      "preferredName": "Superior frontal gyrus",
+      "aliases": [
+        "Left superiorfrontal",
+        "superiorfrontal"
+      ],
+      "acceptedAnswers": [
+        "Superior frontal gyrus",
+        "superior frontal gyrus",
+        "Left superiorfrontal",
+        "left superiorfrontal",
+        "superiorfrontal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Superior frontal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "superiorfrontal",
+          "value": 1028
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "superior_frontal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Superior frontal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 137,
+            "j": 60,
+            "k": 149
+          },
+          "worldMm": {
+            "x": -9.5,
+            "y": 41.977,
+            "z": 63.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "supramarginal_gyrus",
+      "preferredName": "Supramarginal gyrus",
+      "aliases": [
+        "Left supramarginal",
+        "supramarginal"
+      ],
+      "acceptedAnswers": [
+        "Supramarginal gyrus",
+        "supramarginal gyrus",
+        "Left supramarginal",
+        "left supramarginal",
+        "supramarginal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Supramarginal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Review flag: viewer_name_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "supramarginal",
+          "value": 1031
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "supramarginal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Supramarginal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 177,
+            "j": 76,
+            "k": 91
+          },
+          "worldMm": {
+            "x": -49.5,
+            "y": -16.023,
+            "z": 47.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "temporal_pole",
+      "preferredName": "Temporal pole",
+      "aliases": [
+        "Left temporalpole",
+        "Left Pole temporal",
+        "temporalpole",
+        "Pole_temporal"
+      ],
+      "acceptedAnswers": [
+        "Temporal pole",
+        "temporal pole",
+        "Left temporalpole",
+        "left temporalpole",
+        "Left Pole temporal",
+        "temporalpole",
+        "Pole_temporal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Temporal pole. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Rename from atlas display name and hide laterality in viewer.",
+        "Review flag: viewer_name_review.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "temporalpole",
+          "value": 1033
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "Pole_temporal",
+          "value": 11144
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "temporal_pole_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Temporal pole.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 155,
+            "j": 130,
+            "k": 150
+          },
+          "worldMm": {
+            "x": -27.5,
+            "y": 42.977,
+            "z": -6.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "insular_cortex",
+      "preferredName": "Insular cortex",
+      "aliases": [
+        "Left insula",
+        "Left G Ins lg and S cent ins",
+        "Left G insular short",
+        "insula",
+        "G_Ins_lg_and_S_cent_ins",
+        "G_insular_short"
+      ],
+      "acceptedAnswers": [
+        "Insular cortex",
+        "insular cortex",
+        "Left insula",
+        "left insula",
+        "Left G Ins lg and S cent ins",
+        "Left G insular short",
+        "insula",
+        "G_Ins_lg_and_S_cent_ins",
+        "G_insular_short"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Insular cortex. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Good cortical target; use learner-facing name.",
+        "Review flag: viewer_name_review.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "insula",
+          "value": 1035
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_Ins_lg_and_S_cent_ins",
+          "value": 11117
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_insular_short",
+          "value": 11118
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "insular_cortex_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Insular cortex.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 164,
+            "j": 102,
+            "k": 132
+          },
+          "worldMm": {
+            "x": -36.5,
+            "y": 24.977,
+            "z": 21.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "foramen_magnum",
+      "preferredName": "Foramen magnum",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Foramen magnum",
+        "foramen magnum"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "skull_base"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Foramen magnum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Large skull-base landmark; manual point or contour.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Foramen magnum"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "foramen_magnum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Foramen magnum.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "medulla_oblongata",
+      "preferredName": "Medulla oblongata",
+      "aliases": [
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "acceptedAnswers": [
+        "Medulla oblongata",
+        "medulla oblongata",
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Medulla oblongata. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "FreeSurfer has only a coarse brainstem label in this run.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Brain-Stem",
+          "value": 16
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "medulla_oblongata_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Medulla oblongata.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 131,
+            "k": 106
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -1.023,
+            "z": -7.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "cerebellar_tonsil",
+      "preferredName": "Cerebellar tonsil",
+      "aliases": [
+        "Left Cerebellum Cortex",
+        "Left-Cerebellum-Cortex"
+      ],
+      "acceptedAnswers": [
+        "Cerebellar tonsil",
+        "cerebellar tonsil",
+        "Left Cerebellum Cortex",
+        "Left-Cerebellum-Cortex"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cerebellum"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cerebellar tonsil. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Stock FreeSurfer cerebellum label is too coarse for tonsil.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Cerebellum-Cortex",
+          "value": 8
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cerebellar_tonsil_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cerebellar tonsil.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 151,
+            "j": 136,
+            "k": 78
+          },
+          "worldMm": {
+            "x": -23.5,
+            "y": -29.023,
+            "z": -12.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "premedullary_cistern",
+      "preferredName": "Premedullary cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Premedullary cistern",
+        "premedullary cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Premedullary cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "CSF space anterior to medulla.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Premedullary cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "premedullary_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Premedullary cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "cerebellum",
+      "preferredName": "Cerebellum",
+      "aliases": [
+        "Left Cerebellum Cortex",
+        "Left Cerebellum White Matter",
+        "Left-Cerebellum-Cortex",
+        "Left-Cerebellum-White-Matter"
+      ],
+      "acceptedAnswers": [
+        "Cerebellum",
+        "cerebellum",
+        "Left Cerebellum Cortex",
+        "Left Cerebellum White Matter",
+        "Left-Cerebellum-Cortex",
+        "Left-Cerebellum-White-Matter"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cerebellum",
+        "white_matter"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cerebellum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Rename learner-facing label to Cerebellum or Cerebellar hemisphere.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Cerebellum-Cortex",
+          "value": 8
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Cerebellum-White-Matter",
+          "value": 7
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cerebellum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cerebellum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 149,
+            "j": 137,
+            "k": 79
+          },
+          "worldMm": {
+            "x": -21.5,
+            "y": -28.023,
+            "z": -13.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "external_auditory_canal",
+      "preferredName": "External auditory canal",
+      "aliases": [],
+      "acceptedAnswers": [
+        "External auditory canal",
+        "external auditory canal"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "skull_base"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for External auditory canal. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Bony landmark, better on CT but usually localizable.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "External auditory canal"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "external_auditory_canal_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the External auditory canal.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "foramen_of_magendie",
+      "preferredName": "Foramen of Magendie",
+      "aliases": [
+        "4th Ventricle",
+        "4th-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Foramen of Magendie",
+        "foramen of magendie",
+        "4th Ventricle",
+        "4th-Ventricle"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Foramen of Magendie. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small fourth ventricular outlet; manual point target.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "4th-Ventricle",
+          "value": 15
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "foramen_of_magendie_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Foramen of Magendie.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 135,
+            "k": 93
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -14.023,
+            "z": -11.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "superior_orbital_fissure",
+      "preferredName": "Superior orbital fissure",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Superior orbital fissure",
+        "superior orbital fissure"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "skull_base",
+        "cranial_nerves"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Superior orbital fissure. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "High-yield foraminal anatomy; add contents later.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Superior orbital fissure"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "superior_orbital_fissure_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Superior orbital fissure.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "meckel_s_cave",
+      "preferredName": "Meckel's cave",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Meckel's cave",
+        "meckel's cave"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "skull_base",
+        "cranial_nerves",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Meckel's cave. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Trigeminal cistern; may be visible on T1 but needs QC.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Meckel's cave"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "meckel_s_cave_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Meckel's cave.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "foramen_of_luschka",
+      "preferredName": "Foramen of Luschka",
+      "aliases": [
+        "4th Ventricle",
+        "4th-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Foramen of Luschka",
+        "foramen of luschka",
+        "4th Ventricle",
+        "4th-Ventricle"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Foramen of Luschka. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small lateral fourth ventricular outlet.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "4th-Ventricle",
+          "value": 15
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "foramen_of_luschka_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Foramen of Luschka.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 135,
+            "k": 93
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -14.023,
+            "z": -11.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "crista_galli",
+      "preferredName": "Crista galli",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Crista galli",
+        "crista galli"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "skull_base",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Crista galli. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Anterior midline skull-base landmark.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Crista galli"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "crista_galli_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Crista galli.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "pituitary_fossa",
+      "preferredName": "Pituitary fossa",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Pituitary fossa",
+        "pituitary fossa"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "skull_base",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Pituitary fossa. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Sella turcica region; useful midline landmark.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Pituitary fossa"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pituitary_fossa_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pituitary fossa.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "pons",
+      "preferredName": "Pons",
+      "aliases": [
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "acceptedAnswers": [
+        "Pons",
+        "pons",
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Pons. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Split manually from coarse brainstem label.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Brain-Stem",
+          "value": 16
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pons_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pons.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 131,
+            "k": 106
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -1.023,
+            "z": -7.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "gyrus_rectus",
+      "preferredName": "Gyrus rectus",
+      "aliases": [
+        "Left G rectus",
+        "G_rectus"
+      ],
+      "acceptedAnswers": [
+        "Gyrus rectus",
+        "gyrus rectus",
+        "Left G rectus",
+        "G_rectus"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Gyrus rectus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Destrieux provides an explicit gyrus rectus label.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_rectus",
+          "value": 11131
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "gyrus_rectus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Gyrus rectus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 131,
+            "j": 111,
+            "k": 172
+          },
+          "worldMm": {
+            "x": -3.5,
+            "y": 64.977,
+            "z": 12.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "prepontine_cistern",
+      "preferredName": "Prepontine cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Prepontine cistern",
+        "prepontine cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Prepontine cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "CSF space anterior to pons; basilar artery relationship.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Prepontine cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "prepontine_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Prepontine cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "middle_cerebellar_peduncle",
+      "preferredName": "Middle cerebellar peduncle",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Middle cerebellar peduncle",
+        "middle cerebellar peduncle"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "cerebellum",
+        "brainstem"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Middle cerebellar peduncle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "High-yield fiber tract landmark, not a stock FreeSurfer label here.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Middle cerebellar peduncle"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "middle_cerebellar_peduncle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Middle cerebellar peduncle.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "uncus",
+      "preferredName": "Uncus",
+      "aliases": [
+        "Left Amygdala",
+        "Left entorhinal",
+        "Left parahippocampal",
+        "Left-Amygdala",
+        "entorhinal",
+        "parahippocampal"
+      ],
+      "acceptedAnswers": [
+        "Uncus",
+        "uncus",
+        "Left Amygdala",
+        "Left entorhinal",
+        "Left parahippocampal",
+        "Left-Amygdala",
+        "entorhinal",
+        "parahippocampal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "limbic",
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Uncus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Use nearby labels only as orientation support.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Amygdala",
+          "value": 18
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "entorhinal",
+          "value": 1006
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "parahippocampal",
+          "value": 1016
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "uncus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Uncus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 148,
+            "j": 116,
+            "k": 129
+          },
+          "worldMm": {
+            "x": -20.5,
+            "y": 21.977,
+            "z": 7.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "temporal_horn_of_the_lateral_ventricle",
+      "preferredName": "Temporal horn of the lateral ventricle",
+      "aliases": [
+        "Left Inf Lat Vent",
+        "Left Lateral Ventricle",
+        "Left-Inf-Lat-Vent",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Temporal horn of the lateral ventricle",
+        "temporal horn of the lateral ventricle",
+        "Left Inf Lat Vent",
+        "Left Lateral Ventricle",
+        "Left-Inf-Lat-Vent",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Temporal horn of the lateral ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "FreeSurfer inferior lateral ventricle is a useful seed, but refine teaching target.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Inf-Lat-Vent",
+          "value": 5
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "temporal_horn_of_the_lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Temporal horn of the lateral ventricle.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "nodule_of_the_cerebellum",
+      "preferredName": "Nodule of the cerebellum",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Nodule of the cerebellum",
+        "nodule of the cerebellum"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cerebellum",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Nodule of the cerebellum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Small vermian structure; manual or specialized atlas.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Nodule of the cerebellum"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "nodule_of_the_cerebellum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Nodule of the cerebellum.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "suprasellar_cistern",
+      "preferredName": "Suprasellar cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Suprasellar cistern",
+        "suprasellar cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "skull_base"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Suprasellar cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Good midline CSF landmark around optic chiasm/pituitary stalk.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Suprasellar cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "suprasellar_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Suprasellar cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "tentorium_cerebelli",
+      "preferredName": "Tentorium cerebelli",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Tentorium cerebelli",
+        "tentorium cerebelli"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "skull_base"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Tentorium cerebelli. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Dural reflection; visible as boundary rather than segmented tissue.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Tentorium cerebelli"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "tentorium_cerebelli_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Tentorium cerebelli.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "interpeduncular_cistern",
+      "preferredName": "Interpeduncular cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Interpeduncular cistern",
+        "interpeduncular cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Interpeduncular cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "CSF space between cerebral peduncles.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Interpeduncular cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "interpeduncular_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Interpeduncular cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "cerebral_crus_cerebral_peduncle",
+      "preferredName": "Cerebral crus (cerebral peduncle)",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Cerebral crus (cerebral peduncle)",
+        "cerebral crus (cerebral peduncle)"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "brainstem"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cerebral crus (cerebral peduncle). This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Use midbrain-level manual target.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Cerebral crus (cerebral peduncle)"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cerebral_crus_cerebral_peduncle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cerebral crus (cerebral peduncle).",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "sylvian_fissure",
+      "preferredName": "Sylvian fissure",
+      "aliases": [
+        "Left Lat Fis ant Horizont",
+        "Left Lat Fis ant Vertical",
+        "Left Lat Fis post",
+        "Lat_Fis-ant-Horizont",
+        "Lat_Fis-ant-Vertical",
+        "Lat_Fis-post"
+      ],
+      "acceptedAnswers": [
+        "Sylvian fissure",
+        "sylvian fissure",
+        "Left Lat Fis ant Horizont",
+        "Left Lat Fis ant Vertical",
+        "Left Lat Fis post",
+        "Lat_Fis-ant-Horizont",
+        "Lat_Fis-ant-Vertical",
+        "Lat_Fis-post"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "csf_spaces",
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Sylvian fissure. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Destrieux fissure components can support, but a simple manual target may teach better.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "Lat_Fis-ant-Horizont",
+          "value": 11139
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "Lat_Fis-ant-Vertical",
+          "value": 11140
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "Lat_Fis-post",
+          "value": 11141
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "sylvian_fissure_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Sylvian fissure.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 165,
+            "j": 91,
+            "k": 110
+          },
+          "worldMm": {
+            "x": -37.5,
+            "y": 2.977,
+            "z": 32.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "mammillary_bodies",
+      "preferredName": "Mammillary bodies",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Mammillary bodies",
+        "mammillary bodies"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "limbic",
+        "midline"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Mammillary bodies. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small hypothalamic structures.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Mammillary bodies"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "mammillary_bodies_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Mammillary bodies.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "median_interhemispheric_fissure",
+      "preferredName": "Median interhemispheric fissure",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Median interhemispheric fissure",
+        "median interhemispheric fissure"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "csf_spaces",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Median interhemispheric fissure. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Useful orientation landmark.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Median interhemispheric fissure"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "median_interhemispheric_fissure_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Median interhemispheric fissure.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "midbrain",
+      "preferredName": "Midbrain",
+      "aliases": [
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "acceptedAnswers": [
+        "Midbrain",
+        "midbrain",
+        "Brain Stem",
+        "Brain-Stem"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Midbrain. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Split manually from coarse brainstem label.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Brain-Stem",
+          "value": 16
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "midbrain_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Midbrain.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 131,
+            "k": 106
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -1.023,
+            "z": -7.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "ambient_cistern",
+      "preferredName": "Ambient cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Ambient cistern",
+        "ambient cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Ambient cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Cistern lateral to midbrain.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Ambient cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "ambient_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Ambient cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "cerebral_aqueduct",
+      "preferredName": "Cerebral aqueduct",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Cerebral aqueduct",
+        "cerebral aqueduct"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "ventricles",
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Cerebral aqueduct. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "High-yield small CSF channel between third and fourth ventricles.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Cerebral aqueduct"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cerebral_aqueduct_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cerebral aqueduct.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "inferior_colliculus",
+      "preferredName": "Inferior colliculus",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Inferior colliculus",
+        "inferior colliculus"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "brainstem"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Inferior colliculus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Small dorsal midbrain structure.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Inferior colliculus"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "inferior_colliculus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Inferior colliculus.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "anterior_limb_of_the_internal_capsule",
+      "preferredName": "Anterior limb of the internal capsule",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Anterior limb of the internal capsule",
+        "anterior limb of the internal capsule"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "basal_ganglia"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Anterior limb of the internal capsule. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "High-yield white matter structure not directly labeled by current FreeSurfer outputs.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Anterior limb of the internal capsule"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "anterior_limb_of_the_internal_capsule_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Anterior limb of the internal capsule.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "interventricular_foramen_foramen_of_monro",
+      "preferredName": "Interventricular foramen (foramen of Monro)",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "3rd Ventricle",
+        "Left-Lateral-Ventricle",
+        "3rd-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Interventricular foramen (foramen of Monro)",
+        "interventricular foramen (foramen of monro)",
+        "Left Lateral Ventricle",
+        "3rd Ventricle",
+        "Left-Lateral-Ventricle",
+        "3rd-Ventricle"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Interventricular foramen (foramen of Monro). This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small communication between lateral and third ventricles.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "3rd-Ventricle",
+          "value": 14
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "interventricular_foramen_foramen_of_monro_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Interventricular foramen (foramen of Monro).",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 136,
+            "j": 85,
+            "k": 120
+          },
+          "worldMm": {
+            "x": -8.5,
+            "y": 12.977,
+            "z": 38.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "genu_of_the_corpus_callosum",
+      "preferredName": "Genu of the corpus callosum",
+      "aliases": [
+        "CC Anterior",
+        "CC_Anterior"
+      ],
+      "acceptedAnswers": [
+        "Genu of the corpus callosum",
+        "genu of the corpus callosum",
+        "CC Anterior",
+        "CC_Anterior"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Genu of the corpus callosum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Rename FreeSurfer corpus callosum segment into standard anatomy.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Anterior",
+          "value": 255
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "genu_of_the_corpus_callosum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Genu of the corpus callosum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 128,
+            "j": 92,
+            "k": 153
+          },
+          "worldMm": {
+            "x": -0.5,
+            "y": 45.977,
+            "z": 31.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "frontal_horn_of_the_lateral_ventricle",
+      "preferredName": "Frontal horn of the lateral ventricle",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Frontal horn of the lateral ventricle",
+        "frontal horn of the lateral ventricle",
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Frontal horn of the lateral ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Use whole lateral ventricle label as support, but target frontal horn manually.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "frontal_horn_of_the_lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Frontal horn of the lateral ventricle.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "genu_of_the_internal_capsule",
+      "preferredName": "Genu of the internal capsule",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Genu of the internal capsule",
+        "genu of the internal capsule"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "basal_ganglia"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Genu of the internal capsule. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Manual target between anterior and posterior limbs.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Genu of the internal capsule"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "genu_of_the_internal_capsule_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Genu of the internal capsule.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "quadrigeminal_cistern",
+      "preferredName": "Quadrigeminal cistern",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Quadrigeminal cistern",
+        "quadrigeminal cistern"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "csf_spaces",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Quadrigeminal cistern. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Posterior to midbrain tectum.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Quadrigeminal cistern"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "quadrigeminal_cistern_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Quadrigeminal cistern.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "head_of_the_caudate_nucleus",
+      "preferredName": "Head of the caudate nucleus",
+      "aliases": [
+        "Left Caudate",
+        "Left-Caudate"
+      ],
+      "acceptedAnswers": [
+        "Head of the caudate nucleus",
+        "head of the caudate nucleus",
+        "Left Caudate",
+        "Left-Caudate"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Head of the caudate nucleus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "FreeSurfer labels whole caudate; teach head with manual target.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Caudate",
+          "value": 11
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "head_of_the_caudate_nucleus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Head of the caudate nucleus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 90,
+            "k": 139
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 31.977,
+            "z": 33.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "lentiform_nucleus",
+      "preferredName": "Lentiform nucleus",
+      "aliases": [
+        "Left Putamen",
+        "Left Pallidum",
+        "Left-Putamen",
+        "Left-Pallidum"
+      ],
+      "acceptedAnswers": [
+        "Lentiform nucleus",
+        "lentiform nucleus",
+        "Left Putamen",
+        "Left Pallidum",
+        "Left-Putamen",
+        "Left-Pallidum"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Lentiform nucleus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Composite teaching structure from putamen and globus pallidus.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Putamen",
+          "value": 12
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Pallidum",
+          "value": 13
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "lentiform_nucleus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Lentiform nucleus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 150,
+            "j": 100,
+            "k": 129
+          },
+          "worldMm": {
+            "x": -22.5,
+            "y": 21.977,
+            "z": 23.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "pineal_gland",
+      "preferredName": "Pineal gland",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Pineal gland",
+        "pineal gland"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Pineal gland. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small midline gland posterior to third ventricle.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Pineal gland"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "pineal_gland_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Pineal gland.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "vermis",
+      "preferredName": "Vermis",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Vermis",
+        "vermis"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cerebellum",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Vermis. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Vermis is not separated in current FreeSurfer outputs.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Vermis"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "vermis_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Vermis.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "column_of_the_fornix",
+      "preferredName": "Column of the fornix",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Column of the fornix",
+        "column of the fornix"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "limbic",
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Column of the fornix. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Small limbic white matter structure.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Column of the fornix"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "column_of_the_fornix_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Column of the fornix.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "posterior_limb_of_the_internal_capsule",
+      "preferredName": "Posterior limb of the internal capsule",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Posterior limb of the internal capsule",
+        "posterior limb of the internal capsule"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "basal_ganglia"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Posterior limb of the internal capsule. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "High-yield motor pathway landmark.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Posterior limb of the internal capsule"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "posterior_limb_of_the_internal_capsule_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Posterior limb of the internal capsule.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "cingulate_gyrus",
+      "preferredName": "Cingulate gyrus",
+      "aliases": [
+        "Left caudalanteriorcingulate",
+        "Left rostralanteriorcingulate",
+        "Left posteriorcingulate",
+        "Left isthmuscingulate",
+        "caudalanteriorcingulate",
+        "rostralanteriorcingulate",
+        "posteriorcingulate",
+        "isthmuscingulate"
+      ],
+      "acceptedAnswers": [
+        "Cingulate gyrus",
+        "cingulate gyrus",
+        "Left caudalanteriorcingulate",
+        "Left rostralanteriorcingulate",
+        "Left posteriorcingulate",
+        "Left isthmuscingulate",
+        "caudalanteriorcingulate",
+        "rostralanteriorcingulate",
+        "posteriorcingulate",
+        "isthmuscingulate"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cingulate gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "May be cleaner as anterior/posterior cingulate or one broader teaching target.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "caudalanteriorcingulate",
+          "value": 1002
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "rostralanteriorcingulate",
+          "value": 1026
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "posteriorcingulate",
+          "value": 1023
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "isthmuscingulate",
+          "value": 1010
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cingulate_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cingulate gyrus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 131,
+            "j": 77,
+            "k": 119
+          },
+          "worldMm": {
+            "x": -3.5,
+            "y": 11.977,
+            "z": 46.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "septum_pellucidum",
+      "preferredName": "Septum pellucidum",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Right Lateral Ventricle",
+        "Left-Lateral-Ventricle",
+        "Right-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Septum pellucidum",
+        "septum pellucidum",
+        "Left Lateral Ventricle",
+        "Right Lateral Ventricle",
+        "Left-Lateral-Ventricle",
+        "Right-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "midline",
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Septum pellucidum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Thin membrane between frontal horns.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Right-Lateral-Ventricle",
+          "value": 43
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "septum_pellucidum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Septum pellucidum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 131,
+            "j": 85,
+            "k": 117
+          },
+          "worldMm": {
+            "x": -3.5,
+            "y": 9.977,
+            "z": 38.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "forceps_minor",
+      "preferredName": "Forceps minor",
+      "aliases": [
+        "CC Anterior",
+        "CC_Anterior"
+      ],
+      "acceptedAnswers": [
+        "Forceps minor",
+        "forceps minor",
+        "CC Anterior",
+        "CC_Anterior"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Forceps minor. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Callosal frontal radiation; consider tract atlas.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Anterior",
+          "value": 255
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "forceps_minor_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Forceps minor.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 128,
+            "j": 92,
+            "k": 153
+          },
+          "worldMm": {
+            "x": -0.5,
+            "y": 45.977,
+            "z": 31.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "trigone_atrium_of_the_lateral_ventricle",
+      "preferredName": "Trigone (atrium) of the lateral ventricle",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Trigone (atrium) of the lateral ventricle",
+        "trigone (atrium) of the lateral ventricle",
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Trigone (atrium) of the lateral ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Manual target within lateral ventricle label.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "trigone_atrium_of_the_lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Trigone (atrium) of the lateral ventricle.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "occipital_lobe",
+      "preferredName": "Occipital lobe",
+      "aliases": [
+        "Left cuneus",
+        "Left lateraloccipital",
+        "Left lingual",
+        "Left pericalcarine",
+        "cuneus",
+        "lateraloccipital",
+        "lingual",
+        "pericalcarine"
+      ],
+      "acceptedAnswers": [
+        "Occipital lobe",
+        "occipital lobe",
+        "Left cuneus",
+        "Left lateraloccipital",
+        "Left lingual",
+        "Left pericalcarine",
+        "cuneus",
+        "lateraloccipital",
+        "lingual",
+        "pericalcarine"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Occipital lobe. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Can be a broad teaching region rather than exact atlas parcel.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "cuneus",
+          "value": 1005
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "lateraloccipital",
+          "value": 1011
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "lingual",
+          "value": 1013
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "pericalcarine",
+          "value": 1021
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "occipital_lobe_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Occipital lobe.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 146,
+            "j": 115,
+            "k": 56
+          },
+          "worldMm": {
+            "x": -18.5,
+            "y": -51.023,
+            "z": 8.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "splenium_of_the_corpus_callosum",
+      "preferredName": "Splenium of the corpus callosum",
+      "aliases": [
+        "CC Posterior",
+        "CC_Posterior"
+      ],
+      "acceptedAnswers": [
+        "Splenium of the corpus callosum",
+        "splenium of the corpus callosum",
+        "CC Posterior",
+        "CC_Posterior"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Splenium of the corpus callosum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Rename FreeSurfer posterior corpus callosum segment.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Posterior",
+          "value": 251
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "splenium_of_the_corpus_callosum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Splenium of the corpus callosum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 92,
+            "k": 97
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -10.023,
+            "z": 31.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "occipital_horn_of_the_lateral_ventricle",
+      "preferredName": "Occipital horn of the lateral ventricle",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Occipital horn of the lateral ventricle",
+        "occipital horn of the lateral ventricle",
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Occipital horn of the lateral ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Manual target within lateral ventricle label.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "occipital_horn_of_the_lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Occipital horn of the lateral ventricle.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "body_of_the_lateral_ventricle",
+      "preferredName": "Body of the lateral ventricle",
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "acceptedAnswers": [
+        "Body of the lateral ventricle",
+        "body of the lateral ventricle",
+        "Left Lateral Ventricle",
+        "Left-Lateral-Ventricle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "ventricles",
+        "csf_spaces"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Body of the lateral ventricle. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Manual target within lateral ventricle label.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "body_of_the_lateral_ventricle_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Body of the lateral ventricle.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 140,
+            "j": 84,
+            "k": 116
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": 8.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "forceps_major",
+      "preferredName": "Forceps major",
+      "aliases": [
+        "CC Posterior",
+        "CC_Posterior"
+      ],
+      "acceptedAnswers": [
+        "Forceps major",
+        "forceps major",
+        "CC Posterior",
+        "CC_Posterior"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Forceps major. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Callosal occipital radiation; consider tract atlas.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Posterior",
+          "value": 251
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "forceps_major_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Forceps major.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 127,
+            "j": 92,
+            "k": 97
+          },
+          "worldMm": {
+            "x": 0.5,
+            "y": -10.023,
+            "z": 31.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "body_of_the_corpus_callosum",
+      "preferredName": "Body of the corpus callosum",
+      "aliases": [
+        "CC Central",
+        "CC Mid Anterior",
+        "CC Mid Posterior",
+        "CC_Central",
+        "CC_Mid_Anterior",
+        "CC_Mid_Posterior"
+      ],
+      "acceptedAnswers": [
+        "Body of the corpus callosum",
+        "body of the corpus callosum",
+        "CC Central",
+        "CC Mid Anterior",
+        "CC Mid Posterior",
+        "CC_Central",
+        "CC_Mid_Anterior",
+        "CC_Mid_Posterior"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Body of the corpus callosum. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Composite/renamed FreeSurfer corpus callosum segment.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Central",
+          "value": 253
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Mid_Anterior",
+          "value": 254
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "CC_Mid_Posterior",
+          "value": 252
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "body_of_the_corpus_callosum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Body of the corpus callosum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 128,
+            "j": 84,
+            "k": 127
+          },
+          "worldMm": {
+            "x": -0.5,
+            "y": 19.977,
+            "z": 39.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "centrum_semiovale",
+      "preferredName": "Centrum semiovale",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Centrum semiovale",
+        "centrum semiovale"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "white_matter"
+      ],
+      "laterality": "bilateral",
+      "description": "Draft T1 MPRAGE annotation target for Centrum semiovale. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual_or_external_atlas.",
+        "Broad white matter region; manual target may teach better than FreeSurfer white matter parcellation.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: external_atlas_candidate.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Centrum semiovale"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "centrum_semiovale_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Centrum semiovale.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "central_sulcus",
+      "preferredName": "Central sulcus",
+      "aliases": [
+        "Left S central",
+        "S_central"
+      ],
+      "acceptedAnswers": [
+        "Central sulcus",
+        "central sulcus",
+        "Left S central",
+        "S_central"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Central sulcus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Excellent landmark; Destrieux explicit sulcal label.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "S_central",
+          "value": 11146
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "central_sulcus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Central sulcus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 162,
+            "j": 66,
+            "k": 105
+          },
+          "worldMm": {
+            "x": -34.5,
+            "y": -2.023,
+            "z": 57.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "hand_bump_of_the_precentral_gyrus",
+      "preferredName": "Hand bump of the precentral gyrus",
+      "aliases": [
+        "Left precentral",
+        "Left G precentral",
+        "precentral",
+        "G_precentral"
+      ],
+      "acceptedAnswers": [
+        "Hand bump of the precentral gyrus",
+        "hand bump of the precentral gyrus",
+        "Left precentral",
+        "Left G precentral",
+        "precentral",
+        "G_precentral"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Hand bump of the precentral gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Manual point/region within precentral gyrus.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "precentral",
+          "value": 1024
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_precentral",
+          "value": 11129
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "hand_bump_of_the_precentral_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Hand bump of the precentral gyrus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 165,
+            "j": 66,
+            "k": 114
+          },
+          "worldMm": {
+            "x": -37.5,
+            "y": 6.977,
+            "z": 57.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "marginal_sulcus_pars_marginalis",
+      "preferredName": "Marginal sulcus (pars marginalis)",
+      "aliases": [
+        "Left S cingul Marginalis",
+        "S_cingul-Marginalis"
+      ],
+      "acceptedAnswers": [
+        "Marginal sulcus (pars marginalis)",
+        "marginal sulcus (pars marginalis)",
+        "Left S cingul Marginalis",
+        "S_cingul-Marginalis"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Marginal sulcus (pars marginalis). This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Useful for paracentral lobule/cingulate anatomy.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "S_cingul-Marginalis",
+          "value": 11147
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "marginal_sulcus_pars_marginalis_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Marginal sulcus (pars marginalis).",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 140,
+            "j": 70,
+            "k": 89
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": -18.023,
+            "z": 53.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "falx_cerebri",
+      "preferredName": "Falx cerebri",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Falx cerebri",
+        "falx cerebri"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Falx cerebri. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Midline dural reflection; visible as boundary rather than segmented tissue.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Falx cerebri"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "falx_cerebri_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Falx cerebri.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "angular_gyrus",
+      "preferredName": "Angular gyrus",
+      "aliases": [
+        "Left G pariet inf Angular",
+        "Left inferiorparietal",
+        "G_pariet_inf-Angular",
+        "inferiorparietal"
+      ],
+      "acceptedAnswers": [
+        "Angular gyrus",
+        "angular gyrus",
+        "Left G pariet inf Angular",
+        "Left inferiorparietal",
+        "G_pariet_inf-Angular",
+        "inferiorparietal"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Angular gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "High-yield parietal language/network landmark; pair with supramarginal gyrus.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_pariet_inf-Angular",
+          "value": 11125
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "inferiorparietal",
+          "value": 1008
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "angular_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Angular gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 171,
+            "j": 78,
+            "k": 65
+          },
+          "worldMm": {
+            "x": -43.5,
+            "y": -42.023,
+            "z": 45.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "superior_temporal_gyrus",
+      "preferredName": "Superior temporal gyrus",
+      "aliases": [
+        "Left superiortemporal",
+        "Left G temp sup Lateral",
+        "superiortemporal",
+        "G_temp_sup-Lateral"
+      ],
+      "acceptedAnswers": [
+        "Superior temporal gyrus",
+        "superior temporal gyrus",
+        "Left superiortemporal",
+        "Left G temp sup Lateral",
+        "superiortemporal",
+        "G_temp_sup-Lateral"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Superior temporal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Common temporal lobe landmark along the Sylvian fissure.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "superiortemporal",
+          "value": 1030
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_temp_sup-Lateral",
+          "value": 11134
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "superior_temporal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Superior temporal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 177,
+            "j": 108,
+            "k": 125
+          },
+          "worldMm": {
+            "x": -49.5,
+            "y": 17.977,
+            "z": 15.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "middle_temporal_gyrus",
+      "preferredName": "Middle temporal gyrus",
+      "aliases": [
+        "Left middletemporal",
+        "Left G temporal middle",
+        "middletemporal",
+        "G_temporal_middle"
+      ],
+      "acceptedAnswers": [
+        "Middle temporal gyrus",
+        "middle temporal gyrus",
+        "Left middletemporal",
+        "Left G temporal middle",
+        "middletemporal",
+        "G_temporal_middle"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Middle temporal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Common temporal lobe landmark.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "middletemporal",
+          "value": 1015
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_temporal_middle",
+          "value": 11138
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "middle_temporal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Middle temporal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 182,
+            "j": 113,
+            "k": 106
+          },
+          "worldMm": {
+            "x": -54.5,
+            "y": -1.023,
+            "z": 10.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "inferior_temporal_gyrus",
+      "preferredName": "Inferior temporal gyrus",
+      "aliases": [
+        "Left inferiortemporal",
+        "Left G temporal inf",
+        "inferiortemporal",
+        "G_temporal_inf"
+      ],
+      "acceptedAnswers": [
+        "Inferior temporal gyrus",
+        "inferior temporal gyrus",
+        "Left inferiortemporal",
+        "Left G temporal inf",
+        "inferiortemporal",
+        "G_temporal_inf"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Inferior temporal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Useful inferior temporal landmark.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "inferiortemporal",
+          "value": 1009
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_temporal_inf",
+          "value": 11137
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "inferior_temporal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Inferior temporal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 175,
+            "j": 124,
+            "k": 103
+          },
+          "worldMm": {
+            "x": -47.5,
+            "y": -4.023,
+            "z": -0.023
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "parahippocampal_gyrus",
+      "preferredName": "Parahippocampal gyrus",
+      "aliases": [
+        "Left parahippocampal",
+        "Left G oc temp med Parahip",
+        "parahippocampal",
+        "G_oc-temp_med-Parahip"
+      ],
+      "acceptedAnswers": [
+        "Parahippocampal gyrus",
+        "parahippocampal gyrus",
+        "Left parahippocampal",
+        "Left G oc temp med Parahip",
+        "parahippocampal",
+        "G_oc-temp_med-Parahip"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Parahippocampal gyrus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Important medial temporal landmark adjacent to hippocampus and uncus.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "parahippocampal",
+          "value": 1016
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_oc-temp_med-Parahip",
+          "value": 11123
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "parahippocampal_gyrus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Parahippocampal gyrus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 149,
+            "j": 118,
+            "k": 103
+          },
+          "worldMm": {
+            "x": -21.5,
+            "y": -4.023,
+            "z": 5.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "orbitofrontal_cortex",
+      "preferredName": "Orbitofrontal cortex",
+      "aliases": [
+        "Left lateralorbitofrontal",
+        "Left medialorbitofrontal",
+        "Left G orbital",
+        "lateralorbitofrontal",
+        "medialorbitofrontal",
+        "G_orbital"
+      ],
+      "acceptedAnswers": [
+        "Orbitofrontal cortex",
+        "orbitofrontal cortex",
+        "Left lateralorbitofrontal",
+        "Left medialorbitofrontal",
+        "Left G orbital",
+        "lateralorbitofrontal",
+        "medialorbitofrontal",
+        "G_orbital"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "skull_base"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Orbitofrontal cortex. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Learner-facing broad region; may be represented by medial/lateral orbitofrontal parcels.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "lateralorbitofrontal",
+          "value": 1012
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "medialorbitofrontal",
+          "value": 1014
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_orbital",
+          "value": 11124
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "orbitofrontal_cortex_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Orbitofrontal cortex.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 150,
+            "j": 111,
+            "k": 162
+          },
+          "worldMm": {
+            "x": -22.5,
+            "y": 54.977,
+            "z": 12.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "calcarine_sulcus",
+      "preferredName": "Calcarine sulcus",
+      "aliases": [
+        "Left S calcarine",
+        "Left pericalcarine",
+        "S_calcarine",
+        "pericalcarine"
+      ],
+      "acceptedAnswers": [
+        "Calcarine sulcus",
+        "calcarine sulcus",
+        "Left S calcarine",
+        "Left pericalcarine",
+        "S_calcarine",
+        "pericalcarine"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Calcarine sulcus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "High-yield visual cortex landmark on sagittal/axial views.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "S_calcarine",
+          "value": 11145
+        },
+        {
+          "source": "FreeSurfer Desikan-Killiany aparc",
+          "label": "pericalcarine",
+          "value": 1021
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "calcarine_sulcus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Calcarine sulcus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 140,
+            "j": 103,
+            "k": 70
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": -37.023,
+            "z": 20.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "parieto_occipital_sulcus",
+      "preferredName": "Parieto-occipital sulcus",
+      "aliases": [
+        "Left S parieto occipital",
+        "S_parieto_occipital"
+      ],
+      "acceptedAnswers": [
+        "Parieto-occipital sulcus",
+        "parieto-occipital sulcus",
+        "Left S parieto occipital",
+        "S_parieto_occipital"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Parieto-occipital sulcus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_seed.",
+        "Useful midline sagittal landmark separating parietal and occipital lobes.",
+        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "S_parieto_occipital",
+          "value": 11166
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "parieto_occipital_sulcus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Parieto-occipital sulcus.",
+          "status": "draft",
+          "hint": "Auto-populated from FreeSurfer label; QC before release.",
+          "voxel": {
+            "i": 140,
+            "j": 92,
+            "k": 61
+          },
+          "worldMm": {
+            "x": -12.5,
+            "y": -46.023,
+            "z": 31.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "cingulate_sulcus",
+      "preferredName": "Cingulate sulcus",
+      "aliases": [
+        "Left S cingul Marginalis",
+        "Left G and S cingul Ant",
+        "Left G and S cingul Mid Ant",
+        "S_cingul-Marginalis",
+        "G_and_S_cingul-Ant",
+        "G_and_S_cingul-Mid-Ant"
+      ],
+      "acceptedAnswers": [
+        "Cingulate sulcus",
+        "cingulate sulcus",
+        "Left S cingul Marginalis",
+        "Left G and S cingul Ant",
+        "Left G and S cingul Mid Ant",
+        "S_cingul-Marginalis",
+        "G_and_S_cingul-Ant",
+        "G_and_S_cingul-Mid-Ant"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "cortex",
+        "limbic"
+      ],
+      "laterality": "left",
+      "description": "Draft T1 MPRAGE annotation target for Cingulate sulcus. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: freesurfer_support_manual_refine.",
+        "Useful for cingulate/paracentral region orientation; may need manual target.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: needs_manual_refinement.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "S_cingul-Marginalis",
+          "value": 11147
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_and_S_cingul-Ant",
+          "value": 11106
+        },
+        {
+          "source": "FreeSurfer Destrieux aparc.a2009s",
+          "label": "G_and_S_cingul-Mid-Ant",
+          "value": 11107
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cingulate_sulcus_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cingulate sulcus.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 134,
+            "j": 76,
+            "k": 143
+          },
+          "worldMm": {
+            "x": -6.5,
+            "y": 35.977,
+            "z": 47.977
+          }
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "sourceDifficulty": "intermediate"
+    },
+    {
+      "id": "anterior_commissure",
+      "preferredName": "Anterior commissure",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Anterior commissure",
+        "anterior commissure"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Anterior commissure. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Classic small midline landmark; useful with AC-PC plane concepts.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Anterior commissure"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "anterior_commissure_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Anterior commissure.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "posterior_commissure",
+      "preferredName": "Posterior commissure",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Posterior commissure",
+        "posterior commissure"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "midline",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Posterior commissure. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small midline landmark near pineal/aqueduct region.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Posterior commissure"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "posterior_commissure_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Posterior commissure.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    },
+    {
+      "id": "cisterna_magna",
+      "preferredName": "Cisterna magna",
+      "aliases": [],
+      "acceptedAnswers": [
+        "Cisterna magna",
+        "cisterna magna"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "csf_spaces",
+        "cerebellum",
+        "brainstem"
+      ],
+      "laterality": "midline",
+      "description": "Draft T1 MPRAGE annotation target for Cisterna magna. This entry needs localization and QC before viewer release.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Common posterior fossa CSF landmark inferior to the cerebellum.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Cisterna magna"
+        }
+      ],
+      "quizTargets": [
+        {
+          "id": "cisterna_magna_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Cisterna magna.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "high_value_common_anatomy_candidate_list"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": []
+    }
+  ]
+}

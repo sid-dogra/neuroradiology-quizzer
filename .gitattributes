@@ -1,0 +1,8 @@
+*.dcm binary
+*.nii binary
+*.nii.gz binary
+*.mgz binary
+*.nrrd binary
+*.png binary
+*.jpg binary
+*.jpeg binary

@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/annotated-brain-mri/anatomy-annotations.schema.json",
+  "title": "Annotated Brain MRI Anatomy Metadata",
+  "type": "object",
+  "required": ["version", "study", "structures"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Semantic version for this annotation set."
+    },
+    "study": {
+      "type": "object",
+      "required": ["id", "title", "modality", "sequence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "modality": { "type": "string", "enum": ["MR"] },
+        "sequence": { "type": "string" },
+        "dicomJson": {
+          "type": "string",
+          "description": "Relative path to the OHIF dicomjson manifest once available."
+        },
+        "segmentation": {
+          "type": "string",
+          "description": "Relative path to a DICOM SEG or other segmentation export once available."
+        }
+      }
+    },
+    "structures": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/structure" }
+    }
+  },
+  "$defs": {
+    "structure": {
+      "type": "object",
+      "required": [
+        "id",
+        "preferredName",
+        "acceptedAnswers",
+        "difficulty",
+        "systems",
+        "description",
+        "quizTargets"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+        },
+        "preferredName": { "type": "string" },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "acceptedAnswers": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["beginner", "intermediate", "advanced"]
+        },
+        "systems": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "ventricles",
+              "basal_ganglia",
+              "white_matter",
+              "brainstem",
+              "cerebellum",
+              "skull_base",
+              "cranial_nerves",
+              "vascular",
+              "limbic",
+              "midline",
+              "cortex",
+              "deep_gray",
+              "csf_spaces"
+            ]
+          }
+        },
+        "laterality": {
+          "type": "string",
+          "enum": ["left", "right", "midline", "bilateral", "not_applicable"],
+          "default": "not_applicable"
+        },
+        "description": { "type": "string" },
+        "clinicalNotes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "relationships": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "contains": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "travelsThrough": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "adjacentTo": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "suppliedBy": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "drainsTo": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        },
+        "sourceLabels": {
+          "type": "array",
+          "description": "Atlas or manual segmentation labels that correspond to this structure.",
+          "items": {
+            "type": "object",
+            "required": ["source", "label"],
+            "additionalProperties": false,
+            "properties": {
+              "source": { "type": "string" },
+              "label": { "type": "string" },
+              "value": {
+                "type": ["integer", "string"],
+                "description": "Numeric label value if applicable."
+              }
+            }
+          },
+          "default": []
+        },
+        "quizTargets": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/quizTarget" }
+        },
+        "references": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        }
+      }
+    },
+    "quizTarget": {
+      "type": "object",
+      "required": ["id", "view", "prompt", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+        },
+        "view": {
+          "type": "string",
+          "enum": ["axial", "coronal", "sagittal", "mpr"]
+        },
+        "prompt": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["needs_localization", "draft", "reviewed"]
+        },
+        "voxel": {
+          "type": "object",
+          "required": ["i", "j", "k"],
+          "additionalProperties": false,
+          "properties": {
+            "i": { "type": "number" },
+            "j": { "type": "number" },
+            "k": { "type": "number" }
+          }
+        },
+        "worldMm": {
+          "type": "object",
+          "required": ["x", "y", "z"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" },
+            "z": { "type": "number" }
+          }
+        },
+        "calloutRadiusPx": {
+          "type": "integer",
+          "minimum": 4,
+          "maximum": 80,
+          "default": 18
+        },
+        "hint": { "type": "string" },
+        "linkedSopInstanceUid": {
+          "type": "string",
+          "description": "Optional DICOM instance UID for stack-based targets."
+        }
+      }
+    }
+  }
+}
+

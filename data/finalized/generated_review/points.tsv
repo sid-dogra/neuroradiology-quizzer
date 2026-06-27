@@ -1,0 +1,97 @@
+labelValue	id	preferredName	userAction	sourceStrategy	voxel_i	voxel_j	voxel_k	world_x	world_y	world_z	notes
+1	lateral_ventricle	Lateral Ventricle	qc_auto_point	freesurfer_seed	140	84	116	-12.5	8.977	39.977	
+2	thalamus	Thalamus	qc_auto_point	freesurfer_seed	138	97	112	-10.5	4.977	26.977	Good stock label candidate.
+3	caudate	Caudate	qc_auto_point	freesurfer_seed	140	90	139	-12.5	31.977	33.977	
+4	putamen	Putamen	qc_auto_point	freesurfer_seed	152	100	130	-24.5	22.977	23.977	
+5	globus_pallidus	Globus pallidus	qc_auto_point	freesurfer_seed	146	101	127	-18.5	19.977	22.977	
+6	third_ventricle	Third ventricle	qc_auto_point	freesurfer_seed	128	104	123	-0.5	15.977	19.977	Good stock label candidate.
+7	fourth_ventricle	Fourth ventricle	qc_auto_point	freesurfer_seed	127	135	93	0.5	-14.023	-11.023	Good stock label candidate.
+8	hippocampus	Hippocampus	qc_auto_point	freesurfer_seed	150	113	110	-22.5	2.977	10.977	
+9	amygdala	Amygdala	qc_auto_point	freesurfer_seed	148	116	129	-20.5	21.977	7.977	
+10	nucleus_accumbens	Nucleus accumbens	qc_auto_point	freesurfer_seed	135	104	142	-7.5	34.977	19.977	
+11	choroid_plexus	Choroid plexus	qc_auto_point	freesurfer_seed	147	95	96	-19.5	-11.023	28.977	Good stock label candidate, with QC.
+12	optic_chiasm	Optic chiasm	qc_auto_point	freesurfer_seed	127	114	137	0.5	29.977	9.977	
+13	cuneus	Cuneus	qc_auto_point	freesurfer_seed	132	98	46	-4.5	-61.023	25.977	
+14	entorhinal_cortex	Entorhinal cortex	qc_auto_point	freesurfer_seed	150	129	131	-22.5	23.977	-5.023	
+15	fusiform_gyrus	Fusiform gyrus	qc_auto_point	freesurfer_seed	156	123	94	-28.5	-13.023	0.977	
+16	lingual_gyrus	Lingual gyrus	qc_auto_point	freesurfer_seed	137	110	69	-9.5	-38.023	13.977	
+17	pars_opercularis	Pars opercularis	qc_auto_point	freesurfer_seed	172	86	138	-44.5	30.977	37.977	
+18	pars_orbitalis	Pars orbitalis	qc_auto_point	freesurfer_seed	167	107	163	-39.5	55.977	16.977	
+19	pars_triangularis	Pars triangularis	qc_auto_point	freesurfer_seed	172	93	154	-44.5	46.977	30.977	
+20	postcentral_gyrus	Postcentral gyrus	qc_auto_point	freesurfer_seed	169	65	100	-41.5	-7.023	58.977	
+21	posterior_cingulate_gyrus	Posterior cingulate gyrus	qc_auto_point	freesurfer_seed	134	72	106	-6.5	-1.023	51.977	
+22	precentral_gyrus	Precentral gyrus	qc_auto_point	freesurfer_seed	165	66	114	-37.5	6.977	57.977	
+23	precuneus	precuneus	qc_auto_point	freesurfer_seed	135	79	70	-7.5	-37.023	44.977	
+24	superior_frontal_gyrus	Superior frontal gyrus	qc_auto_point	freesurfer_seed	137	60	149	-9.5	41.977	63.977	
+25	supramarginal_gyrus	Supramarginal gyrus	qc_auto_point	freesurfer_seed	177	76	91	-49.5	-16.023	47.977	
+26	temporal_pole	Temporal pole	qc_auto_point	freesurfer_seed	155	130	150	-27.5	42.977	-6.023	Rename from atlas display name and hide laterality in viewer.
+27	insular_cortex	Insular cortex	qc_auto_point	freesurfer_seed	164	102	132	-36.5	24.977	21.977	Good cortical target; use learner-facing name.
+28	foramen_magnum	Foramen magnum	fully_place_manually	manual							Large skull-base landmark; manual point or contour.
+29	medulla_oblongata	Medulla oblongata	edit_or_replace_anchor	manual_or_external_atlas	127	131	106	0.5	-1.023	-7.023	FreeSurfer has only a coarse brainstem label in this run.
+30	cerebellar_tonsil	Cerebellar tonsil	edit_or_replace_anchor	manual	151	136	78	-23.5	-29.023	-12.023	Stock FreeSurfer cerebellum label is too coarse for tonsil.
+31	premedullary_cistern	Premedullary cistern	fully_place_manually	manual							CSF space anterior to medulla.
+32	cerebellum	Cerebellum	edit_or_replace_anchor	freesurfer_support_manual_refine	149	137	79	-21.5	-28.023	-13.023	Rename learner-facing label to Cerebellum or Cerebellar hemisphere.
+33	external_auditory_canal	External auditory canal	fully_place_manually	manual							Bony landmark, better on CT but usually localizable.
+34	foramen_of_magendie	Foramen of Magendie	edit_or_replace_anchor	manual	127	135	93	0.5	-14.023	-11.023	Small fourth ventricular outlet; manual point target.
+35	superior_orbital_fissure	Superior orbital fissure	fully_place_manually	manual							High-yield foraminal anatomy; add contents later.
+36	meckel_s_cave	Meckel's cave	fully_place_manually	manual							Trigeminal cistern; may be visible on T1 but needs QC.
+37	foramen_of_luschka	Foramen of Luschka	edit_or_replace_anchor	manual	127	135	93	0.5	-14.023	-11.023	Small lateral fourth ventricular outlet.
+38	crista_galli	Crista galli	fully_place_manually	manual							Anterior midline skull-base landmark.
+39	pituitary_fossa	Pituitary fossa	fully_place_manually	manual							Sella turcica region; useful midline landmark.
+40	pons	Pons	edit_or_replace_anchor	manual_or_external_atlas	127	131	106	0.5	-1.023	-7.023	Split manually from coarse brainstem label.
+41	gyrus_rectus	Gyrus rectus	qc_auto_point	freesurfer_seed	131	111	172	-3.5	64.977	12.977	Destrieux provides an explicit gyrus rectus label.
+42	prepontine_cistern	Prepontine cistern	fully_place_manually	manual							CSF space anterior to pons; basilar artery relationship.
+43	middle_cerebellar_peduncle	Middle cerebellar peduncle	fully_place_manually	manual_or_external_atlas							High-yield fiber tract landmark, not a stock FreeSurfer label here.
+44	uncus	Uncus	edit_or_replace_anchor	manual	148	116	129	-20.5	21.977	7.977	Use nearby labels only as orientation support.
+45	temporal_horn_of_the_lateral_ventricle	Temporal horn of the lateral ventricle	edit_or_replace_anchor	freesurfer_support_manual_refine	140	84	116	-12.5	8.977	39.977	FreeSurfer inferior lateral ventricle is a useful seed, but refine teaching target.
+46	nodule_of_the_cerebellum	Nodule of the cerebellum	fully_place_manually	manual_or_external_atlas							Small vermian structure; manual or specialized atlas.
+47	suprasellar_cistern	Suprasellar cistern	fully_place_manually	manual							Good midline CSF landmark around optic chiasm/pituitary stalk.
+48	tentorium_cerebelli	Tentorium cerebelli	fully_place_manually	manual							Dural reflection; visible as boundary rather than segmented tissue.
+49	interpeduncular_cistern	Interpeduncular cistern	fully_place_manually	manual							CSF space between cerebral peduncles.
+50	cerebral_crus_cerebral_peduncle	Cerebral crus (cerebral peduncle)	fully_place_manually	manual_or_external_atlas							Use midbrain-level manual target.
+51	sylvian_fissure	Sylvian fissure	edit_or_replace_anchor	manual	165	91	110	-37.5	2.977	32.977	Destrieux fissure components can support, but a simple manual target may teach better.
+52	mammillary_bodies	Mammillary bodies	fully_place_manually	manual							Small hypothalamic structures.
+53	median_interhemispheric_fissure	Median interhemispheric fissure	fully_place_manually	manual							Useful orientation landmark.
+54	midbrain	Midbrain	edit_or_replace_anchor	manual_or_external_atlas	127	131	106	0.5	-1.023	-7.023	Split manually from coarse brainstem label.
+55	ambient_cistern	Ambient cistern	fully_place_manually	manual							Cistern lateral to midbrain.
+56	cerebral_aqueduct	Cerebral aqueduct	fully_place_manually	manual							High-yield small CSF channel between third and fourth ventricles.
+57	inferior_colliculus	Inferior colliculus	fully_place_manually	manual_or_external_atlas							Small dorsal midbrain structure.
+58	anterior_limb_of_the_internal_capsule	Anterior limb of the internal capsule	fully_place_manually	manual_or_external_atlas							High-yield white matter structure not directly labeled by current FreeSurfer outputs.
+59	interventricular_foramen_foramen_of_monro	Interventricular foramen (foramen of Monro)	edit_or_replace_anchor	manual	136	85	120	-8.5	12.977	38.977	Small communication between lateral and third ventricles.
+60	genu_of_the_corpus_callosum	Genu of the corpus callosum	edit_or_replace_anchor	freesurfer_support_manual_refine	128	92	153	-0.5	45.977	31.977	Rename FreeSurfer corpus callosum segment into standard anatomy.
+61	frontal_horn_of_the_lateral_ventricle	Frontal horn of the lateral ventricle	edit_or_replace_anchor	freesurfer_support_manual_refine	140	84	116	-12.5	8.977	39.977	Use whole lateral ventricle label as support, but target frontal horn manually.
+62	genu_of_the_internal_capsule	Genu of the internal capsule	fully_place_manually	manual_or_external_atlas							Manual target between anterior and posterior limbs.
+63	quadrigeminal_cistern	Quadrigeminal cistern	fully_place_manually	manual							Posterior to midbrain tectum.
+64	head_of_the_caudate_nucleus	Head of the caudate nucleus	edit_or_replace_anchor	freesurfer_support_manual_refine	140	90	139	-12.5	31.977	33.977	FreeSurfer labels whole caudate; teach head with manual target.
+65	lentiform_nucleus	Lentiform nucleus	edit_or_replace_anchor	freesurfer_support_manual_refine	150	100	129	-22.5	21.977	23.977	Composite teaching structure from putamen and globus pallidus.
+66	pineal_gland	Pineal gland	fully_place_manually	manual							Small midline gland posterior to third ventricle.
+67	vermis	Vermis	fully_place_manually	manual_or_external_atlas							Vermis is not separated in current FreeSurfer outputs.
+68	column_of_the_fornix	Column of the fornix	fully_place_manually	manual_or_external_atlas							Small limbic white matter structure.
+69	posterior_limb_of_the_internal_capsule	Posterior limb of the internal capsule	fully_place_manually	manual_or_external_atlas							High-yield motor pathway landmark.
+70	cingulate_gyrus	Cingulate gyrus	edit_or_replace_anchor	freesurfer_support_manual_refine	131	77	119	-3.5	11.977	46.977	May be cleaner as anterior/posterior cingulate or one broader teaching target.
+71	septum_pellucidum	Septum pellucidum	edit_or_replace_anchor	manual	131	85	117	-3.5	9.977	38.977	Thin membrane between frontal horns.
+72	forceps_minor	Forceps minor	edit_or_replace_anchor	manual_or_external_atlas	128	92	153	-0.5	45.977	31.977	Callosal frontal radiation; consider tract atlas.
+73	trigone_atrium_of_the_lateral_ventricle	Trigone (atrium) of the lateral ventricle	edit_or_replace_anchor	freesurfer_support_manual_refine	140	84	116	-12.5	8.977	39.977	Manual target within lateral ventricle label.
+74	occipital_lobe	Occipital lobe	edit_or_replace_anchor	freesurfer_support_manual_refine	146	115	56	-18.5	-51.023	8.977	Can be a broad teaching region rather than exact atlas parcel.
+75	splenium_of_the_corpus_callosum	Splenium of the corpus callosum	edit_or_replace_anchor	freesurfer_support_manual_refine	127	92	97	0.5	-10.023	31.977	Rename FreeSurfer posterior corpus callosum segment.
+76	occipital_horn_of_the_lateral_ventricle	Occipital horn of the lateral ventricle	edit_or_replace_anchor	freesurfer_support_manual_refine	140	84	116	-12.5	8.977	39.977	Manual target within lateral ventricle label.
+77	body_of_the_lateral_ventricle	Body of the lateral ventricle	edit_or_replace_anchor	freesurfer_support_manual_refine	140	84	116	-12.5	8.977	39.977	Manual target within lateral ventricle label.
+78	forceps_major	Forceps major	edit_or_replace_anchor	manual_or_external_atlas	127	92	97	0.5	-10.023	31.977	Callosal occipital radiation; consider tract atlas.
+79	body_of_the_corpus_callosum	Body of the corpus callosum	edit_or_replace_anchor	freesurfer_support_manual_refine	128	84	127	-0.5	19.977	39.977	Composite/renamed FreeSurfer corpus callosum segment.
+80	centrum_semiovale	Centrum semiovale	fully_place_manually	manual_or_external_atlas							Broad white matter region; manual target may teach better than FreeSurfer white matter parcellation.
+81	central_sulcus	Central sulcus	qc_auto_point	freesurfer_seed	162	66	105	-34.5	-2.023	57.977	Excellent landmark; Destrieux explicit sulcal label.
+82	hand_bump_of_the_precentral_gyrus	Hand bump of the precentral gyrus	edit_or_replace_anchor	manual	165	66	114	-37.5	6.977	57.977	Manual point/region within precentral gyrus.
+83	marginal_sulcus_pars_marginalis	Marginal sulcus (pars marginalis)	qc_auto_point	freesurfer_seed	140	70	89	-12.5	-18.023	53.977	Useful for paracentral lobule/cingulate anatomy.
+84	falx_cerebri	Falx cerebri	fully_place_manually	manual							Midline dural reflection; visible as boundary rather than segmented tissue.
+85	angular_gyrus	Angular gyrus	qc_auto_point	freesurfer_seed	171	78	65	-43.5	-42.023	45.977	High-yield parietal language/network landmark; pair with supramarginal gyrus.
+86	superior_temporal_gyrus	Superior temporal gyrus	qc_auto_point	freesurfer_seed	177	108	125	-49.5	17.977	15.977	Common temporal lobe landmark along the Sylvian fissure.
+87	middle_temporal_gyrus	Middle temporal gyrus	qc_auto_point	freesurfer_seed	182	113	106	-54.5	-1.023	10.977	Common temporal lobe landmark.
+88	inferior_temporal_gyrus	Inferior temporal gyrus	qc_auto_point	freesurfer_seed	175	124	103	-47.5	-4.023	-0.023	Useful inferior temporal landmark.
+89	parahippocampal_gyrus	Parahippocampal gyrus	qc_auto_point	freesurfer_seed	149	118	103	-21.5	-4.023	5.977	Important medial temporal landmark adjacent to hippocampus and uncus.
+90	orbitofrontal_cortex	Orbitofrontal cortex	edit_or_replace_anchor	freesurfer_support_manual_refine	150	111	162	-22.5	54.977	12.977	Learner-facing broad region; may be represented by medial/lateral orbitofrontal parcels.
+91	calcarine_sulcus	Calcarine sulcus	qc_auto_point	freesurfer_seed	140	103	70	-12.5	-37.023	20.977	High-yield visual cortex landmark on sagittal/axial views.
+92	parieto_occipital_sulcus	Parieto-occipital sulcus	qc_auto_point	freesurfer_seed	140	92	61	-12.5	-46.023	31.977	Useful midline sagittal landmark separating parietal and occipital lobes.
+93	cingulate_sulcus	Cingulate sulcus	edit_or_replace_anchor	freesurfer_support_manual_refine	134	76	143	-6.5	35.977	47.977	Useful for cingulate/paracentral region orientation; may need manual target.
+94	anterior_commissure	Anterior commissure	fully_place_manually	manual							Classic small midline landmark; useful with AC-PC plane concepts.
+95	posterior_commissure	Posterior commissure	fully_place_manually	manual							Small midline landmark near pineal/aqueduct region.
+96	cisterna_magna	Cisterna magna	fully_place_manually	manual							Common posterior fossa CSF landmark inferior to the cerebellum.

@@ -1,0 +1,339 @@
+{
+  "version": "0.1.0",
+  "study": {
+    "id": "demo_t1_mprage",
+    "title": "De-identified T1 MPRAGE Brain MRI",
+    "modality": "MR",
+    "sequence": "3D T1 MPRAGE",
+    "dicomJson": "public/studies/demo_t1_mprage/study.json",
+    "segmentation": "public/studies/demo_t1_mprage/labels.dcm"
+  },
+  "structures": [
+    {
+      "id": "lateral_ventricle_frontal_horn",
+      "preferredName": "Frontal horn of the lateral ventricle",
+      "aliases": ["anterior horn of lateral ventricle"],
+      "acceptedAnswers": ["frontal horn", "anterior horn", "frontal horn of lateral ventricle", "frontal horn of the lateral ventricle", "anterior horn of lateral ventricle"],
+      "difficulty": "beginner",
+      "systems": ["ventricles", "csf_spaces"],
+      "laterality": "bilateral",
+      "description": "CSF-containing anterior portion of each lateral ventricle, bordered laterally by the caudate head and medially by the septum pellucidum.",
+      "clinicalNotes": ["Helpful landmark for caudate head and corpus callosum orientation on axial T1 images."],
+      "relationships": {
+        "adjacentTo": ["caudate head", "septum pellucidum", "genu of corpus callosum"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Left-Lateral-Ventricle", "value": 4 },
+        { "source": "FreeSurfer aseg", "label": "Right-Lateral-Ventricle", "value": 43 }
+      ],
+      "quizTargets": [
+        {
+          "id": "frontal_horn_axial_1",
+          "view": "axial",
+          "prompt": "Identify the CSF space highlighted anteriorly between the caudate heads.",
+          "status": "needs_localization",
+          "hint": "It is the anterior part of the lateral ventricle."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "third_ventricle",
+      "preferredName": "Third ventricle",
+      "aliases": [],
+      "acceptedAnswers": ["third ventricle", "3rd ventricle"],
+      "difficulty": "beginner",
+      "systems": ["ventricles", "midline", "csf_spaces"],
+      "laterality": "midline",
+      "description": "Midline CSF cavity of the diencephalon, located between the thalami and communicating with the lateral ventricles through the foramina of Monro.",
+      "clinicalNotes": ["Expansion can be seen in hydrocephalus and central volume loss."],
+      "relationships": {
+        "adjacentTo": ["thalami", "hypothalamus", "foramina of Monro", "cerebral aqueduct"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "3rd-Ventricle", "value": 14 }
+      ],
+      "quizTargets": [
+        {
+          "id": "third_ventricle_axial_1",
+          "view": "axial",
+          "prompt": "Name the midline CSF space between the thalami.",
+          "status": "needs_localization",
+          "hint": "It sits inferior to the bodies of the lateral ventricles."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "caudate_head",
+      "preferredName": "Head of caudate nucleus",
+      "aliases": ["caudate head"],
+      "acceptedAnswers": ["caudate head", "head of caudate", "head of caudate nucleus"],
+      "difficulty": "beginner",
+      "systems": ["basal_ganglia", "deep_gray"],
+      "laterality": "bilateral",
+      "description": "Anterior component of the caudate nucleus, forming the lateral wall of the frontal horn of the lateral ventricle.",
+      "clinicalNotes": ["Atrophy can contribute to enlargement of the frontal horns, classically discussed in Huntington disease."],
+      "relationships": {
+        "adjacentTo": ["frontal horn of lateral ventricle", "anterior limb of internal capsule", "nucleus accumbens"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Left-Caudate", "value": 11 },
+        { "source": "FreeSurfer aseg", "label": "Right-Caudate", "value": 50 }
+      ],
+      "quizTargets": [
+        {
+          "id": "caudate_head_axial_1",
+          "view": "axial",
+          "prompt": "Identify the gray matter structure lateral to the frontal horn.",
+          "status": "needs_localization",
+          "hint": "It is part of the striatum."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "putamen",
+      "preferredName": "Putamen",
+      "aliases": [],
+      "acceptedAnswers": ["putamen"],
+      "difficulty": "beginner",
+      "systems": ["basal_ganglia", "deep_gray"],
+      "laterality": "bilateral",
+      "description": "Lateral component of the lentiform nucleus, separated from the caudate and thalamus by the internal capsule.",
+      "clinicalNotes": ["A common landmark in basal ganglia hemorrhage and movement disorder anatomy."],
+      "relationships": {
+        "adjacentTo": ["globus pallidus", "external capsule", "internal capsule"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Left-Putamen", "value": 12 },
+        { "source": "FreeSurfer aseg", "label": "Right-Putamen", "value": 51 }
+      ],
+      "quizTargets": [
+        {
+          "id": "putamen_axial_1",
+          "view": "axial",
+          "prompt": "Identify the lateral portion of the lentiform nucleus.",
+          "status": "needs_localization",
+          "hint": "It lies lateral to the globus pallidus."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "thalamus",
+      "preferredName": "Thalamus",
+      "aliases": [],
+      "acceptedAnswers": ["thalamus", "thalami"],
+      "difficulty": "beginner",
+      "systems": ["deep_gray", "midline"],
+      "laterality": "bilateral",
+      "description": "Paired deep gray matter nuclei flanking the third ventricle and forming a major relay hub for cortical pathways.",
+      "clinicalNotes": ["Vascular lesions may involve thalamoperforator or posterior circulation territories depending on location."],
+      "relationships": {
+        "adjacentTo": ["third ventricle", "posterior limb of internal capsule", "fornix"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Left-Thalamus", "value": 10 },
+        { "source": "FreeSurfer aseg", "label": "Right-Thalamus", "value": 49 }
+      ],
+      "quizTargets": [
+        {
+          "id": "thalamus_axial_1",
+          "view": "axial",
+          "prompt": "Name the deep gray structure bordering the third ventricle.",
+          "status": "needs_localization",
+          "hint": "It is a major relay nucleus."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "posterior_limb_internal_capsule",
+      "preferredName": "Posterior limb of the internal capsule",
+      "aliases": ["PLIC"],
+      "acceptedAnswers": ["posterior limb of internal capsule", "posterior limb of the internal capsule", "posterior limb", "plic", "internal capsule posterior limb"],
+      "difficulty": "intermediate",
+      "systems": ["white_matter", "basal_ganglia"],
+      "laterality": "bilateral",
+      "description": "Compact white matter pathway between the thalamus medially and lentiform nucleus laterally.",
+      "clinicalNotes": ["Contains corticospinal fibers; small infarcts here can cause dense contralateral motor deficits."],
+      "relationships": {
+        "adjacentTo": ["thalamus", "putamen", "globus pallidus"],
+        "contains": ["corticospinal tract fibers", "corticobulbar tract fibers"]
+      },
+      "sourceLabels": [],
+      "quizTargets": [
+        {
+          "id": "plic_axial_1",
+          "view": "axial",
+          "prompt": "Identify the white matter band between thalamus and lentiform nucleus.",
+          "status": "needs_localization",
+          "hint": "Motor tract fibers are packed here."
+        }
+      ],
+      "references": ["Neuroanatomy review"]
+    },
+    {
+      "id": "corpus_callosum_genu",
+      "preferredName": "Genu of the corpus callosum",
+      "aliases": ["callosal genu"],
+      "acceptedAnswers": ["genu", "genu of corpus callosum", "genu of the corpus callosum", "callosal genu"],
+      "difficulty": "beginner",
+      "systems": ["white_matter", "midline"],
+      "laterality": "midline",
+      "description": "Anterior bend of the corpus callosum connecting frontal lobe white matter across the midline.",
+      "clinicalNotes": ["Useful landmark for frontal horns and anterior commissure region."],
+      "relationships": {
+        "adjacentTo": ["frontal horns", "septum pellucidum", "rostrum of corpus callosum"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "CC_Anterior", "value": 251 }
+      ],
+      "quizTargets": [
+        {
+          "id": "callosal_genu_sagittal_1",
+          "view": "sagittal",
+          "prompt": "Identify the anterior bend of the corpus callosum.",
+          "status": "needs_localization",
+          "hint": "It arches over the frontal horns."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "hippocampus",
+      "preferredName": "Hippocampus",
+      "aliases": [],
+      "acceptedAnswers": ["hippocampus", "hippocampal formation"],
+      "difficulty": "intermediate",
+      "systems": ["limbic"],
+      "laterality": "bilateral",
+      "description": "Medial temporal lobe structure involved in memory, located along the floor of the temporal horn.",
+      "clinicalNotes": ["Assess symmetry and volume in mesial temporal sclerosis and neurodegenerative disease contexts."],
+      "relationships": {
+        "adjacentTo": ["temporal horn", "amygdala", "parahippocampal gyrus"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Left-Hippocampus", "value": 17 },
+        { "source": "FreeSurfer aseg", "label": "Right-Hippocampus", "value": 53 }
+      ],
+      "quizTargets": [
+        {
+          "id": "hippocampus_coronal_1",
+          "view": "coronal",
+          "prompt": "Identify the medial temporal lobe structure along the floor of the temporal horn.",
+          "status": "needs_localization",
+          "hint": "It is central to memory circuitry."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "pons",
+      "preferredName": "Pons",
+      "aliases": [],
+      "acceptedAnswers": ["pons"],
+      "difficulty": "beginner",
+      "systems": ["brainstem"],
+      "laterality": "midline",
+      "description": "Middle portion of the brainstem, located anterior to the fourth ventricle and between the midbrain and medulla.",
+      "clinicalNotes": ["Pontine lesions may affect corticospinal tracts, cranial nerve nuclei, and transverse pontocerebellar fibers."],
+      "relationships": {
+        "adjacentTo": ["fourth ventricle", "basilar artery", "middle cerebellar peduncles"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "Brain-Stem", "value": 16 }
+      ],
+      "quizTargets": [
+        {
+          "id": "pons_sagittal_1",
+          "view": "sagittal",
+          "prompt": "Name the rounded middle segment of the brainstem.",
+          "status": "needs_localization",
+          "hint": "It lies anterior to the fourth ventricle."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "fourth_ventricle",
+      "preferredName": "Fourth ventricle",
+      "aliases": ["4th ventricle"],
+      "acceptedAnswers": ["fourth ventricle", "4th ventricle"],
+      "difficulty": "beginner",
+      "systems": ["ventricles", "brainstem", "csf_spaces"],
+      "laterality": "midline",
+      "description": "CSF cavity posterior to the pons and medulla and anterior to the cerebellum.",
+      "clinicalNotes": ["Important compartment in obstructive hydrocephalus and posterior fossa mass effect."],
+      "relationships": {
+        "adjacentTo": ["pons", "medulla", "cerebellum", "cerebral aqueduct"]
+      },
+      "sourceLabels": [
+        { "source": "FreeSurfer aseg", "label": "4th-Ventricle", "value": 15 }
+      ],
+      "quizTargets": [
+        {
+          "id": "fourth_ventricle_sagittal_1",
+          "view": "sagittal",
+          "prompt": "Identify the CSF space between brainstem and cerebellum.",
+          "status": "needs_localization",
+          "hint": "It communicates superiorly with the cerebral aqueduct."
+        }
+      ],
+      "references": ["FreeSurferColorLUT", "Neuroanatomy review"]
+    },
+    {
+      "id": "foramen_ovale",
+      "preferredName": "Foramen ovale",
+      "aliases": [],
+      "acceptedAnswers": ["foramen ovale", "ovale"],
+      "difficulty": "advanced",
+      "systems": ["skull_base", "cranial_nerves"],
+      "laterality": "bilateral",
+      "description": "Opening in the greater wing of the sphenoid that transmits key mandibular division structures from the middle cranial fossa to the infratemporal fossa.",
+      "clinicalNotes": ["Important skull base landmark for trigeminal anatomy and percutaneous procedures targeting V3-related pathways."],
+      "relationships": {
+        "travelsThrough": ["mandibular division of trigeminal nerve (CN V3)", "accessory meningeal artery", "lesser petrosal nerve", "emissary vein"],
+        "adjacentTo": ["foramen spinosum", "foramen rotundum", "sphenoid bone"]
+      },
+      "sourceLabels": [],
+      "quizTargets": [
+        {
+          "id": "foramen_ovale_axial_1",
+          "view": "axial",
+          "prompt": "Identify the skull base foramen that transmits CN V3.",
+          "status": "needs_localization",
+          "hint": "It is posterolateral to foramen rotundum and anteromedial to foramen spinosum."
+        }
+      ],
+      "references": ["Skull base anatomy review"]
+    },
+    {
+      "id": "internal_auditory_canal",
+      "preferredName": "Internal auditory canal",
+      "aliases": ["internal acoustic meatus", "IAC"],
+      "acceptedAnswers": ["internal auditory canal", "internal acoustic meatus", "iac"],
+      "difficulty": "intermediate",
+      "systems": ["skull_base", "cranial_nerves"],
+      "laterality": "bilateral",
+      "description": "Canal in the petrous temporal bone that transmits facial, vestibulocochlear, and labyrinthine vascular structures.",
+      "clinicalNotes": ["Commonly evaluated on dedicated IAC MRI for vestibular schwannoma and facial nerve pathology."],
+      "relationships": {
+        "travelsThrough": ["facial nerve (CN VII)", "vestibulocochlear nerve (CN VIII)", "labyrinthine artery"],
+        "adjacentTo": ["cerebellopontine angle", "petrous temporal bone"]
+      },
+      "sourceLabels": [],
+      "quizTargets": [
+        {
+          "id": "iac_axial_1",
+          "view": "axial",
+          "prompt": "Identify the petrous temporal bone canal carrying CN VII and CN VIII.",
+          "status": "needs_localization",
+          "hint": "It opens into the cerebellopontine angle cistern."
+        }
+      ],
+      "references": ["Skull base anatomy review"]
+    }
+  ]
+}

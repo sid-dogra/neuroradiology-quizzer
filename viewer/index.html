@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Annotated Brain MRI</title>
+    <link rel="stylesheet" href="./styles.css?v=20260627-10" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="title-block">
+          <h1>Annotated Brain MRI</h1>
+          <p id="studyTitle">Loading study...</p>
+        </div>
+        <div class="view-controls" id="viewControls" role="group" aria-label="Image plane">
+          <button class="view-button is-active" type="button" data-view="axial">Axial</button>
+          <button class="view-button" type="button" data-view="sagittal">Sagittal</button>
+          <button class="view-button" type="button" data-view="coronal">Coronal</button>
+        </div>
+        <div class="topbar-actions" role="group" aria-label="Viewer mode">
+          <button class="mode-button is-active" type="button" data-mode="browse">Browse</button>
+          <button class="mode-button" type="button" data-mode="quiz">Quiz</button>
+          <button class="mode-button" type="button" data-mode="edit">Edit Mode</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="sidebar" aria-label="Filters">
+          <section class="control-block">
+            <h2>Level</h2>
+            <div class="segmented" id="levelFilters">
+              <button class="is-active" type="button" data-level="beginner">Beginner</button>
+              <button type="button" data-level="advanced">Advanced</button>
+            </div>
+          </section>
+
+          <section class="control-block">
+            <h2>Search</h2>
+            <label class="search-field">
+              <span>Structure</span>
+              <input id="searchInput" type="search" autocomplete="off" />
+            </label>
+          </section>
+
+          <section class="control-block">
+            <h2>Systems</h2>
+            <div class="tag-grid" id="systemFilters"></div>
+          </section>
+
+          <section class="control-block">
+            <h2>Set</h2>
+            <div class="stat-row">
+              <span>Visible</span>
+              <strong id="visibleCount">0</strong>
+            </div>
+            <div class="stat-row">
+              <span>With overlays</span>
+              <strong id="overlayCount">0</strong>
+            </div>
+            <div class="stat-row">
+              <span>Selected</span>
+              <strong id="selectedCount">0</strong>
+            </div>
+          </section>
+        </aside>
+
+        <section class="viewer-pane" aria-label="MRI viewer">
+          <canvas id="niivueCanvas"></canvas>
+          <div class="viewer-status" id="viewerStatus">Preparing viewer...</div>
+          <div class="slice-navigator" id="sliceNavigator">
+            <label for="sliceSlider">
+              <span id="sliceLabel">Axial slice</span>
+              <strong id="sliceValue">-</strong>
+            </label>
+            <input id="sliceSlider" type="range" min="0" max="0" step="1" value="0" disabled />
+          </div>
+          <div class="viewport-footer">
+            <span id="activeStructure">No annotation selected</span>
+            <span id="activeSource"></span>
+          </div>
+        </section>
+
+        <aside class="panel" id="browsePanel" aria-label="Structure browser">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Browse</p>
+              <h2 id="browseTitle">Structures</h2>
+            </div>
+            <div class="panel-actions">
+              <button type="button" id="clearButton">Clear</button>
+            </div>
+          </div>
+
+          <label class="range-field">
+            <span>Overlay opacity</span>
+            <input id="opacitySlider" type="range" min="0.15" max="0.9" step="0.05" value="0.55" />
+          </label>
+
+          <div class="structure-list" id="structureList"></div>
+          <div class="empty-state" id="emptyState" hidden>No structures match these filters.</div>
+          <section class="details" id="browseDetails" aria-label="Selected structure details"></section>
+        </aside>
+
+        <aside class="panel is-hidden" id="quizPanel" aria-label="Quiz">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow" id="quizMeta">Quiz</p>
+              <h2 id="quizPrompt">Loading...</h2>
+            </div>
+          </div>
+
+          <div class="quiz-card">
+            <p id="quizInstruction">Identify the highlighted annotation.</p>
+            <div class="quiz-answer" id="quizAnswer" hidden></div>
+          </div>
+
+          <div class="actions">
+            <button type="button" id="revealButton">Reveal</button>
+            <button type="button" id="nextButton">Next</button>
+          </div>
+
+          <section class="details" id="quizDetails" aria-label="Quiz structure details"></section>
+        </aside>
+
+        <aside class="panel is-hidden" id="editPanel" aria-label="Mask editor">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Edit Mode</p>
+              <h2 id="editTitle">Mask editor</h2>
+            </div>
+          </div>
+
+          <label class="select-field">
+            <span>Annotation</span>
+            <select id="editStructureSelect"></select>
+          </label>
+
+          <div class="edit-controls" role="group" aria-label="Edit tool">
+            <button class="is-active" type="button" data-edit-tool="paint">Paint</button>
+            <button type="button" data-edit-tool="erase">Erase</button>
+          </div>
+
+          <label class="range-field">
+            <span>Brush size <strong id="penSizeValue">2</strong></span>
+            <input id="penSizeSlider" type="range" min="1" max="12" step="1" value="2" />
+          </label>
+
+          <div class="edit-actions">
+            <button type="button" id="undoEditButton">Undo</button>
+            <button type="button" id="resetEditButton">Reset</button>
+            <button type="button" id="saveEditButton">Save NIfTI</button>
+          </div>
+
+          <section class="details" id="editDetails" aria-label="Edit structure details"></section>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js?v=20260627-10"></script>
+  </body>
+</html>

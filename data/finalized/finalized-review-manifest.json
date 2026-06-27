@@ -1,0 +1,96 @@
+{
+  "version": "0.1.0",
+  "kind": "finalized_review_bundle",
+  "generatedAt": "2026-06-27T18:25:02+00:00",
+  "sourceFiles": [
+    {
+      "source": "data/raw/t1_mprage.nii.gz",
+      "destination": "data/finalized/source/t1_mprage_original.nii.gz",
+      "bytes": 6571733,
+      "sha256": "16526ee0e811bc6df53bb1e2246c25179a538aff6d671520928722d109aa4ea9"
+    },
+    {
+      "source": "data/raw/t1_mprage.json",
+      "destination": "data/finalized/source/t1_mprage_original.json",
+      "bytes": 1850,
+      "sha256": "c884e91c12a9a2d4c2a20b51fa1f30fea9d09a23cf1e60ab8a9d7aa50b0459ca"
+    },
+    {
+      "source": "data/working/itksnap/t1_conformed.nii.gz",
+      "destination": "data/finalized/source/t1_conformed_freesurfer.nii.gz",
+      "bytes": 2729168,
+      "sha256": "d52e582f6c04545aeee4f272a2363115485b7124bd4ce6d269752c7b65d0399c"
+    }
+  ],
+  "generatedReviewFiles": [
+    {
+      "source": "data/working/itksnap/auto_seed_segmentation.nii.gz",
+      "destination": "data/finalized/generated_review/candidate_auto_seed_segmentation.nii.gz",
+      "bytes": 286277,
+      "sha256": "f8a37fe799db3d5ccaef8f12b593df9c90c6ae2bec9c363ccef18f493c558ed8"
+    },
+    {
+      "source": "data/working/itksnap/blank_segmentation.nii.gz",
+      "destination": "data/finalized/generated_review/blank_segmentation.nii.gz",
+      "bytes": 146545,
+      "sha256": "1c252bfbb1b341a0f2559f798c2b4b7cab71cbccefeac0bc46900f6e0dadce73"
+    },
+    {
+      "source": "data/working/itksnap/labels.tsv",
+      "destination": "data/finalized/generated_review/labels.tsv",
+      "bytes": 15679,
+      "sha256": "26a5b69d58a699fe8bfecb3630eefa3b0e4caf31fb4671e16e3b7d5fe5dc6519"
+    },
+    {
+      "source": "data/working/itksnap/points.tsv",
+      "destination": "data/finalized/generated_review/points.tsv",
+      "bytes": 14024,
+      "sha256": "3f0ad2df37a7a75d4a82f780e4b0a1e46607ba468d3de120ea16aaaf0c49ff5f"
+    },
+    {
+      "source": "data/working/itksnap/itksnap_label_descriptions.txt",
+      "destination": "data/finalized/generated_review/itksnap_label_descriptions.txt",
+      "bytes": 6188,
+      "sha256": "219dfa64fc135fc15659097c253b5cc7c879540dd86648c998744753b7bcc168"
+    },
+    {
+      "source": "annotations/localization/itksnap-export-manifest.json",
+      "destination": "data/finalized/generated_review/itksnap-export-manifest.json",
+      "bytes": 45314,
+      "sha256": "795169d3e98a6d1ba2290ea5485a68e8d5d4fe24d4d828594f3ce6525ae11ec5"
+    },
+    {
+      "source": "annotations/localization/itksnap-export-review.md",
+      "destination": "data/finalized/generated_review/itksnap-export-review.md",
+      "bytes": 8363,
+      "sha256": "1cfbb90a2a88ad7ab526b7902a24046d2618b40d7e6ddc464bfce013f1447816"
+    },
+    {
+      "source": "annotations/localization/t1-localization-review.md",
+      "destination": "data/finalized/generated_review/t1-localization-review.md",
+      "bytes": 16024,
+      "sha256": "816195456f5d6becb435a1e4e5ed22fa6b3c42630240893644ce41f49a05b9e5"
+    },
+    {
+      "source": "annotations/structures/t1-targets.localized.draft.json",
+      "destination": "data/finalized/generated_review/t1-targets.localized.draft.json",
+      "bytes": 161334,
+      "sha256": "35194607a72bebae290d4a477d039011af325a80f1451dfd56b33a53eb464c8b"
+    }
+  ],
+  "generatedReviewDirs": [
+    {
+      "source": "data/working/itksnap/full_gyrus_masks",
+      "destination": "data/finalized/generated_review/full_gyrus_masks",
+      "fileCount": 23,
+      "bytes": 1814816
+    },
+    {
+      "source": "data/working/itksnap/rough_support_masks",
+      "destination": "data/finalized/generated_review/rough_support_masks",
+      "fileCount": 28,
+      "bytes": 2183491
+    }
+  ],
+  "acceptedAnnotationsDir": "data/finalized/accepted_annotations"
+}

@@ -1,0 +1,773 @@
+{
+  "version": "0.1.0",
+  "kind": "radiology_landmark_candidate_list",
+  "sourceContext": "User-provided list from a Radiopaedia annotated head CT case, used as an anatomy target checklist only. Do not reuse case images or annotations without appropriate permission/attribution.",
+  "curationNotes": [
+    "Use this list to complement the FreeSurfer-derived inventory.",
+    "For paired anatomy, prefer left-sided annotations unless the teaching point requires bilateral context.",
+    "Vessels, dural sinuses, cisterns, foramina, small white matter structures, and brainstem subdivisions generally require manual localization or an external atlas.",
+    "Some vascular and skull-base structures may be less conspicuous on the current non-contrast T1 MPRAGE than on CT, CTA, MRA, or MRV."
+  ],
+  "structures": [
+    {
+      "id": "foramen_magnum",
+      "preferredName": "Foramen magnum",
+      "lateralityPolicy": "midline",
+      "systems": ["skull_base"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Large skull-base landmark; manual point or contour."
+    },
+    {
+      "id": "medulla_oblongata",
+      "preferredName": "Medulla oblongata",
+      "lateralityPolicy": "midline",
+      "systems": ["brainstem"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": ["aseg: Brain-Stem"],
+      "reviewNotes": "FreeSurfer has only a coarse brainstem label in this run."
+    },
+    {
+      "id": "vertebral_artery",
+      "preferredName": "Vertebral artery",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "skull_base"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "May be visible as a flow void; better on CTA/MRA."
+    },
+    {
+      "id": "cerebellar_tonsil",
+      "preferredName": "Cerebellar tonsil",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cerebellum"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: Left-Cerebellum-Cortex"],
+      "reviewNotes": "Stock FreeSurfer cerebellum label is too coarse for tonsil."
+    },
+    {
+      "id": "premedullary_cistern",
+      "preferredName": "Premedullary cistern",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "brainstem"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "CSF space anterior to medulla."
+    },
+    {
+      "id": "internal_jugular_vein",
+      "preferredName": "Internal jugular vein",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "skull_base"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "May be limited on non-contrast T1."
+    },
+    {
+      "id": "basilar_artery",
+      "preferredName": "Basilar artery",
+      "lateralityPolicy": "midline",
+      "systems": ["vascular", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Often visible as prepontine flow void."
+    },
+    {
+      "id": "sigmoid_sinus",
+      "preferredName": "Sigmoid sinus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "skull_base"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Likely visible as venous sinus/flow void, but needs QC."
+    },
+    {
+      "id": "petrous_internal_carotid_artery",
+      "preferredName": "Petrous internal carotid artery in the carotid canal",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "skull_base"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Can be a skull-base landmark; better on CT/CTA."
+    },
+    {
+      "id": "cerebellar_hemisphere",
+      "preferredName": "Cerebellar hemisphere",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cerebellum"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Cerebellum-Cortex", "aseg: Left-Cerebellum-White-Matter"],
+      "reviewNotes": "Rename learner-facing label to Cerebellum or Cerebellar hemisphere."
+    },
+    {
+      "id": "external_auditory_canal",
+      "preferredName": "External auditory canal",
+      "lateralityPolicy": "left_reference",
+      "systems": ["skull_base"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Bony landmark, better on CT but usually localizable."
+    },
+    {
+      "id": "foramen_of_magendie",
+      "preferredName": "Foramen of Magendie",
+      "lateralityPolicy": "midline",
+      "systems": ["ventricles", "csf_spaces", "brainstem"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: 4th-Ventricle"],
+      "reviewNotes": "Small fourth ventricular outlet; manual point target."
+    },
+    {
+      "id": "superior_orbital_fissure",
+      "preferredName": "Superior orbital fissure",
+      "lateralityPolicy": "left_reference",
+      "systems": ["skull_base", "cranial_nerves"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "High-yield foraminal anatomy; add contents later."
+    },
+    {
+      "id": "meckels_cave",
+      "preferredName": "Meckel's cave",
+      "lateralityPolicy": "left_reference",
+      "systems": ["skull_base", "cranial_nerves", "csf_spaces"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Trigeminal cistern; may be visible on T1 but needs QC."
+    },
+    {
+      "id": "foramen_of_luschka",
+      "preferredName": "Foramen of Luschka",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces", "brainstem"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: 4th-Ventricle"],
+      "reviewNotes": "Small lateral fourth ventricular outlet."
+    },
+    {
+      "id": "crista_galli",
+      "preferredName": "Crista galli",
+      "lateralityPolicy": "midline",
+      "systems": ["skull_base", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Anterior midline skull-base landmark."
+    },
+    {
+      "id": "pituitary_fossa",
+      "preferredName": "Pituitary fossa",
+      "lateralityPolicy": "midline",
+      "systems": ["skull_base", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Sella turcica region; useful midline landmark."
+    },
+    {
+      "id": "pons",
+      "preferredName": "Pons",
+      "lateralityPolicy": "midline",
+      "systems": ["brainstem"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": ["aseg: Brain-Stem"],
+      "reviewNotes": "Split manually from coarse brainstem label."
+    },
+    {
+      "id": "gyrus_rectus",
+      "preferredName": "Gyrus rectus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: G_rectus"],
+      "reviewNotes": "Destrieux provides an explicit gyrus rectus label."
+    },
+    {
+      "id": "cavernous_ica",
+      "preferredName": "Cavernous ICA in the cavernous sinus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "skull_base", "cranial_nerves"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Add cavernous sinus contents as anatomy pearl."
+    },
+    {
+      "id": "temporal_pole",
+      "preferredName": "Temporal pole",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: temporalpole", "aparc_a2009s: Pole_temporal"],
+      "reviewNotes": "Rename from atlas display name and hide laterality in viewer."
+    },
+    {
+      "id": "prepontine_cistern",
+      "preferredName": "Prepontine cistern",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "CSF space anterior to pons; basilar artery relationship."
+    },
+    {
+      "id": "middle_cerebellar_peduncle",
+      "preferredName": "Middle cerebellar peduncle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["white_matter", "cerebellum", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "High-yield fiber tract landmark, not a stock FreeSurfer label here."
+    },
+    {
+      "id": "uncus",
+      "preferredName": "Uncus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["limbic", "cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: Left-Amygdala", "aparc: entorhinal", "aparc: parahippocampal"],
+      "reviewNotes": "Use nearby labels only as orientation support."
+    },
+    {
+      "id": "temporal_horn_lateral_ventricle",
+      "preferredName": "Temporal horn of the lateral ventricle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Inf-Lat-Vent", "aseg: Left-Lateral-Ventricle"],
+      "reviewNotes": "FreeSurfer inferior lateral ventricle is a useful seed, but refine teaching target."
+    },
+    {
+      "id": "fourth_ventricle",
+      "preferredName": "Fourth ventricle",
+      "lateralityPolicy": "midline",
+      "systems": ["ventricles", "csf_spaces", "brainstem"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aseg: 4th-Ventricle"],
+      "reviewNotes": "Good stock label candidate."
+    },
+    {
+      "id": "cerebellar_nodule",
+      "preferredName": "Nodule of the cerebellum",
+      "lateralityPolicy": "midline",
+      "systems": ["cerebellum", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small vermian structure; manual or specialized atlas."
+    },
+    {
+      "id": "mca_m1_segment",
+      "preferredName": "MCA M1 segment",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Better on CTA/MRA; may be visible as flow void in Sylvian cistern."
+    },
+    {
+      "id": "suprasellar_cistern",
+      "preferredName": "Suprasellar cistern",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "skull_base"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Good midline CSF landmark around optic chiasm/pituitary stalk."
+    },
+    {
+      "id": "tentorium_cerebelli",
+      "preferredName": "Tentorium cerebelli",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["skull_base"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Dural reflection; visible as boundary rather than segmented tissue."
+    },
+    {
+      "id": "interpeduncular_cistern",
+      "preferredName": "Interpeduncular cistern",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "CSF space between cerebral peduncles."
+    },
+    {
+      "id": "cerebral_crus",
+      "preferredName": "Cerebral crus (cerebral peduncle)",
+      "lateralityPolicy": "left_reference",
+      "systems": ["white_matter", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Use midbrain-level manual target."
+    },
+    {
+      "id": "sylvian_fissure",
+      "preferredName": "Sylvian fissure",
+      "lateralityPolicy": "left_reference",
+      "systems": ["csf_spaces", "cortex"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aparc_a2009s: Lat_Fis-ant-Horizont", "aparc_a2009s: Lat_Fis-ant-Vertical", "aparc_a2009s: Lat_Fis-post"],
+      "reviewNotes": "Destrieux fissure components can support, but a simple manual target may teach better."
+    },
+    {
+      "id": "mammillary_bodies",
+      "preferredName": "Mammillary bodies",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["limbic", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small hypothalamic structures."
+    },
+    {
+      "id": "median_interhemispheric_fissure",
+      "preferredName": "Median interhemispheric fissure",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Useful orientation landmark."
+    },
+    {
+      "id": "midbrain",
+      "preferredName": "Midbrain",
+      "lateralityPolicy": "midline",
+      "systems": ["brainstem"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": ["aseg: Brain-Stem"],
+      "reviewNotes": "Split manually from coarse brainstem label."
+    },
+    {
+      "id": "ambient_cistern",
+      "preferredName": "Ambient cistern",
+      "lateralityPolicy": "left_reference",
+      "systems": ["csf_spaces", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Cistern lateral to midbrain."
+    },
+    {
+      "id": "cerebral_aqueduct",
+      "preferredName": "Cerebral aqueduct",
+      "lateralityPolicy": "midline",
+      "systems": ["ventricles", "csf_spaces", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "High-yield small CSF channel between third and fourth ventricles."
+    },
+    {
+      "id": "third_ventricle",
+      "preferredName": "Third ventricle",
+      "lateralityPolicy": "midline",
+      "systems": ["ventricles", "csf_spaces", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aseg: 3rd-Ventricle"],
+      "reviewNotes": "Good stock label candidate."
+    },
+    {
+      "id": "inferior_colliculus",
+      "preferredName": "Inferior colliculus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["brainstem"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small dorsal midbrain structure."
+    },
+    {
+      "id": "torcula_herophili",
+      "preferredName": "Torcula herophili (confluence of sinuses)",
+      "lateralityPolicy": "midline",
+      "systems": ["vascular", "midline"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Dural venous confluence; may be visible as flow void."
+    },
+    {
+      "id": "anterior_limb_internal_capsule",
+      "preferredName": "Anterior limb of the internal capsule",
+      "lateralityPolicy": "left_reference",
+      "systems": ["white_matter", "basal_ganglia"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "High-yield white matter structure not directly labeled by current FreeSurfer outputs."
+    },
+    {
+      "id": "interventricular_foramen",
+      "preferredName": "Interventricular foramen (foramen of Monro)",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle", "aseg: 3rd-Ventricle"],
+      "reviewNotes": "Small communication between lateral and third ventricles."
+    },
+    {
+      "id": "insular_cortex",
+      "preferredName": "Insular cortex",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc: insula", "aparc_a2009s: G_Ins_lg_and_S_cent_ins", "aparc_a2009s: G_insular_short"],
+      "reviewNotes": "Good cortical target; use learner-facing name."
+    },
+    {
+      "id": "transverse_sinus",
+      "preferredName": "Transverse sinus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Dural venous sinus; visibility depends on sequence/slice."
+    },
+    {
+      "id": "genu_corpus_callosum",
+      "preferredName": "Genu of the corpus callosum",
+      "lateralityPolicy": "midline",
+      "systems": ["white_matter", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: CC_Anterior"],
+      "reviewNotes": "Rename FreeSurfer corpus callosum segment into standard anatomy."
+    },
+    {
+      "id": "frontal_horn_lateral_ventricle",
+      "preferredName": "Frontal horn of the lateral ventricle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle"],
+      "reviewNotes": "Use whole lateral ventricle label as support, but target frontal horn manually."
+    },
+    {
+      "id": "genu_internal_capsule",
+      "preferredName": "Genu of the internal capsule",
+      "lateralityPolicy": "left_reference",
+      "systems": ["white_matter", "basal_ganglia"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Manual target between anterior and posterior limbs."
+    },
+    {
+      "id": "quadrigeminal_cistern",
+      "preferredName": "Quadrigeminal cistern",
+      "lateralityPolicy": "midline",
+      "systems": ["csf_spaces", "brainstem"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Posterior to midbrain tectum."
+    },
+    {
+      "id": "head_caudate_nucleus",
+      "preferredName": "Head of the caudate nucleus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["basal_ganglia", "deep_gray"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Caudate"],
+      "reviewNotes": "FreeSurfer labels whole caudate; teach head with manual target."
+    },
+    {
+      "id": "lentiform_nucleus",
+      "preferredName": "Lentiform nucleus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["basal_ganglia", "deep_gray"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Putamen", "aseg: Left-Pallidum"],
+      "reviewNotes": "Composite teaching structure from putamen and globus pallidus."
+    },
+    {
+      "id": "pineal_gland",
+      "preferredName": "Pineal gland",
+      "lateralityPolicy": "midline",
+      "systems": ["midline"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small midline gland posterior to third ventricle."
+    },
+    {
+      "id": "superior_vermis_cerebellum",
+      "preferredName": "Superior vermis of the cerebellum",
+      "lateralityPolicy": "midline",
+      "systems": ["cerebellum", "midline"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Vermis is not separated in current FreeSurfer outputs."
+    },
+    {
+      "id": "column_fornix",
+      "preferredName": "Column of the fornix",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["limbic", "white_matter", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small limbic white matter structure."
+    },
+    {
+      "id": "posterior_limb_internal_capsule",
+      "preferredName": "Posterior limb of the internal capsule",
+      "lateralityPolicy": "left_reference",
+      "systems": ["white_matter", "basal_ganglia"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "High-yield motor pathway landmark."
+    },
+    {
+      "id": "internal_cerebral_vein",
+      "preferredName": "Internal cerebral vein",
+      "lateralityPolicy": "left_reference",
+      "systems": ["vascular", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small deep venous structure; may need MRV/contrast for confidence."
+    },
+    {
+      "id": "straight_sinus",
+      "preferredName": "Straight sinus",
+      "lateralityPolicy": "midline",
+      "systems": ["vascular", "midline"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Dural venous sinus along falcotentorial junction."
+    },
+    {
+      "id": "cingulate_gyrus",
+      "preferredName": "Cingulate gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex", "limbic"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aparc: caudalanteriorcingulate", "aparc: rostralanteriorcingulate", "aparc: posteriorcingulate", "aparc: isthmuscingulate"],
+      "reviewNotes": "May be cleaner as anterior/posterior cingulate or one broader teaching target."
+    },
+    {
+      "id": "septum_pellucidum",
+      "preferredName": "Septum pellucidum",
+      "lateralityPolicy": "midline",
+      "systems": ["midline", "ventricles"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle", "aseg: Right-Lateral-Ventricle"],
+      "reviewNotes": "Thin membrane between frontal horns."
+    },
+    {
+      "id": "thalamus",
+      "preferredName": "Thalamus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["deep_gray"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aseg: Left-Thalamus"],
+      "reviewNotes": "Good stock label candidate."
+    },
+    {
+      "id": "forceps_minor",
+      "preferredName": "Forceps minor",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["white_matter"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": ["aseg: CC_Anterior"],
+      "reviewNotes": "Callosal frontal radiation; consider tract atlas."
+    },
+    {
+      "id": "atrium_lateral_ventricle",
+      "preferredName": "Trigone (atrium) of the lateral ventricle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle"],
+      "reviewNotes": "Manual target within lateral ventricle label."
+    },
+    {
+      "id": "occipital_lobe",
+      "preferredName": "Occipital lobe",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aparc: cuneus", "aparc: lateraloccipital", "aparc: lingual", "aparc: pericalcarine"],
+      "reviewNotes": "Can be a broad teaching region rather than exact atlas parcel."
+    },
+    {
+      "id": "splenium_corpus_callosum",
+      "preferredName": "Splenium of the corpus callosum",
+      "lateralityPolicy": "midline",
+      "systems": ["white_matter", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: CC_Posterior"],
+      "reviewNotes": "Rename FreeSurfer posterior corpus callosum segment."
+    },
+    {
+      "id": "occipital_horn_lateral_ventricle",
+      "preferredName": "Occipital horn of the lateral ventricle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle"],
+      "reviewNotes": "Manual target within lateral ventricle label."
+    },
+    {
+      "id": "body_lateral_ventricle",
+      "preferredName": "Body of the lateral ventricle",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: Left-Lateral-Ventricle"],
+      "reviewNotes": "Manual target within lateral ventricle label."
+    },
+    {
+      "id": "choroid_plexus",
+      "preferredName": "Choroid plexus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["ventricles", "csf_spaces"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aseg: Left-choroid-plexus"],
+      "reviewNotes": "Good stock label candidate, with QC."
+    },
+    {
+      "id": "forceps_major",
+      "preferredName": "Forceps major",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["white_matter"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": ["aseg: CC_Posterior"],
+      "reviewNotes": "Callosal occipital radiation; consider tract atlas."
+    },
+    {
+      "id": "inferior_sagittal_sinus",
+      "preferredName": "Inferior sagittal sinus",
+      "lateralityPolicy": "midline",
+      "systems": ["vascular", "midline"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Small dural venous sinus; T1 visibility may be limited."
+    },
+    {
+      "id": "body_corpus_callosum",
+      "preferredName": "Body of the corpus callosum",
+      "lateralityPolicy": "midline",
+      "systems": ["white_matter", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "freesurfer_support_manual_refine",
+      "freeSurferSupport": ["aseg: CC_Central", "aseg: CC_Mid_Anterior", "aseg: CC_Mid_Posterior"],
+      "reviewNotes": "Composite/renamed FreeSurfer corpus callosum segment."
+    },
+    {
+      "id": "centrum_semiovale",
+      "preferredName": "Centrum semiovale",
+      "lateralityPolicy": "midline_or_bilateral",
+      "systems": ["white_matter"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual_or_external_atlas",
+      "freeSurferSupport": [],
+      "reviewNotes": "Broad white matter region; manual target may teach better than FreeSurfer white matter parcellation."
+    },
+    {
+      "id": "central_sulcus",
+      "preferredName": "Central sulcus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "intermediate",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: S_central"],
+      "reviewNotes": "Excellent landmark; Destrieux explicit sulcal label."
+    },
+    {
+      "id": "hand_bump_precentral_gyrus",
+      "preferredName": "Hand bump of the precentral gyrus",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": ["aparc: precentral", "aparc_a2009s: G_precentral"],
+      "reviewNotes": "Manual point/region within precentral gyrus."
+    },
+    {
+      "id": "marginal_sulcus",
+      "preferredName": "Marginal sulcus (pars marginalis)",
+      "lateralityPolicy": "left_reference",
+      "systems": ["cortex"],
+      "difficultySuggested": "advanced",
+      "sourceStrategy": "freesurfer_seed",
+      "freeSurferSupport": ["aparc_a2009s: S_cingul-Marginalis"],
+      "reviewNotes": "Useful for paracentral lobule/cingulate anatomy."
+    },
+    {
+      "id": "superior_sagittal_sinus",
+      "preferredName": "Superior sagittal sinus",
+      "lateralityPolicy": "midline",
+      "systems": ["vascular", "midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual_qc_t1_visibility",
+      "freeSurferSupport": [],
+      "reviewNotes": "Often visible at vertex; good dural venous landmark."
+    },
+    {
+      "id": "falx_cerebri",
+      "preferredName": "Falx cerebri",
+      "lateralityPolicy": "midline",
+      "systems": ["midline"],
+      "difficultySuggested": "beginner",
+      "sourceStrategy": "manual",
+      "freeSurferSupport": [],
+      "reviewNotes": "Midline dural reflection; visible as boundary rather than segmented tissue."
+    }
+  ]
+}
