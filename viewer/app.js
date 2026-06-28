@@ -1,4 +1,5 @@
 const DEFAULT_STUDY = "../public/studies/nki_a00039636_t1/study.json";
+const APP_BUILD_VERSION = "20260628-02";
 const NIVUE_MODULE_URL = "https://cdn.jsdelivr.net/npm/@niivue/niivue@latest/dist/index.js";
 const VIEW_TYPES = {
   axial: 0,
@@ -86,7 +87,9 @@ const els = {
 
 function getStudyUrl() {
   const params = new URLSearchParams(window.location.search);
-  return new URL(params.get("study") || DEFAULT_STUDY, window.location.href);
+  const studyUrl = new URL(params.get("study") || DEFAULT_STUDY, window.location.href);
+  studyUrl.searchParams.set("_viewerVersion", APP_BUILD_VERSION);
+  return studyUrl;
 }
 
 function assetUrl(path) {
@@ -201,7 +204,7 @@ function editableStructures() {
 
 async function loadStudy() {
   const url = getStudyUrl();
-  const response = await fetch(url.href);
+  const response = await fetch(url.href, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Unable to load study manifest: ${response.status}`);
   }
