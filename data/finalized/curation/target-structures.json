@@ -495,7 +495,7 @@
         "left amygdala",
         "Left-Amygdala"
       ],
-      "difficulty": "beginner",
+      "difficulty": "advanced",
       "systems": [
         "limbic"
       ],
@@ -1747,7 +1747,7 @@
         "Left Cerebellum Cortex",
         "Left-Cerebellum-Cortex"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cerebellum"
       ],
@@ -1790,9 +1790,10 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": false,
+      "includeInViewer": true,
       "quizQuestions": [],
-      "sourceDifficulty": "intermediate"
+      "sourceDifficulty": "intermediate",
+      "curationNote": "Beginner posterior fossa landmark; activated for future manual annotation."
     },
     {
       "id": "premedullary_cistern",
@@ -3246,7 +3247,7 @@
         "Left-Lateral-Ventricle",
         "3rd-Ventricle"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "ventricles",
         "csf_spaces"
@@ -3296,8 +3297,9 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": false,
-      "quizQuestions": []
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Beginner CSF pathway landmark; activated for future manual annotation."
     },
     {
       "id": "genu_of_the_corpus_callosum",
@@ -5549,6 +5551,253 @@
       ],
       "includeInViewer": true,
       "quizQuestions": []
+    },
+    {
+      "id": "frontal_lobe",
+      "preferredName": "Frontal lobe",
+      "aliases": [
+        "Frontal lobe"
+      ],
+      "acceptedAnswers": [
+        "Frontal lobe",
+        "frontal lobe"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "lobes",
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Frontal lobe. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Broad beginner lobar anatomy target; manually annotate once a mask is created.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Broad beginner lobar anatomy target; manually annotate once a mask is created."
+    },
+    {
+      "id": "parietal_lobe",
+      "preferredName": "Parietal lobe",
+      "aliases": [
+        "Parietal lobe"
+      ],
+      "acceptedAnswers": [
+        "Parietal lobe",
+        "parietal lobe"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "lobes",
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Parietal lobe. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Broad beginner lobar anatomy target; manually annotate once a mask is created.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Broad beginner lobar anatomy target; manually annotate once a mask is created."
+    },
+    {
+      "id": "temporal_lobe",
+      "preferredName": "Temporal lobe",
+      "aliases": [
+        "Temporal lobe"
+      ],
+      "acceptedAnswers": [
+        "Temporal lobe",
+        "temporal lobe"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "lobes",
+        "cortex"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Temporal lobe. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Broad beginner lobar anatomy target; manually annotate once a mask is created.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Broad beginner lobar anatomy target; manually annotate once a mask is created."
+    },
+    {
+      "id": "caudate_body",
+      "preferredName": "Caudate body",
+      "aliases": [
+        "Caudate body"
+      ],
+      "acceptedAnswers": [
+        "Caudate body",
+        "caudate body"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "basal_ganglia",
+        "deep_gray"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Caudate body. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Beginner deep gray landmark distinct from the caudate head.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Beginner deep gray landmark distinct from the caudate head."
+    },
+    {
+      "id": "cerebellar_hemisphere",
+      "preferredName": "Cerebellar hemisphere",
+      "aliases": [
+        "Cerebellar hemisphere"
+      ],
+      "acceptedAnswers": [
+        "Cerebellar hemisphere",
+        "cerebellar hemisphere"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cerebellum"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Cerebellar hemisphere. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Beginner posterior fossa landmark; broader cerebellum target is already present.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Beginner posterior fossa landmark; broader cerebellum target is already present."
+    },
+    {
+      "id": "internal_auditory_canal",
+      "preferredName": "Internal auditory canal",
+      "aliases": [
+        "Internal auditory canal"
+      ],
+      "acceptedAnswers": [
+        "Internal auditory canal",
+        "internal auditory canal"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "skull_base",
+        "cranial_nerves"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Internal auditory canal. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "High-yield skull base landmark; useful before adding detailed foraminal contents questions.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "High-yield skull base landmark; useful before adding detailed foraminal contents questions."
+    },
+    {
+      "id": "subthalamic_region",
+      "preferredName": "Subthalamic region",
+      "aliases": [
+        "Subthalamic region"
+      ],
+      "acceptedAnswers": [
+        "Subthalamic region",
+        "subthalamic region"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "deep_gray",
+        "basal_ganglia"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Subthalamic region. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Optional beginner-to-intermediate deep gray landmark if it can be shown cleanly on this T1.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Optional beginner-to-intermediate deep gray landmark if it can be shown cleanly on this T1."
+    },
+    {
+      "id": "habenula",
+      "preferredName": "Habenula",
+      "aliases": [
+        "Habenula"
+      ],
+      "acceptedAnswers": [
+        "Habenula",
+        "habenula"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "midline",
+        "deep_gray"
+      ],
+      "laterality": "midline",
+      "description": "Draft beginner annotation target for Habenula. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small pineal/posterior commissural region landmark; include if visible enough for teaching.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Small pineal/posterior commissural region landmark; include if visible enough for teaching."
     }
   ]
 }

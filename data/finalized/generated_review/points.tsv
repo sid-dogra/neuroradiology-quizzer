@@ -95,3 +95,11 @@ labelValue	id	preferredName	userAction	sourceStrategy	voxel_i	voxel_j	voxel_k	wo
 94	anterior_commissure	Anterior commissure	fully_place_manually	manual							Classic small midline landmark; useful with AC-PC plane concepts.
 95	posterior_commissure	Posterior commissure	fully_place_manually	manual							Small midline landmark near pineal/aqueduct region.
 96	cisterna_magna	Cisterna magna	fully_place_manually	manual							Common posterior fossa CSF landmark inferior to the cerebellum.
+97	frontal_lobe	Frontal lobe	fully_place_manually	manual							Broad beginner lobar anatomy target; manually annotate once a mask is created.
+98	parietal_lobe	Parietal lobe	fully_place_manually	manual							Broad beginner lobar anatomy target; manually annotate once a mask is created.
+99	temporal_lobe	Temporal lobe	fully_place_manually	manual							Broad beginner lobar anatomy target; manually annotate once a mask is created.
+100	caudate_body	Caudate body	fully_place_manually	manual							Beginner deep gray landmark distinct from the caudate head.
+101	cerebellar_hemisphere	Cerebellar hemisphere	fully_place_manually	manual							Beginner posterior fossa landmark; broader cerebellum target is already present.
+102	internal_auditory_canal	Internal auditory canal	fully_place_manually	manual							High-yield skull base landmark; useful before adding detailed foraminal contents questions.
+103	subthalamic_region	Subthalamic region	fully_place_manually	manual							Optional beginner-to-intermediate deep gray landmark if it can be shown cleanly on this T1.
+104	habenula	Habenula	fully_place_manually	manual							Small pineal/posterior commissural region landmark; include if visible enough for teaching.

@@ -95,3 +95,11 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 94	anterior_commissure	Anterior commissure	Anterior commissure	fully_place_manually	manual_required	manual	advanced	white_matter;midline	102	242	78
 95	posterior_commissure	Posterior commissure	Posterior commissure	fully_place_manually	manual_required	manual	advanced	white_matter;midline;brainstem	78	242	83
 96	cisterna_magna	Cisterna magna	Cisterna magna	fully_place_manually	manual_required	manual	beginner	csf_spaces;cerebellum;brainstem	78	242	155
+97	frontal_lobe	Frontal lobe	Frontal lobe	fully_place_manually	manual_required	manual	beginner	lobes;cortex	78	166	242
+98	parietal_lobe	Parietal lobe	Parietal lobe	fully_place_manually	manual_required	manual	beginner	lobes;cortex	242	132	78
+99	temporal_lobe	Temporal lobe	Temporal lobe	fully_place_manually	manual_required	manual	beginner	lobes;cortex	160	102	242
+100	caudate_body	Caudate body	Caudate body	fully_place_manually	manual_required	manual	beginner	basal_ganglia;deep_gray	84	211	155
+101	cerebellar_hemisphere	Cerebellar hemisphere	Cerebellar hemisphere	fully_place_manually	manual_required	manual	beginner	cerebellum	242	194	78
+102	internal_auditory_canal	Internal auditory canal	Internal auditory canal	fully_place_manually	manual_required	manual	beginner	skull_base;cranial_nerves	242	98	122
+103	subthalamic_region	Subthalamic region	Subthalamic region	fully_place_manually	manual_required	manual	beginner	deep_gray;basal_ganglia	118	217	218
+104	habenula	Habenula	Habenula	fully_place_manually	manual_required	manual	beginner	midline;deep_gray	190	214	82
