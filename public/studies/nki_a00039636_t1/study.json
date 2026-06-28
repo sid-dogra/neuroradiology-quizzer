@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T16:56:44+00:00",
+  "generatedAt": "2026-06-28T17:05:32+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -1406,8 +1406,8 @@
       "displayName": "Optic chiasm",
       "targetName": "Optic Chiasm",
       "laterality": "midline",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
       "systems": [
         "cranial_nerves",
         "skull_base"
@@ -2350,8 +2350,8 @@
       "displayName": "Postcentral gyrus",
       "targetName": "Left postcentral",
       "laterality": "left",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
       "systems": [
         "cortex"
       ],
@@ -2587,8 +2587,8 @@
       "displayName": "Precentral gyrus",
       "targetName": "Left precentral",
       "laterality": "left",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
       "systems": [
         "cortex"
       ],
@@ -3849,8 +3849,8 @@
       "displayName": "Temporal horn of the lateral ventricle",
       "targetName": "Temporal horn of the lateral ventricle",
       "laterality": "left",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
       "systems": [
         "ventricles",
         "csf_spaces",

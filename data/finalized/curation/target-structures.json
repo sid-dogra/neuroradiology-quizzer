@@ -672,7 +672,7 @@
         "Optic Chiasm",
         "Optic-Chiasm"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cranial_nerves",
         "skull_base"
@@ -1145,7 +1145,7 @@
         "left postcentral",
         "postcentral"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cortex"
       ],
@@ -1264,7 +1264,7 @@
         "left precentral",
         "precentral"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cortex"
       ],
@@ -1802,7 +1802,7 @@
         "Premedullary cistern",
         "premedullary cistern"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "csf_spaces",
         "brainstem"
@@ -2372,7 +2372,7 @@
         "Prepontine cistern",
         "prepontine cistern"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "csf_spaces",
         "brainstem"
@@ -2416,7 +2416,7 @@
         "Middle cerebellar peduncle",
         "middle cerebellar peduncle"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "white_matter",
         "cerebellum",
@@ -2551,7 +2551,7 @@
         "Left-Inf-Lat-Vent",
         "Left-Lateral-Ventricle"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "ventricles",
         "csf_spaces",
@@ -2659,7 +2659,7 @@
         "Suprasellar cistern",
         "suprasellar cistern"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "csf_spaces",
         "skull_base"
@@ -2703,7 +2703,7 @@
         "Tentorium cerebelli",
         "tentorium cerebelli"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "skull_base"
       ],
@@ -2746,7 +2746,7 @@
         "Interpeduncular cistern",
         "interpeduncular cistern"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "csf_spaces",
         "brainstem"
@@ -2790,7 +2790,7 @@
         "Cerebral crus (cerebral peduncle)",
         "cerebral crus (cerebral peduncle)"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "white_matter",
         "brainstem"
@@ -2914,7 +2914,7 @@
         "Mammillary bodies",
         "mammillary bodies"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "limbic",
         "midline"
@@ -3104,7 +3104,7 @@
         "Cerebral aqueduct",
         "cerebral aqueduct"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "ventricles",
         "csf_spaces",
@@ -3474,7 +3474,7 @@
         "Quadrigeminal cistern",
         "quadrigeminal cistern"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "csf_spaces",
         "brainstem"
@@ -3650,7 +3650,7 @@
         "Pineal gland",
         "pineal gland"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "midline"
       ],
@@ -3783,7 +3783,7 @@
         "Posterior limb of the internal capsule",
         "posterior limb of the internal capsule"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "white_matter",
         "basal_ganglia"
@@ -4569,7 +4569,7 @@
         "Left S central",
         "S_central"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cortex"
       ],
@@ -4632,7 +4632,7 @@
         "precentral",
         "G_precentral"
       ],
-      "difficulty": "advanced",
+      "difficulty": "beginner",
       "systems": [
         "cortex"
       ],
