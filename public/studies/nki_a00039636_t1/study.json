@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-27T23:46:18+00:00",
+  "generatedAt": "2026-06-28T01:03:18+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -4248,11 +4248,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/054_midbrain.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 52658,
-        "sha256": "d70cd26619d88e2f9b85fb96f14d2e6a3becae84cd5c5ef89bf76817546628b1",
-        "voxelCount": 19933,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 48587,
+        "sha256": "a849768a10624f1087e87d7f85f9c14e9f99551ddc1dc0b8f231dd2d68ff1698",
+        "voxelCount": 8398,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4262,37 +4262,37 @@
           ],
           "centroidVoxel": {
             "i": 128,
-            "j": 106,
-            "k": 42
+            "j": 111,
+            "k": 60
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 124,
-            "areaVoxelCount": 1082,
+            "sliceIndex": 133,
+            "areaVoxelCount": 408,
             "voxel": {
-              "i": 124,
-              "j": 105,
-              "k": 41
+              "i": 133,
+              "j": 110,
+              "k": 60
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 101,
-            "areaVoxelCount": 933,
+            "sliceIndex": 112,
+            "areaVoxelCount": 404,
             "voxel": {
               "i": 128,
-              "j": 101,
-              "k": 40
+              "j": 112,
+              "k": 60
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 45,
-            "areaVoxelCount": 633,
+            "sliceIndex": 62,
+            "areaVoxelCount": 767,
             "voxel": {
               "i": 128,
-              "j": 110,
-              "k": 45
+              "j": 112,
+              "k": 62
             }
           }
         }
@@ -5288,11 +5288,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/075_splenium_of_the_corpus_callosum.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 46296,
-        "sha256": "63c23c80252f5fcb445a5ec8b2e05d23dfde55d013b6b74cbe87f2f9cc7180e9",
-        "voxelCount": 905,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 47665,
+        "sha256": "f398a2173a7bed4eaabdc18112a0c7585de3e70730e66c2b4ff7b60e07167585",
+        "voxelCount": 5396,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5302,37 +5302,37 @@
           ],
           "centroidVoxel": {
             "i": 128,
-            "j": 97,
+            "j": 95,
             "k": 81
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 128,
-            "areaVoxelCount": 188,
+            "sliceIndex": 121,
+            "areaVoxelCount": 248,
             "voxel": {
-              "i": 128,
+              "i": 121,
               "j": 96,
               "k": 81
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 95,
-            "areaVoxelCount": 75,
+            "sliceIndex": 94,
+            "areaVoxelCount": 402,
             "voxel": {
               "i": 128,
-              "j": 95,
-              "k": 79
+              "j": 94,
+              "k": 80
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 84,
-            "areaVoxelCount": 76,
+            "sliceIndex": 76,
+            "areaVoxelCount": 451,
             "voxel": {
-              "i": 128,
-              "j": 97,
-              "k": 84
+              "i": 129,
+              "j": 91,
+              "k": 76
             }
           }
         }
@@ -5794,11 +5794,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/079_body_of_the_corpus_callosum.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 47205,
-        "sha256": "7676762dc95b75089a5ad13c055b6d1b8bfd76073c337de4c4942e2cc12cea5e",
-        "voxelCount": 2071,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46680,
+        "sha256": "ad02158ec2338046c02678062f0c69fbdd106f8f61c8d55692b8d81f7e3229b2",
+        "voxelCount": 1532,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5808,27 +5808,27 @@
           ],
           "centroidVoxel": {
             "i": 127,
-            "j": 127,
-            "k": 89
+            "j": 126,
+            "k": 91
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 127,
-            "areaVoxelCount": 589,
+            "sliceIndex": 126,
+            "areaVoxelCount": 334,
             "voxel": {
-              "i": 127,
-              "j": 129,
-              "k": 87
+              "i": 126,
+              "j": 127,
+              "k": 91
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 147,
-            "areaVoxelCount": 64,
+            "sliceIndex": 113,
+            "areaVoxelCount": 44,
             "voxel": {
               "i": 127,
-              "j": 147,
-              "k": 83
+              "j": 113,
+              "k": 90
             }
           },
           "axial": {
@@ -7166,7 +7166,7 @@
     "overlayCount": 57,
     "missingOverlayCount": 0,
     "targetStructureCount": 96,
-    "acceptedOverlayCount": 7
+    "acceptedOverlayCount": 10
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",
