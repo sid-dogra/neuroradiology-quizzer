@@ -192,7 +192,8 @@ select:focus-visible {
 
 .search-field,
 .range-field,
-.select-field {
+.select-field,
+.text-field {
   display: grid;
   gap: 8px;
   color: var(--muted);
@@ -200,6 +201,7 @@ select:focus-visible {
 }
 
 input[type="search"],
+input[type="text"],
 select {
   width: 100%;
   min-width: 0;
@@ -353,6 +355,14 @@ input[type="range"] {
   margin-top: 16px;
 }
 
+.new-structure-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
 .structure-list {
   display: grid;
   gap: 10px;
@@ -492,6 +502,11 @@ input[type="range"] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.full-width-action {
+  width: 100%;
+  margin-top: 8px;
+}
+
 .mask-operations {
   margin-top: 18px;
   padding-top: 16px;
@@ -576,6 +591,10 @@ input[type="range"] {
   }
 
   .edit-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .new-structure-panel {
     grid-template-columns: 1fr;
   }
 }

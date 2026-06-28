@@ -58,6 +58,8 @@ http://localhost:8000/viewer/?study=../public/studies/nki_a00039636_t1/study.jso
 
 - Browse: filter structures and toggle overlays on the T1.
 - Quiz: show one randomly ordered overlay at a time, then reveal the answer and notes.
+- Edit Mode: paint/erase masks, clear or fill slices/ranges, interpolate between
+  hand-drawn anchor slices, and download edited or new masks as `.nii.gz`.
 - Level: beginner includes first-pass resident anatomy; advanced includes the remaining intermediate/advanced targets.
 - Plane: axial, sagittal, and coronal single-plane views; axial is the default.
 

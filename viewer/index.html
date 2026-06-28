@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Neuroradiology Quizzer</title>
-    <link rel="stylesheet" href="./styles.css?v=20260628-03" />
+    <link rel="stylesheet" href="./styles.css?v=20260628-04" />
   </head>
   <body>
     <div class="app-shell">
@@ -132,6 +132,14 @@
             <select id="editStructureSelect"></select>
           </label>
 
+          <section class="new-structure-panel" aria-label="New structure">
+            <label class="text-field">
+              <span>New structure</span>
+              <input id="newStructureNameInput" type="text" autocomplete="off" />
+            </label>
+            <button type="button" id="createStructureButton">New Blank Mask</button>
+          </section>
+
           <div class="edit-controls" role="group" aria-label="Edit tool">
             <button class="is-active" type="button" data-edit-tool="paint">Paint</button>
             <button type="button" data-edit-tool="erase">Erase</button>
@@ -169,6 +177,7 @@
               <button type="button" id="clearRangeButton">Clear Range</button>
               <button type="button" id="fillRangeButton">Fill Range</button>
             </div>
+            <button class="full-width-action" type="button" id="interpolateRangeButton">Interpolate Range</button>
           </section>
 
           <section class="details" id="editDetails" aria-label="Edit structure details"></section>
@@ -176,6 +185,6 @@
       </main>
     </div>
 
-    <script type="module" src="./app.js?v=20260628-03"></script>
+    <script type="module" src="./app.js?v=20260628-04"></script>
   </body>
 </html>

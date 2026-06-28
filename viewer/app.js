@@ -1,5 +1,5 @@
 const DEFAULT_STUDY = "../public/studies/nki_a00039636_t1/study.json";
-const APP_BUILD_VERSION = "20260628-03";
+const APP_BUILD_VERSION = "20260628-04";
 const NIVUE_MODULE_URL = "https://cdn.jsdelivr.net/npm/@niivue/niivue@latest/dist/index.js";
 const VIEW_TYPES = {
   axial: 0,
@@ -34,6 +34,8 @@ const state = {
   quizCursor: 0,
   quizSignature: "",
   editStructureId: null,
+  editIsNewStructure: false,
+  editNewStructureName: "",
   editTool: "paint",
   editPenSize: 2,
   overlayOpacity: 0.55,
@@ -76,6 +78,8 @@ const els = {
   nextButton: document.querySelector("#nextButton"),
   editTitle: document.querySelector("#editTitle"),
   editStructureSelect: document.querySelector("#editStructureSelect"),
+  newStructureNameInput: document.querySelector("#newStructureNameInput"),
+  createStructureButton: document.querySelector("#createStructureButton"),
   penSizeSlider: document.querySelector("#penSizeSlider"),
   penSizeValue: document.querySelector("#penSizeValue"),
   editDetails: document.querySelector("#editDetails"),
@@ -87,6 +91,7 @@ const els = {
   clearRangeButton: document.querySelector("#clearRangeButton"),
   fillSliceButton: document.querySelector("#fillSliceButton"),
   fillRangeButton: document.querySelector("#fillRangeButton"),
+  interpolateRangeButton: document.querySelector("#interpolateRangeButton"),
   sliceRangeStart: document.querySelector("#sliceRangeStart"),
   sliceRangeEnd: document.querySelector("#sliceRangeEnd"),
   canvas: document.querySelector("#niivueCanvas")
@@ -145,6 +150,15 @@ function escapeHtml(value) {
 
 function pluralize(count, singular, plural = `${singular}s`) {
   return count === 1 ? singular : plural;
+}
+
+function slugifyName(value) {
+  const slug = String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+  return slug || "new_structure";
 }
 
 function structureById(id) {
@@ -539,11 +553,36 @@ async function syncViewerVolumes() {
   }
 }
 
-function editStatus(structure = structureById(state.editStructureId)) {
+function newStructureTarget() {
+  const displayName = state.editNewStructureName.trim();
+  if (!displayName) {
+    return null;
+  }
+  return {
+    id: "__new_structure__",
+    displayName,
+    targetName: displayName,
+    color: "#54d39b",
+    systems: [],
+    aliases: [],
+    acceptedAnswers: [displayName],
+    isNewStructure: true
+  };
+}
+
+function currentEditTarget() {
+  if (state.editIsNewStructure) {
+    return newStructureTarget();
+  }
+  return structureById(state.editStructureId);
+}
+
+function editStatus(structure = currentEditTarget()) {
   if (!structure) {
     return `${VIEW_LABELS[state.viewMode]} | No editable annotation`;
   }
-  return `${VIEW_LABELS[state.viewMode]} | Editing ${structure.displayName}`;
+  const action = structure.isNewStructure ? "Creating" : "Editing";
+  return `${VIEW_LABELS[state.viewMode]} | ${action} ${structure.displayName}`;
 }
 
 function closeEditDrawing() {
@@ -574,12 +613,24 @@ function applyEditTool() {
 }
 
 function editFileName(structure) {
+  if (structure?.isNewStructure) {
+    return `new_${slugifyName(structure.displayName)}.edited.nii.gz`;
+  }
   const sourceName = fileNameFromPath(structure.overlay?.url || `${structure.id}.nii.gz`);
   const editedName = sourceName.replace(/\.nii(?:\.gz)?$/i, ".edited.nii.gz");
   return editedName === sourceName ? `${sourceName}.edited.nii.gz` : editedName;
 }
 
 function ensureEditStructure() {
+  if (state.editIsNewStructure) {
+    const target = newStructureTarget();
+    if (target) {
+      return target;
+    }
+    state.editIsNewStructure = false;
+    state.editStructureId = null;
+  }
+
   const structures = editableStructures();
   if (!structures.length) {
     state.editStructureId = null;
@@ -621,8 +672,12 @@ async function syncEditDrawing() {
     return;
   }
 
-  state.activeStructureId = structure.id;
-  setViewerStatus(`Loading editable mask for ${structure.displayName}...`);
+  state.activeStructureId = structure.isNewStructure ? null : structure.id;
+  setViewerStatus(
+    structure.isNewStructure
+      ? `Preparing blank mask for ${structure.displayName}...`
+      : `Loading editable mask for ${structure.displayName}...`
+  );
 
   try {
     await state.nv.loadVolumes(baseVolumeList());
@@ -630,16 +685,22 @@ async function syncEditDrawing() {
       return;
     }
     applyViewMode();
-    const loaded = await state.nv.loadDrawingFromUrl(assetUrl(structure.overlay.url), true);
-    if (loadId !== state.editLoadId || state.mode !== "edit") {
-      return;
-    }
-    if (loaded === false) {
-      throw new Error("Mask dimensions do not match the T1 volume");
+    if (structure.isNewStructure) {
+      state.nv.createEmptyDrawing?.();
+    } else {
+      const loaded = await state.nv.loadDrawingFromUrl(assetUrl(structure.overlay.url), true);
+      if (loadId !== state.editLoadId || state.mode !== "edit") {
+        return;
+      }
+      if (loaded === false) {
+        throw new Error("Mask dimensions do not match the T1 volume");
+      }
     }
     state.nv.setDrawOpacity?.(0.72);
     applyEditTool();
-    jumpToActiveStructure();
+    if (!structure.isNewStructure) {
+      jumpToActiveStructure();
+    }
     updateSliceControls();
     setViewerStatus(editStatus(structure));
   } catch (error) {
@@ -882,18 +943,28 @@ function renderEdit() {
   const structures = editableStructures();
   const structure = ensureEditStructure();
   els.editTitle.textContent = `${structures.length} editable ${pluralize(structures.length, "mask")}`;
+  els.newStructureNameInput.value = state.editNewStructureName;
   els.editStructureSelect.innerHTML = "";
+
+  if (state.editIsNewStructure && structure) {
+    const option = document.createElement("option");
+    option.value = "__new_structure__";
+    option.textContent = `New: ${structure.displayName}`;
+    option.selected = true;
+    els.editStructureSelect.append(option);
+  }
 
   for (const item of structures) {
     const option = document.createElement("option");
     option.value = item.id;
     option.textContent = item.displayName;
-    option.selected = item.id === state.editStructureId;
+    option.selected = !state.editIsNewStructure && item.id === state.editStructureId;
     els.editStructureSelect.append(option);
   }
 
   const hasStructure = Boolean(structure);
-  els.editStructureSelect.disabled = !hasStructure;
+  els.editStructureSelect.disabled = !hasStructure && !structures.length;
+  els.createStructureButton.disabled = !state.editNewStructureName.trim();
   els.undoEditButton.disabled = !hasStructure;
   els.resetEditButton.disabled = !hasStructure;
   els.saveEditButton.disabled = !hasStructure;
@@ -902,7 +973,8 @@ function renderEdit() {
     els.clearSliceButton,
     els.clearRangeButton,
     els.fillSliceButton,
-    els.fillRangeButton
+    els.fillRangeButton,
+    els.interpolateRangeButton
   ]) {
     button.disabled = !hasStructure;
   }
@@ -922,10 +994,10 @@ function renderEdit() {
     return;
   }
 
-  state.activeStructureId = structure.id;
+  state.activeStructureId = structure.isNewStructure ? null : structure.id;
   els.editDetails.innerHTML = detailsHtml(structure, true);
   els.activeStructure.textContent = structure.displayName;
-  els.activeSource.textContent = "Editing mask";
+  els.activeSource.textContent = structure.isNewStructure ? "Editing new mask" : "Editing mask";
 }
 
 function render() {
@@ -961,6 +1033,7 @@ function resetForFilterChange() {
   state.quizCursor = 0;
   state.quizSignature = "";
   state.editStructureId = null;
+  state.editIsNewStructure = false;
 }
 
 function enterMode(mode) {
@@ -993,7 +1066,7 @@ function selectQuizStructure(id) {
 }
 
 async function saveEditedNifti() {
-  const structure = structureById(state.editStructureId);
+  const structure = currentEditTarget();
   if (!structure || !state.nv?.saveImage) {
     return;
   }
@@ -1127,6 +1200,146 @@ function fillDrawingSliceHoles(bitmap, shape, axis, slice) {
   return changed;
 }
 
+function extractDrawingPlane(bitmap, shape, axis, slice) {
+  const [width, height] = planeDimensions(axis, shape);
+  const plane = new Uint8Array(width * height);
+  let count = 0;
+  for (let b = 0; b < height; b += 1) {
+    for (let a = 0; a < width; a += 1) {
+      const [x, y, z] = planeVoxel(axis, slice, a, b);
+      const value = bitmap[voxelIndex(x, y, z, shape)] > 0 ? 1 : 0;
+      const index = a + b * width;
+      plane[index] = value;
+      count += value;
+    }
+  }
+  return { plane, width, height, count };
+}
+
+function writeDrawingPlane(bitmap, shape, axis, slice, plane) {
+  const [width, height] = planeDimensions(axis, shape);
+  let changed = 0;
+  for (let b = 0; b < height; b += 1) {
+    for (let a = 0; a < width; a += 1) {
+      const [x, y, z] = planeVoxel(axis, slice, a, b);
+      changed += setDrawingVoxel(bitmap, shape, x, y, z, plane[a + b * width]);
+    }
+  }
+  return changed;
+}
+
+function chamferDistance(seedMask, width, height) {
+  const inf = 1_000_000;
+  const distance = new Float32Array(seedMask.length);
+  for (let index = 0; index < seedMask.length; index += 1) {
+    distance[index] = seedMask[index] ? 0 : inf;
+  }
+
+  const relax = (index, neighbor, weight) => {
+    const candidate = distance[neighbor] + weight;
+    if (candidate < distance[index]) {
+      distance[index] = candidate;
+    }
+  };
+
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      const index = x + y * width;
+      if (x > 0) {
+        relax(index, index - 1, 3);
+      }
+      if (y > 0) {
+        relax(index, index - width, 3);
+        if (x > 0) {
+          relax(index, index - width - 1, 4);
+        }
+        if (x < width - 1) {
+          relax(index, index - width + 1, 4);
+        }
+      }
+    }
+  }
+
+  for (let y = height - 1; y >= 0; y -= 1) {
+    for (let x = width - 1; x >= 0; x -= 1) {
+      const index = x + y * width;
+      if (x < width - 1) {
+        relax(index, index + 1, 3);
+      }
+      if (y < height - 1) {
+        relax(index, index + width, 3);
+        if (x < width - 1) {
+          relax(index, index + width + 1, 4);
+        }
+        if (x > 0) {
+          relax(index, index + width - 1, 4);
+        }
+      }
+    }
+  }
+
+  return distance;
+}
+
+function signedDistancePlane(plane, width, height) {
+  const foreground = chamferDistance(plane, width, height);
+  const backgroundSeeds = new Uint8Array(plane.length);
+  for (let index = 0; index < plane.length; index += 1) {
+    backgroundSeeds[index] = plane[index] ? 0 : 1;
+  }
+  const background = chamferDistance(backgroundSeeds, width, height);
+  const signed = new Float32Array(plane.length);
+  for (let index = 0; index < plane.length; index += 1) {
+    signed[index] = background[index] - foreground[index];
+  }
+  return signed;
+}
+
+function interpolateBetweenDistances(lowDistance, highDistance, fraction) {
+  const output = new Uint8Array(lowDistance.length);
+  for (let index = 0; index < output.length; index += 1) {
+    const value = lowDistance[index] * (1 - fraction) + highDistance[index] * fraction;
+    output[index] = value >= 0 ? 1 : 0;
+  }
+  return output;
+}
+
+function interpolateDrawingSlices(bitmap, shape, axis, start, end) {
+  const anchors = [];
+  for (let slice = start; slice <= end; slice += 1) {
+    const { count } = extractDrawingPlane(bitmap, shape, axis, slice);
+    if (count > 0) {
+      anchors.push(slice);
+    }
+  }
+
+  if (anchors.length < 2) {
+    throw new Error("Draw at least two non-empty anchor slices in the selected range");
+  }
+
+  let changed = 0;
+  for (let index = 0; index < anchors.length - 1; index += 1) {
+    const lowSlice = anchors[index];
+    const highSlice = anchors[index + 1];
+    const gap = highSlice - lowSlice;
+    if (gap < 2) {
+      continue;
+    }
+
+    const low = extractDrawingPlane(bitmap, shape, axis, lowSlice);
+    const high = extractDrawingPlane(bitmap, shape, axis, highSlice);
+    const lowDistance = signedDistancePlane(low.plane, low.width, low.height);
+    const highDistance = signedDistancePlane(high.plane, high.width, high.height);
+    for (let slice = lowSlice + 1; slice < highSlice; slice += 1) {
+      const fraction = (slice - lowSlice) / gap;
+      const interpolated = interpolateBetweenDistances(lowDistance, highDistance, fraction);
+      changed += writeDrawingPlane(bitmap, shape, axis, slice, interpolated);
+    }
+  }
+
+  return changed;
+}
+
 function selectedSliceRange(singleSlice = false) {
   const shape = volumeShape();
   const voxel = currentVoxel();
@@ -1214,6 +1427,18 @@ function fillDrawingRange(singleSlice = false) {
   }
 }
 
+function interpolateDrawingRange() {
+  const label = "Interpolate range";
+  try {
+    const range = selectedSliceRange(false);
+    applyDrawingOperation(label, (bitmap, shape) =>
+      interpolateDrawingSlices(bitmap, shape, range.axis, range.start, range.end)
+    );
+  } catch (error) {
+    setViewerStatus(`${label} failed: ${error.message}`);
+  }
+}
+
 els.levelFilters.addEventListener("click", event => {
   const button = event.target.closest("button[data-level]");
   if (!button) {
@@ -1293,10 +1518,39 @@ els.opacitySlider.addEventListener("input", event => {
 });
 
 els.editStructureSelect.addEventListener("change", event => {
-  state.editStructureId = event.target.value;
-  state.activeStructureId = state.editStructureId;
+  if (event.target.value === "__new_structure__") {
+    state.editIsNewStructure = true;
+    state.activeStructureId = null;
+  } else {
+    state.editIsNewStructure = false;
+    state.editStructureId = event.target.value;
+    state.activeStructureId = state.editStructureId;
+  }
   render();
   syncActiveViewer();
+});
+
+els.newStructureNameInput.addEventListener("input", event => {
+  state.editNewStructureName = event.target.value.trim();
+  if (state.editIsNewStructure) {
+    render();
+    setViewerStatus(editStatus());
+  } else {
+    els.createStructureButton.disabled = !state.editNewStructureName;
+  }
+});
+
+els.createStructureButton.addEventListener("click", () => {
+  const name = state.editNewStructureName.trim();
+  if (!name) {
+    setViewerStatus("New structure needs a name");
+    return;
+  }
+  state.editIsNewStructure = true;
+  state.editStructureId = "__new_structure__";
+  state.activeStructureId = null;
+  render();
+  syncEditDrawing();
 });
 
 document.querySelectorAll("[data-edit-tool]").forEach(button => {
@@ -1348,6 +1602,10 @@ els.fillSliceButton.addEventListener("click", () => {
 
 els.fillRangeButton.addEventListener("click", () => {
   fillDrawingRange(false);
+});
+
+els.interpolateRangeButton.addEventListener("click", () => {
+  interpolateDrawingRange();
 });
 
 els.revealButton.addEventListener("click", () => {
