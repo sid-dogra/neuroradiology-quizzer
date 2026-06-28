@@ -9,8 +9,8 @@ FreeSurfer `orig.mgz` for more raw-MPRAGE-like contrast while preserving overlay
 alignment. The public NIfTI files are cropped in the axial direction to remove
 blank padding while keeping overlay and display-image grids identical.
 
-- Structures in manifest: 57
-- Structures with overlays: 57
+- Structures in manifest: 54
+- Structures with overlays: 54
 
 The current overlays are a generated review set unless `overlay.sourceKind` is
 `accepted_annotation`. They still need visual QC before being treated as final

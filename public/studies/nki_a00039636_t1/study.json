@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T01:08:39+00:00",
+  "generatedAt": "2026-06-28T01:19:15+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -3344,9 +3344,9 @@
         "url": "annotations/029_medulla_oblongata.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 47688,
-        "sha256": "ebab17bd3b349df396007804e47e8adbbfc8766f119a7e7a81cb6743778b409b",
-        "voxelCount": 4246,
+        "bytes": 47718,
+        "sha256": "2636df5f8e7e1dd04989911e54ef0fc8f019c6f8911a324bd748f30bd1dac1ea",
+        "voxelCount": 4156,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -3362,7 +3362,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 124,
-            "areaVoxelCount": 316,
+            "areaVoxelCount": 313,
             "voxel": {
               "i": 124,
               "j": 99,
@@ -3382,7 +3382,7 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 28,
-            "areaVoxelCount": 245,
+            "areaVoxelCount": 233,
             "voxel": {
               "i": 128,
               "j": 100,
@@ -3393,11 +3393,15 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 76,
-          "filledVoxelCount": 76
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 77,
+          "addedVoxelCount": 63,
+          "filledVoxelCount": 63,
+          "netVoxelChange": -14
         }
       },
       "quizTargets": [
@@ -4259,9 +4263,9 @@
         "url": "annotations/054_midbrain.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 48440,
-        "sha256": "cab9aa9cbd74e7ff7d2e5bcb02e2fd67c40593cae9b2bc9893e63147e0b6e0b9",
-        "voxelCount": 8593,
+        "bytes": 48306,
+        "sha256": "30d5d05dd940645683d1d097bdfcb41997bcffd4ba494f8f410b72471d10411c",
+        "voxelCount": 8411,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4276,10 +4280,10 @@
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 133,
-            "areaVoxelCount": 414,
+            "sliceIndex": 132,
+            "areaVoxelCount": 409,
             "voxel": {
-              "i": 133,
+              "i": 132,
               "j": 110,
               "k": 60
             }
@@ -4287,7 +4291,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 112,
-            "areaVoxelCount": 409,
+            "areaVoxelCount": 406,
             "voxel": {
               "i": 128,
               "j": 112,
@@ -4297,10 +4301,10 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 62,
-            "areaVoxelCount": 786,
+            "areaVoxelCount": 758,
             "voxel": {
               "i": 128,
-              "j": 113,
+              "j": 112,
               "k": 62
             }
           }
@@ -4308,11 +4312,15 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 195,
-          "filledVoxelCount": 195
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 156,
+          "addedVoxelCount": 169,
+          "filledVoxelCount": 169,
+          "netVoxelChange": 13
         }
       },
       "quizTargets": [
@@ -4512,9 +4520,9 @@
         "url": "annotations/061_frontal_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46760,
-        "sha256": "1f2a1c81eef5584cf7fe6caa8b9a60df50d810ab0acd1c71bfe39269b6b98b16",
-        "voxelCount": 1592,
+        "bytes": 46703,
+        "sha256": "cf94978125a9ffdb371963c942d520b0824fe2dd4e0e524620b52015f0a7b21e",
+        "voxelCount": 1516,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4525,22 +4533,22 @@
           "centroidVoxel": {
             "i": 122,
             "j": 140,
-            "k": 83
+            "k": 82
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 123,
-            "areaVoxelCount": 271,
+            "areaVoxelCount": 259,
             "voxel": {
               "i": 123,
-              "j": 138,
+              "j": 139,
               "k": 81
             }
           },
           "coronal": {
             "axis": 1,
             "sliceIndex": 138,
-            "areaVoxelCount": 79,
+            "areaVoxelCount": 76,
             "voxel": {
               "i": 123,
               "j": 138,
@@ -4550,7 +4558,7 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 87,
-            "areaVoxelCount": 166,
+            "areaVoxelCount": 150,
             "voxel": {
               "i": 121,
               "j": 137,
@@ -4561,11 +4569,15 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 25,
-          "filledVoxelCount": 25
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 67,
+          "addedVoxelCount": 16,
+          "filledVoxelCount": 16,
+          "netVoxelChange": -51
         }
       },
       "quizTargets": [
@@ -5046,9 +5058,9 @@
         "url": "annotations/073_trigone_atrium_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46682,
-        "sha256": "8c7240dfb7400845ce078b402a3fa1663d9aee84227c0d56edb0f079fd348ab7",
-        "voxelCount": 1247,
+        "bytes": 46570,
+        "sha256": "8610396010f9596d978c9b08951f93abac699fdf3852ad580386558414d63bee",
+        "voxelCount": 1099,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5057,14 +5069,14 @@
             160
           ],
           "centroidVoxel": {
-            "i": 105,
+            "i": 104,
             "j": 86,
-            "k": 75
+            "k": 74
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 102,
-            "areaVoxelCount": 145,
+            "areaVoxelCount": 139,
             "voxel": {
               "i": 102,
               "j": 82,
@@ -5073,33 +5085,37 @@
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 87,
-            "areaVoxelCount": 93,
+            "sliceIndex": 86,
+            "areaVoxelCount": 83,
             "voxel": {
               "i": 104,
-              "j": 87,
-              "k": 74
+              "j": 86,
+              "k": 73
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 80,
-            "areaVoxelCount": 94,
+            "sliceIndex": 70,
+            "areaVoxelCount": 87,
             "voxel": {
-              "i": 109,
-              "j": 90,
-              "k": 80
+              "i": 102,
+              "j": 83,
+              "k": 70
             }
           }
         },
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 126,
-          "filledVoxelCount": 126
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 98,
+          "addedVoxelCount": 76,
+          "filledVoxelCount": 76,
+          "netVoxelChange": -22
         }
       },
       "quizTargets": [
@@ -5326,9 +5342,9 @@
         "url": "annotations/075_splenium_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 47620,
-        "sha256": "b4dc0c782a12c7375c3183a2f08da373cbdcb5399bdbc177d42ad0f46b0e90b7",
-        "voxelCount": 5592,
+        "bytes": 47541,
+        "sha256": "fb09a389afbb2a52e7e19f7f7366c9faf72b9ad6721d89abcc307bb3cf763a95",
+        "voxelCount": 5314,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5344,7 +5360,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 121,
-            "areaVoxelCount": 248,
+            "areaVoxelCount": 227,
             "voxel": {
               "i": 121,
               "j": 96,
@@ -5354,7 +5370,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 94,
-            "areaVoxelCount": 407,
+            "areaVoxelCount": 400,
             "voxel": {
               "i": 128,
               "j": 94,
@@ -5364,10 +5380,10 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 76,
-            "areaVoxelCount": 462,
+            "areaVoxelCount": 445,
             "voxel": {
-              "i": 129,
-              "j": 91,
+              "i": 130,
+              "j": 92,
               "k": 76
             }
           }
@@ -5375,11 +5391,15 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 208,
-          "filledVoxelCount": 208
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 222,
+          "addedVoxelCount": 152,
+          "filledVoxelCount": 152,
+          "netVoxelChange": -70
         }
       },
       "quizTargets": [
@@ -5841,9 +5861,9 @@
         "url": "annotations/079_body_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46681,
-        "sha256": "f2c525cb729c83da535d1455c8923973b6dc18a2ec0dffdc54299f96d77411d8",
-        "voxelCount": 1568,
+        "bytes": 46619,
+        "sha256": "6374966f8951985814c33a7990023abfed30849ae46b399556c15ad916110d3a",
+        "voxelCount": 1470,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5859,17 +5879,17 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 126,
-            "areaVoxelCount": 343,
+            "areaVoxelCount": 326,
             "voxel": {
               "i": 126,
               "j": 126,
-              "k": 90
+              "k": 91
             }
           },
           "coronal": {
             "axis": 1,
             "sliceIndex": 113,
-            "areaVoxelCount": 46,
+            "areaVoxelCount": 42,
             "voxel": {
               "i": 127,
               "j": 113,
@@ -5879,7 +5899,7 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 91,
-            "areaVoxelCount": 184,
+            "areaVoxelCount": 181,
             "voxel": {
               "i": 127,
               "j": 128,
@@ -5890,11 +5910,15 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
-          "removedVoxelCount": 0,
-          "addedVoxelCount": 36,
-          "filledVoxelCount": 36
+          "removedIslandVoxelCount": 0,
+          "removedVoxelCount": 87,
+          "addedVoxelCount": 25,
+          "filledVoxelCount": 25,
+          "netVoxelChange": -62
         }
       },
       "quizTargets": [
@@ -6166,393 +6190,6 @@
         }
       ],
       "reviewNote": "High-yield parietal language/network landmark; pair with supramarginal gyrus."
-    },
-    {
-      "id": "superior_temporal_gyrus",
-      "displayName": "Superior temporal gyrus",
-      "targetName": "Superior temporal gyrus",
-      "laterality": "left",
-      "difficulty": "beginner",
-      "audienceLevel": "beginner",
-      "systems": [
-        "cortex"
-      ],
-      "description": "Draft T1 MPRAGE annotation target for Superior temporal gyrus. This entry needs localization and QC before viewer release.",
-      "relationships": {},
-      "clinicalNotes": [
-        "Source strategy: freesurfer_seed.",
-        "Common temporal lobe landmark along the Sylvian fissure.",
-        "Review flag: multiple_source_labels_review.",
-        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
-      ],
-      "acceptedAnswers": [
-        "Superior temporal gyrus",
-        "superior temporal gyrus",
-        "Left superiortemporal",
-        "Left G temp sup Lateral",
-        "superiortemporal",
-        "G_temp_sup-Lateral"
-      ],
-      "aliases": [
-        "Left superiortemporal",
-        "Left G temp sup Lateral",
-        "superiortemporal",
-        "G_temp_sup-Lateral"
-      ],
-      "references": [
-        "Target tab curation workbook",
-        "FreeSurfer generated inventory",
-        "high_value_common_anatomy_candidate_list"
-      ],
-      "quizQuestions": [],
-      "includeInViewer": true,
-      "sourceLabels": [
-        {
-          "source": "FreeSurfer Desikan-Killiany aparc",
-          "label": "superiortemporal",
-          "value": 1030
-        },
-        {
-          "source": "FreeSurfer Destrieux aparc.a2009s",
-          "label": "G_temp_sup-Lateral",
-          "value": 11134
-        }
-      ],
-      "sourceStrategy": "freesurfer_seed",
-      "userAction": "qc_auto_point",
-      "localizationStatus": "auto_point_from_freesurfer",
-      "labelValue": 86,
-      "color": "#e8f24e",
-      "hasOverlay": true,
-      "overlay": {
-        "url": "annotations/086_superior_temporal_gyrus.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 52310,
-        "sha256": "6313f9ea01170b7ae7f4fe10079592ca963ae65e74229593e0e81d19fa24db3f",
-        "voxelCount": 15968,
-        "bestSlices": {
-          "coordinateSpace": "viewer_ras_voxel",
-          "shape": [
-            256,
-            256,
-            160
-          ],
-          "centroidVoxel": {
-            "i": 80,
-            "j": 123,
-            "k": 65
-          },
-          "sagittal": {
-            "axis": 0,
-            "sliceIndex": 80,
-            "areaVoxelCount": 788,
-            "voxel": {
-              "i": 80,
-              "j": 127,
-              "k": 64
-            }
-          },
-          "coronal": {
-            "axis": 1,
-            "sliceIndex": 102,
-            "areaVoxelCount": 326,
-            "voxel": {
-              "i": 79,
-              "j": 102,
-              "k": 75
-            }
-          },
-          "axial": {
-            "axis": 2,
-            "sliceIndex": 68,
-            "areaVoxelCount": 781,
-            "voxel": {
-              "i": 78,
-              "j": 120,
-              "k": 68
-            }
-          }
-        }
-      },
-      "quizTargets": [
-        {
-          "id": "superior_temporal_gyrus_mpr_1",
-          "view": "mpr",
-          "prompt": "Identify the Superior temporal gyrus.",
-          "status": "draft",
-          "hint": "Auto-populated from FreeSurfer label; QC before release.",
-          "voxel": {
-            "i": 177,
-            "j": 108,
-            "k": 125
-          },
-          "worldMm": {
-            "x": -49.5,
-            "y": 17.977,
-            "z": 15.977
-          }
-        }
-      ],
-      "reviewNote": "Common temporal lobe landmark along the Sylvian fissure."
-    },
-    {
-      "id": "middle_temporal_gyrus",
-      "displayName": "Middle temporal gyrus",
-      "targetName": "Middle temporal gyrus",
-      "laterality": "left",
-      "difficulty": "beginner",
-      "audienceLevel": "beginner",
-      "systems": [
-        "cortex"
-      ],
-      "description": "Draft T1 MPRAGE annotation target for Middle temporal gyrus. This entry needs localization and QC before viewer release.",
-      "relationships": {},
-      "clinicalNotes": [
-        "Source strategy: freesurfer_seed.",
-        "Common temporal lobe landmark.",
-        "Review flag: multiple_source_labels_review.",
-        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
-      ],
-      "acceptedAnswers": [
-        "Middle temporal gyrus",
-        "middle temporal gyrus",
-        "Left middletemporal",
-        "Left G temporal middle",
-        "middletemporal",
-        "G_temporal_middle"
-      ],
-      "aliases": [
-        "Left middletemporal",
-        "Left G temporal middle",
-        "middletemporal",
-        "G_temporal_middle"
-      ],
-      "references": [
-        "Target tab curation workbook",
-        "FreeSurfer generated inventory",
-        "high_value_common_anatomy_candidate_list"
-      ],
-      "quizQuestions": [],
-      "includeInViewer": true,
-      "sourceLabels": [
-        {
-          "source": "FreeSurfer Desikan-Killiany aparc",
-          "label": "middletemporal",
-          "value": 1015
-        },
-        {
-          "source": "FreeSurfer Destrieux aparc.a2009s",
-          "label": "G_temporal_middle",
-          "value": 11138
-        }
-      ],
-      "sourceStrategy": "freesurfer_seed",
-      "userAction": "qc_auto_point",
-      "localizationStatus": "auto_point_from_freesurfer",
-      "labelValue": 87,
-      "color": "#4e97f2",
-      "hasOverlay": true,
-      "overlay": {
-        "url": "annotations/087_middle_temporal_gyrus.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 51398,
-        "sha256": "c5da9db3a3db9a1969cc9712c410d28f5d2a15968b99b92c28379baaa49ef484",
-        "voxelCount": 13743,
-        "bestSlices": {
-          "coordinateSpace": "viewer_ras_voxel",
-          "shape": [
-            256,
-            256,
-            160
-          ],
-          "centroidVoxel": {
-            "i": 75,
-            "j": 107,
-            "k": 59
-          },
-          "sagittal": {
-            "axis": 0,
-            "sliceIndex": 74,
-            "areaVoxelCount": 692,
-            "voxel": {
-              "i": 74,
-              "j": 104,
-              "k": 61
-            }
-          },
-          "coronal": {
-            "axis": 1,
-            "sliceIndex": 105,
-            "areaVoxelCount": 292,
-            "voxel": {
-              "i": 74,
-              "j": 105,
-              "k": 61
-            }
-          },
-          "axial": {
-            "axis": 2,
-            "sliceIndex": 59,
-            "areaVoxelCount": 876,
-            "voxel": {
-              "i": 74,
-              "j": 107,
-              "k": 59
-            }
-          }
-        }
-      },
-      "quizTargets": [
-        {
-          "id": "middle_temporal_gyrus_mpr_1",
-          "view": "mpr",
-          "prompt": "Identify the Middle temporal gyrus.",
-          "status": "draft",
-          "hint": "Auto-populated from FreeSurfer label; QC before release.",
-          "voxel": {
-            "i": 182,
-            "j": 113,
-            "k": 106
-          },
-          "worldMm": {
-            "x": -54.5,
-            "y": -1.023,
-            "z": 10.977
-          }
-        }
-      ],
-      "reviewNote": "Common temporal lobe landmark."
-    },
-    {
-      "id": "inferior_temporal_gyrus",
-      "displayName": "Inferior temporal gyrus",
-      "targetName": "Inferior temporal gyrus",
-      "laterality": "left",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
-      "systems": [
-        "cortex"
-      ],
-      "description": "Draft T1 MPRAGE annotation target for Inferior temporal gyrus. This entry needs localization and QC before viewer release.",
-      "relationships": {},
-      "clinicalNotes": [
-        "Source strategy: freesurfer_seed.",
-        "Useful inferior temporal landmark.",
-        "Review flag: multiple_source_labels_review.",
-        "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
-      ],
-      "acceptedAnswers": [
-        "Inferior temporal gyrus",
-        "inferior temporal gyrus",
-        "Left inferiortemporal",
-        "Left G temporal inf",
-        "inferiortemporal",
-        "G_temporal_inf"
-      ],
-      "aliases": [
-        "Left inferiortemporal",
-        "Left G temporal inf",
-        "inferiortemporal",
-        "G_temporal_inf"
-      ],
-      "references": [
-        "Target tab curation workbook",
-        "FreeSurfer generated inventory",
-        "high_value_common_anatomy_candidate_list"
-      ],
-      "quizQuestions": [],
-      "includeInViewer": true,
-      "sourceLabels": [
-        {
-          "source": "FreeSurfer Desikan-Killiany aparc",
-          "label": "inferiortemporal",
-          "value": 1009
-        },
-        {
-          "source": "FreeSurfer Destrieux aparc.a2009s",
-          "label": "G_temporal_inf",
-          "value": 11137
-        }
-      ],
-      "sourceStrategy": "freesurfer_seed",
-      "userAction": "qc_auto_point",
-      "localizationStatus": "auto_point_from_freesurfer",
-      "labelValue": 88,
-      "color": "#f2bf4e",
-      "hasOverlay": true,
-      "overlay": {
-        "url": "annotations/088_inferior_temporal_gyrus.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 53072,
-        "sha256": "0b075c603f55ec97d418eef64fe8ca8bfa235f4ad53d984e757b813f5c90e146",
-        "voxelCount": 18474,
-        "bestSlices": {
-          "coordinateSpace": "viewer_ras_voxel",
-          "shape": [
-            256,
-            256,
-            160
-          ],
-          "centroidVoxel": {
-            "i": 81,
-            "j": 103,
-            "k": 50
-          },
-          "sagittal": {
-            "axis": 0,
-            "sliceIndex": 81,
-            "areaVoxelCount": 948,
-            "voxel": {
-              "i": 81,
-              "j": 98,
-              "k": 51
-            }
-          },
-          "coronal": {
-            "axis": 1,
-            "sliceIndex": 79,
-            "areaVoxelCount": 385,
-            "voxel": {
-              "i": 80,
-              "j": 79,
-              "k": 56
-            }
-          },
-          "axial": {
-            "axis": 2,
-            "sliceIndex": 53,
-            "areaVoxelCount": 1022,
-            "voxel": {
-              "i": 78,
-              "j": 95,
-              "k": 53
-            }
-          }
-        }
-      },
-      "quizTargets": [
-        {
-          "id": "inferior_temporal_gyrus_mpr_1",
-          "view": "mpr",
-          "prompt": "Identify the Inferior temporal gyrus.",
-          "status": "draft",
-          "hint": "Auto-populated from FreeSurfer label; QC before release.",
-          "voxel": {
-            "i": 175,
-            "j": 124,
-            "k": 103
-          },
-          "worldMm": {
-            "x": -47.5,
-            "y": -4.023,
-            "z": -0.023
-          }
-        }
-      ],
-      "reviewNote": "Useful inferior temporal landmark."
     },
     {
       "id": "parahippocampal_gyrus",
@@ -7216,10 +6853,10 @@
     }
   ],
   "summary": {
-    "structureCount": 57,
-    "overlayCount": 57,
+    "structureCount": 54,
+    "overlayCount": 54,
     "missingOverlayCount": 0,
-    "targetStructureCount": 96,
+    "targetStructureCount": 89,
     "acceptedOverlayCount": 10
   },
   "sourceFiles": {

@@ -1790,7 +1790,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": [],
       "sourceDifficulty": "intermediate"
     },
@@ -2008,7 +2008,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -2156,7 +2156,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -3296,7 +3296,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -4919,7 +4919,7 @@
         "FreeSurfer generated inventory",
         "high_value_common_anatomy_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -4987,7 +4987,7 @@
         "FreeSurfer generated inventory",
         "high_value_common_anatomy_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -5055,7 +5055,7 @@
         "FreeSurfer generated inventory",
         "high_value_common_anatomy_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": [],
       "sourceDifficulty": "intermediate"
     },

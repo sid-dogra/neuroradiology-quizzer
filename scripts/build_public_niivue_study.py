@@ -37,6 +37,8 @@ DEFAULT_DISPLAY_IMAGE = (
 AXIAL_FOREGROUND_THRESHOLD = 20
 AXIAL_FOREGROUND_MIN_VOXELS = 100
 EDITED_MASK_MIN_ISLAND_VOXELS = 12
+EDITED_MASK_SMOOTH_SIGMA = 0.75
+EDITED_MASK_SMOOTH_THRESHOLD = 0.5
 EDITED_MASK_CLOSE_ITERATIONS = 1
 
 
@@ -262,11 +264,15 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
         return original, {
             "enabled": True,
             "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+            "smoothSigma": EDITED_MASK_SMOOTH_SIGMA,
+            "smoothThreshold": EDITED_MASK_SMOOTH_THRESHOLD,
             "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
             "removedIslandCount": 0,
+            "removedIslandVoxelCount": 0,
             "removedVoxelCount": 0,
             "addedVoxelCount": 0,
             "filledVoxelCount": 0,
+            "netVoxelChange": 0,
         }
 
     connectivity = ndimage.generate_binary_structure(rank=3, connectivity=1)
@@ -275,16 +281,20 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
     keep_labels = np.where(component_sizes >= EDITED_MASK_MIN_ISLAND_VOXELS)[0]
     keep_labels = keep_labels[keep_labels != 0]
     cleaned = np.isin(labels, keep_labels)
+    smoothed = (
+        ndimage.gaussian_filter(cleaned.astype(np.float32), sigma=EDITED_MASK_SMOOTH_SIGMA)
+        >= EDITED_MASK_SMOOTH_THRESHOLD
+    )
 
     if EDITED_MASK_CLOSE_ITERATIONS:
         closed = ndimage.binary_closing(
-            cleaned,
+            smoothed,
             structure=connectivity,
             iterations=EDITED_MASK_CLOSE_ITERATIONS,
         )
-        cleaned = np.logical_or(cleaned, closed)
+        smoothed = np.logical_or(smoothed, closed)
 
-    filled = ndimage.binary_fill_holes(cleaned, structure=connectivity)
+    filled = ndimage.binary_fill_holes(smoothed, structure=connectivity)
     cleaned = filled.astype(bool)
 
     removed_components = [
@@ -296,11 +306,17 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
     return cleaned, {
         "enabled": True,
         "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+        "smoothSigma": EDITED_MASK_SMOOTH_SIGMA,
+        "smoothThreshold": EDITED_MASK_SMOOTH_THRESHOLD,
         "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
         "removedIslandCount": len(removed_components),
+        "removedIslandVoxelCount": int(
+            sum(component_sizes[label] for label in removed_components)
+        ),
         "removedVoxelCount": int(np.count_nonzero(original & ~cleaned)),
         "addedVoxelCount": int(np.count_nonzero(cleaned & ~original)),
         "filledVoxelCount": int(np.count_nonzero(filled & ~original)),
+        "netVoxelChange": int(np.count_nonzero(cleaned) - np.count_nonzero(original)),
     }
 
 

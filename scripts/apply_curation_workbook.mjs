@@ -80,6 +80,7 @@ async function main() {
   const quizRows = rowsById(await readSheetValues(workbook, "Quiz Questions"));
 
   let updated = 0;
+  let hiddenByDeletedRow = 0;
   for (const structure of targetData.structures || []) {
     const structureEntry = structureRows.get(structure.id);
     if (structureEntry) {
@@ -99,6 +100,9 @@ async function main() {
         delete structure.curationNote;
       }
       updated += 1;
+    } else if (structure.includeInViewer !== false) {
+      structure.includeInViewer = false;
+      hiddenByDeletedRow += 1;
     }
 
     const quizEntry = quizRows.get(structure.id);
@@ -122,6 +126,7 @@ async function main() {
   await fs.writeFile(targetPath, `${JSON.stringify(targetData, null, 2)}\n`);
   console.log(`Applied workbook edits to ${path.relative(repoRoot, targetPath)}`);
   console.log(`Updated ${updated} structures`);
+  console.log(`Marked ${hiddenByDeletedRow} deleted workbook rows as includeInViewer=false`);
 }
 
 await main();
