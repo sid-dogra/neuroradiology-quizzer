@@ -37,6 +37,8 @@ DEFAULT_DISPLAY_IMAGE = (
 AXIAL_FOREGROUND_THRESHOLD = 20
 AXIAL_FOREGROUND_MIN_VOXELS = 100
 EDITED_MASK_MIN_ISLAND_VOXELS = 12
+EDITED_MASK_SLICE_FILL_AXIS = 2
+EDITED_MASK_SLICE_FILL_AXIS_NAME = "axial"
 EDITED_MASK_SMOOTH_SIGMA = 0.75
 EDITED_MASK_SMOOTH_THRESHOLD = 0.5
 EDITED_MASK_CLOSE_ITERATIONS = 1
@@ -258,17 +260,31 @@ def mask_stats(path: Path) -> dict[str, Any]:
     }
 
 
+def fill_holes_by_slice(mask: np.ndarray, axis: int) -> np.ndarray:
+    output = np.zeros_like(mask, dtype=bool)
+    for index in range(mask.shape[axis]):
+        if axis == 0:
+            output[index, :, :] = ndimage.binary_fill_holes(mask[index, :, :])
+        elif axis == 1:
+            output[:, index, :] = ndimage.binary_fill_holes(mask[:, index, :])
+        else:
+            output[:, :, index] = ndimage.binary_fill_holes(mask[:, :, index])
+    return output
+
+
 def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
     original = mask.astype(bool)
     if not np.any(original):
         return original, {
             "enabled": True,
             "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+            "sliceFillAxis": EDITED_MASK_SLICE_FILL_AXIS_NAME,
             "smoothSigma": EDITED_MASK_SMOOTH_SIGMA,
             "smoothThreshold": EDITED_MASK_SMOOTH_THRESHOLD,
             "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
             "removedIslandCount": 0,
             "removedIslandVoxelCount": 0,
+            "sliceFilledVoxelCount": 0,
             "removedVoxelCount": 0,
             "addedVoxelCount": 0,
             "filledVoxelCount": 0,
@@ -281,8 +297,9 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
     keep_labels = np.where(component_sizes >= EDITED_MASK_MIN_ISLAND_VOXELS)[0]
     keep_labels = keep_labels[keep_labels != 0]
     cleaned = np.isin(labels, keep_labels)
+    slice_filled = fill_holes_by_slice(cleaned, axis=EDITED_MASK_SLICE_FILL_AXIS)
     smoothed = (
-        ndimage.gaussian_filter(cleaned.astype(np.float32), sigma=EDITED_MASK_SMOOTH_SIGMA)
+        ndimage.gaussian_filter(slice_filled.astype(np.float32), sigma=EDITED_MASK_SMOOTH_SIGMA)
         >= EDITED_MASK_SMOOTH_THRESHOLD
     )
 
@@ -306,6 +323,7 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
     return cleaned, {
         "enabled": True,
         "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+        "sliceFillAxis": EDITED_MASK_SLICE_FILL_AXIS_NAME,
         "smoothSigma": EDITED_MASK_SMOOTH_SIGMA,
         "smoothThreshold": EDITED_MASK_SMOOTH_THRESHOLD,
         "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
@@ -313,6 +331,7 @@ def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
         "removedIslandVoxelCount": int(
             sum(component_sizes[label] for label in removed_components)
         ),
+        "sliceFilledVoxelCount": int(np.count_nonzero(slice_filled & ~cleaned)),
         "removedVoxelCount": int(np.count_nonzero(original & ~cleaned)),
         "addedVoxelCount": int(np.count_nonzero(cleaned & ~original)),
         "filledVoxelCount": int(np.count_nonzero(filled & ~original)),

@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T01:19:15+00:00",
+  "generatedAt": "2026-06-28T01:52:07+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -462,11 +462,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/004_putamen.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 48035,
-        "sha256": "a9e48030d201087c2ae13214c98c808a3ecf57da97bd057bb9cefe1f1c606c73",
-        "voxelCount": 5006,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 47861,
+        "sha256": "ca2868a0b04e9b032f8245abb21fee71245bd6b0568a919cfc246df56df2500e",
+        "voxelCount": 4934,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -475,40 +475,55 @@
             160
           ],
           "centroidVoxel": {
-            "i": 103,
-            "j": 130,
+            "i": 104,
+            "j": 131,
             "k": 73
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 102,
-            "areaVoxelCount": 480,
+            "areaVoxelCount": 494,
             "voxel": {
               "i": 102,
-              "j": 126,
-              "k": 75
+              "j": 127,
+              "k": 74
             }
           },
           "coronal": {
             "axis": 1,
             "sliceIndex": 138,
-            "areaVoxelCount": 206,
+            "areaVoxelCount": 195,
             "voxel": {
-              "i": 107,
+              "i": 106,
               "j": 138,
-              "k": 72
+              "k": 73
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 69,
-            "areaVoxelCount": 338,
+            "sliceIndex": 70,
+            "areaVoxelCount": 325,
             "voxel": {
               "i": 103,
               "j": 132,
-              "k": 69
+              "k": 70
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 94,
+          "removedVoxelCount": 94,
+          "addedVoxelCount": 97,
+          "filledVoxelCount": 97,
+          "netVoxelChange": 3
         }
       },
       "quizTargets": [
@@ -3393,11 +3408,13 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 77,
           "removedVoxelCount": 77,
           "addedVoxelCount": 63,
           "filledVoxelCount": 63,
@@ -4312,11 +4329,13 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 156,
           "removedVoxelCount": 156,
           "addedVoxelCount": 169,
           "filledVoxelCount": 169,
@@ -4569,11 +4588,13 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 67,
           "removedVoxelCount": 67,
           "addedVoxelCount": 16,
           "filledVoxelCount": 16,
@@ -4663,11 +4684,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/065_lentiform_nucleus.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 48284,
-        "sha256": "333853250f1e0f132c195f2b3df62004886786830eea30972b35e5b6d25f954d",
-        "voxelCount": 6863,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 48048,
+        "sha256": "7b2724b985be8d6558ded9d7b02360aeff2bf65054ee4301fe3040ac97f886ca",
+        "voxelCount": 6295,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4677,39 +4698,54 @@
           ],
           "centroidVoxel": {
             "i": 105,
-            "j": 129,
+            "j": 130,
             "k": 73
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 104,
-            "areaVoxelCount": 530,
+            "areaVoxelCount": 519,
             "voxel": {
               "i": 104,
-              "j": 129,
+              "j": 130,
               "k": 74
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 130,
-            "areaVoxelCount": 294,
+            "sliceIndex": 131,
+            "areaVoxelCount": 275,
             "voxel": {
-              "i": 105,
-              "j": 130,
-              "k": 73
+              "i": 106,
+              "j": 131,
+              "k": 74
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 70,
-            "areaVoxelCount": 525,
+            "sliceIndex": 72,
+            "areaVoxelCount": 496,
             "voxel": {
-              "i": 105,
+              "i": 106,
               "j": 130,
-              "k": 70
+              "k": 72
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 82,
+          "removedVoxelCount": 82,
+          "addedVoxelCount": 80,
+          "filledVoxelCount": 80,
+          "netVoxelChange": -2
         }
       },
       "quizTargets": [
@@ -5058,9 +5094,9 @@
         "url": "annotations/073_trigone_atrium_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46570,
-        "sha256": "8610396010f9596d978c9b08951f93abac699fdf3852ad580386558414d63bee",
-        "voxelCount": 1099,
+        "bytes": 46577,
+        "sha256": "d30e8009a488d06c51bcf7ee0ffa7f2f9fe65f572790ffc4a383b25067c24910",
+        "voxelCount": 1112,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5085,11 +5121,11 @@
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 86,
-            "areaVoxelCount": 83,
+            "sliceIndex": 87,
+            "areaVoxelCount": 86,
             "voxel": {
               "i": 104,
-              "j": 86,
+              "j": 87,
               "k": 73
             }
           },
@@ -5107,15 +5143,17 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
-          "removedVoxelCount": 98,
-          "addedVoxelCount": 76,
-          "filledVoxelCount": 76,
-          "netVoxelChange": -22
+          "sliceFilledVoxelCount": 94,
+          "removedVoxelCount": 94,
+          "addedVoxelCount": 85,
+          "filledVoxelCount": 85,
+          "netVoxelChange": -9
         }
       },
       "quizTargets": [
@@ -5218,11 +5256,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/074_occipital_lobe.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 59215,
-        "sha256": "cc0b65e3ea6c99cf5e573c5d17ca6466733d4ed557bd81f5a925d0f764d00f3d",
-        "voxelCount": 18504,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 58809,
+        "sha256": "c59903abc621233244cd33a8eafafb78f310c2651a417209f6ad53bf2ba02338",
+        "voxelCount": 56421,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5231,40 +5269,55 @@
             160
           ],
           "centroidVoxel": {
-            "i": 109,
+            "i": 107,
             "j": 55,
-            "k": 61
+            "k": 65
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 122,
-            "areaVoxelCount": 619,
+            "sliceIndex": 108,
+            "areaVoxelCount": 1537,
             "voxel": {
-              "i": 122,
-              "j": 53,
-              "k": 64
+              "i": 108,
+              "j": 57,
+              "k": 65
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 49,
-            "areaVoxelCount": 604,
+            "sliceIndex": 48,
+            "areaVoxelCount": 1904,
             "voxel": {
-              "i": 111,
-              "j": 49,
-              "k": 57
+              "i": 109,
+              "j": 48,
+              "k": 66
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 64,
-            "areaVoxelCount": 816,
+            "sliceIndex": 61,
+            "areaVoxelCount": 2206,
             "voxel": {
-              "i": 108,
-              "j": 60,
-              "k": 64
+              "i": 105,
+              "j": 61,
+              "k": 61
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 4,
+          "removedIslandVoxelCount": 7,
+          "sliceFilledVoxelCount": 787,
+          "removedVoxelCount": 794,
+          "addedVoxelCount": 19474,
+          "filledVoxelCount": 19474,
+          "netVoxelChange": 18680
         }
       },
       "quizTargets": [
@@ -5391,11 +5444,13 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 222,
           "removedVoxelCount": 222,
           "addedVoxelCount": 152,
           "filledVoxelCount": 152,
@@ -5597,11 +5652,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/077_body_of_the_lateral_ventricle.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 48390,
-        "sha256": "45ab8feea28403fcd0ec03238a57b24251dc703ebb6b5f65866b4fa77e62b1b3",
-        "voxelCount": 4273,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46514,
+        "sha256": "61a77e1735f3160dd9ce12d174ae64be52cfebf8ed3d7561bf478db013a5f2d2",
+        "voxelCount": 1232,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5610,40 +5665,55 @@
             160
           ],
           "centroidVoxel": {
-            "i": 115,
-            "j": 116,
-            "k": 83
+            "i": 117,
+            "j": 119,
+            "k": 90
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 123,
-            "areaVoxelCount": 332,
+            "sliceIndex": 117,
+            "areaVoxelCount": 135,
             "voxel": {
-              "i": 123,
-              "j": 136,
-              "k": 83
+              "i": 117,
+              "j": 121,
+              "k": 91
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 133,
-            "areaVoxelCount": 102,
+            "sliceIndex": 123,
+            "areaVoxelCount": 39,
             "voxel": {
-              "i": 122,
-              "j": 133,
-              "k": 85
+              "i": 119,
+              "j": 123,
+              "k": 91
             }
           },
           "axial": {
             "axis": 2,
             "sliceIndex": 89,
-            "areaVoxelCount": 294,
+            "areaVoxelCount": 263,
             "voxel": {
               "i": 119,
-              "j": 123,
+              "j": 121,
               "k": 89
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 88,
+          "removedVoxelCount": 88,
+          "addedVoxelCount": 8,
+          "filledVoxelCount": 8,
+          "netVoxelChange": -80
         }
       },
       "quizTargets": [
@@ -5910,11 +5980,13 @@
         "maskCleanup": {
           "enabled": true,
           "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 87,
           "removedVoxelCount": 87,
           "addedVoxelCount": 25,
           "filledVoxelCount": 25,
@@ -6857,7 +6929,7 @@
     "overlayCount": 54,
     "missingOverlayCount": 0,
     "targetStructureCount": 89,
-    "acceptedOverlayCount": 10
+    "acceptedOverlayCount": 14
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",

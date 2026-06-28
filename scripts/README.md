@@ -48,9 +48,10 @@ This requires `nibabel`, `numpy`, and `scipy`. Generated-review masks are marked
 `data/finalized/accepted_annotations/` are marked `accepted`.
 
 Accepted masks with filenames ending in `.edited.nii.gz` are cleaned during
-public export: tiny disconnected islands are removed, a light Gaussian boundary
-smooth is applied to reduce attached edge streaks, then a gentle close/fill is
-applied to reduce small editing gaps. Source masks in
+public export: tiny disconnected islands are removed, enclosed holes are filled
+slice-by-slice on axial views, a light Gaussian boundary smooth is applied to
+reduce attached edge streaks, then a gentle close/fill is applied to reduce
+small editing gaps. Source masks in
 `data/finalized/accepted_annotations/` are not modified.
 
 ## Build OHIF DicomJson Manifest
