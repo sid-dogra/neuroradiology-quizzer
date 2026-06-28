@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T01:03:18+00:00",
+  "generatedAt": "2026-06-28T01:08:39+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -3344,9 +3344,9 @@
         "url": "annotations/029_medulla_oblongata.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 47623,
-        "sha256": "bc6d8b7bf50de556e2f9441ef3481341af1dfeffd391bd8544b0039e8ac7d7cf",
-        "voxelCount": 4170,
+        "bytes": 47688,
+        "sha256": "ebab17bd3b349df396007804e47e8adbbfc8766f119a7e7a81cb6743778b409b",
+        "voxelCount": 4246,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -3362,7 +3362,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 124,
-            "areaVoxelCount": 311,
+            "areaVoxelCount": 316,
             "voxel": {
               "i": 124,
               "j": 99,
@@ -3372,7 +3372,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 97,
-            "areaVoxelCount": 400,
+            "areaVoxelCount": 401,
             "voxel": {
               "i": 128,
               "j": 97,
@@ -3382,13 +3382,22 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 28,
-            "areaVoxelCount": 236,
+            "areaVoxelCount": 245,
             "voxel": {
               "i": 128,
               "j": 100,
               "k": 28
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 76,
+          "filledVoxelCount": 76
         }
       },
       "quizTargets": [
@@ -4250,9 +4259,9 @@
         "url": "annotations/054_midbrain.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 48587,
-        "sha256": "a849768a10624f1087e87d7f85f9c14e9f99551ddc1dc0b8f231dd2d68ff1698",
-        "voxelCount": 8398,
+        "bytes": 48440,
+        "sha256": "cab9aa9cbd74e7ff7d2e5bcb02e2fd67c40593cae9b2bc9893e63147e0b6e0b9",
+        "voxelCount": 8593,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4268,7 +4277,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 133,
-            "areaVoxelCount": 408,
+            "areaVoxelCount": 414,
             "voxel": {
               "i": 133,
               "j": 110,
@@ -4278,7 +4287,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 112,
-            "areaVoxelCount": 404,
+            "areaVoxelCount": 409,
             "voxel": {
               "i": 128,
               "j": 112,
@@ -4288,13 +4297,22 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 62,
-            "areaVoxelCount": 767,
+            "areaVoxelCount": 786,
             "voxel": {
               "i": 128,
-              "j": 112,
+              "j": 113,
               "k": 62
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 195,
+          "filledVoxelCount": 195
         }
       },
       "quizTargets": [
@@ -4494,9 +4512,9 @@
         "url": "annotations/061_frontal_horn_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46713,
-        "sha256": "23627288ae461fb4e609c26caa85e6ac955a06f9c592d5e5a30cc06a44426850",
-        "voxelCount": 1567,
+        "bytes": 46760,
+        "sha256": "1f2a1c81eef5584cf7fe6caa8b9a60df50d810ab0acd1c71bfe39269b6b98b16",
+        "voxelCount": 1592,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4512,7 +4530,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 123,
-            "areaVoxelCount": 268,
+            "areaVoxelCount": 271,
             "voxel": {
               "i": 123,
               "j": 138,
@@ -4532,13 +4550,22 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 87,
-            "areaVoxelCount": 161,
+            "areaVoxelCount": 166,
             "voxel": {
               "i": 121,
-              "j": 138,
+              "j": 137,
               "k": 87
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 25,
+          "filledVoxelCount": 25
         }
       },
       "quizTargets": [
@@ -5019,9 +5046,9 @@
         "url": "annotations/073_trigone_atrium_of_the_lateral_ventricle.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46625,
-        "sha256": "facf665f95af04e8912e624f06ca43a4e65ba6b779ca3d7a06351444b4062b99",
-        "voxelCount": 1121,
+        "bytes": 46682,
+        "sha256": "8c7240dfb7400845ce078b402a3fa1663d9aee84227c0d56edb0f079fd348ab7",
+        "voxelCount": 1247,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5032,7 +5059,7 @@
           "centroidVoxel": {
             "i": 105,
             "j": 86,
-            "k": 74
+            "k": 75
           },
           "sagittal": {
             "axis": 0,
@@ -5046,24 +5073,33 @@
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 84,
-            "areaVoxelCount": 75,
+            "sliceIndex": 87,
+            "areaVoxelCount": 93,
             "voxel": {
               "i": 104,
-              "j": 84,
+              "j": 87,
               "k": 74
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 70,
-            "areaVoxelCount": 90,
+            "sliceIndex": 80,
+            "areaVoxelCount": 94,
             "voxel": {
-              "i": 102,
-              "j": 83,
-              "k": 70
+              "i": 109,
+              "j": 90,
+              "k": 80
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 126,
+          "filledVoxelCount": 126
         }
       },
       "quizTargets": [
@@ -5290,9 +5326,9 @@
         "url": "annotations/075_splenium_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 47665,
-        "sha256": "f398a2173a7bed4eaabdc18112a0c7585de3e70730e66c2b4ff7b60e07167585",
-        "voxelCount": 5396,
+        "bytes": 47620,
+        "sha256": "b4dc0c782a12c7375c3183a2f08da373cbdcb5399bdbc177d42ad0f46b0e90b7",
+        "voxelCount": 5592,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5318,7 +5354,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 94,
-            "areaVoxelCount": 402,
+            "areaVoxelCount": 407,
             "voxel": {
               "i": 128,
               "j": 94,
@@ -5328,13 +5364,22 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 76,
-            "areaVoxelCount": 451,
+            "areaVoxelCount": 462,
             "voxel": {
               "i": 129,
               "j": 91,
               "k": 76
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 208,
+          "filledVoxelCount": 208
         }
       },
       "quizTargets": [
@@ -5796,9 +5841,9 @@
         "url": "annotations/079_body_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46680,
-        "sha256": "ad02158ec2338046c02678062f0c69fbdd106f8f61c8d55692b8d81f7e3229b2",
-        "voxelCount": 1532,
+        "bytes": 46681,
+        "sha256": "f2c525cb729c83da535d1455c8923973b6dc18a2ec0dffdc54299f96d77411d8",
+        "voxelCount": 1568,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5814,17 +5859,17 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 126,
-            "areaVoxelCount": 334,
+            "areaVoxelCount": 343,
             "voxel": {
               "i": 126,
-              "j": 127,
-              "k": 91
+              "j": 126,
+              "k": 90
             }
           },
           "coronal": {
             "axis": 1,
             "sliceIndex": 113,
-            "areaVoxelCount": 44,
+            "areaVoxelCount": 46,
             "voxel": {
               "i": 127,
               "j": 113,
@@ -5841,6 +5886,15 @@
               "k": 91
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedVoxelCount": 0,
+          "addedVoxelCount": 36,
+          "filledVoxelCount": 36
         }
       },
       "quizTargets": [

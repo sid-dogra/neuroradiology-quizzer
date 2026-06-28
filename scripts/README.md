@@ -43,9 +43,14 @@ public/studies/nki_a00039636_t1/
   annotations/
 ```
 
-This requires `nibabel` and `numpy`. Generated-review masks are marked
+This requires `nibabel`, `numpy`, and `scipy`. Generated-review masks are marked
 `needs_review` in the manifest; masks copied from
 `data/finalized/accepted_annotations/` are marked `accepted`.
+
+Accepted masks with filenames ending in `.edited.nii.gz` are cleaned during
+public export: tiny disconnected islands are removed, then a gentle close/fill
+is applied to reduce stray voxels and small editing gaps. Source masks in
+`data/finalized/accepted_annotations/` are not modified.
 
 ## Build OHIF DicomJson Manifest
 

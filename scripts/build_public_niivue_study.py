@@ -15,6 +15,7 @@ from typing import Any
 
 import nibabel as nib
 import numpy as np
+from scipy import ndimage
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +36,8 @@ DEFAULT_DISPLAY_IMAGE = (
 )
 AXIAL_FOREGROUND_THRESHOLD = 20
 AXIAL_FOREGROUND_MIN_VOXELS = 100
+EDITED_MASK_MIN_ISLAND_VOXELS = 12
+EDITED_MASK_CLOSE_ITERATIONS = 1
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -253,6 +256,54 @@ def mask_stats(path: Path) -> dict[str, Any]:
     }
 
 
+def edited_mask_cleanup(mask: np.ndarray) -> tuple[np.ndarray, dict[str, Any]]:
+    original = mask.astype(bool)
+    if not np.any(original):
+        return original, {
+            "enabled": True,
+            "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+            "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
+            "removedIslandCount": 0,
+            "removedVoxelCount": 0,
+            "addedVoxelCount": 0,
+            "filledVoxelCount": 0,
+        }
+
+    connectivity = ndimage.generate_binary_structure(rank=3, connectivity=1)
+    labels, component_count = ndimage.label(original, structure=connectivity)
+    component_sizes = np.bincount(labels.ravel())
+    keep_labels = np.where(component_sizes >= EDITED_MASK_MIN_ISLAND_VOXELS)[0]
+    keep_labels = keep_labels[keep_labels != 0]
+    cleaned = np.isin(labels, keep_labels)
+
+    if EDITED_MASK_CLOSE_ITERATIONS:
+        closed = ndimage.binary_closing(
+            cleaned,
+            structure=connectivity,
+            iterations=EDITED_MASK_CLOSE_ITERATIONS,
+        )
+        cleaned = np.logical_or(cleaned, closed)
+
+    filled = ndimage.binary_fill_holes(cleaned, structure=connectivity)
+    cleaned = filled.astype(bool)
+
+    removed_components = [
+        int(label)
+        for label in range(1, component_count + 1)
+        if component_sizes[label] < EDITED_MASK_MIN_ISLAND_VOXELS
+    ]
+
+    return cleaned, {
+        "enabled": True,
+        "minIslandVoxels": EDITED_MASK_MIN_ISLAND_VOXELS,
+        "closeIterations": EDITED_MASK_CLOSE_ITERATIONS,
+        "removedIslandCount": len(removed_components),
+        "removedVoxelCount": int(np.count_nonzero(original & ~cleaned)),
+        "addedVoxelCount": int(np.count_nonzero(cleaned & ~original)),
+        "filledVoxelCount": int(np.count_nonzero(filled & ~original)),
+    }
+
+
 def build_mask_index(paths: list[Path]) -> dict[str, Path]:
     index: dict[str, Path] = {}
     for directory in paths:
@@ -316,11 +367,14 @@ def copy_mask(
     destination: Path,
     reference: nib.spatialimages.SpatialImage,
     crop_slices: tuple[slice, slice, slice],
-) -> dict[str, Any]:
+) -> tuple[dict[str, Any], dict[str, Any] | None]:
     destination.parent.mkdir(parents=True, exist_ok=True)
     mask = crop_mask_to_reference(source, reference, crop_slices)
+    cleanup: dict[str, Any] | None = None
+    if source.name.endswith(".edited.nii.gz") or source.name.endswith(".edited.nii"):
+        mask, cleanup = edited_mask_cleanup(mask)
     nib.save(make_binary_nifti(reference, mask), str(destination))
-    return mask_stats(destination)
+    return mask_stats(destination), cleanup
 
 
 def split_label_mask(
@@ -473,7 +527,12 @@ def build_public_study(
 
         if chosen:
             source_kind, source_mask = chosen
-            stats = copy_mask(source_mask, mask_destination, reference, crop_slices)
+            stats, cleanup = copy_mask(
+                source_mask,
+                mask_destination,
+                reference,
+                crop_slices,
+            )
             overlay = {
                 "url": relative_path(mask_destination, output_dir),
                 "sourceKind": source_kind,
@@ -482,6 +541,8 @@ def build_public_study(
                 ),
                 **stats,
             }
+            if cleanup:
+                overlay["maskCleanup"] = cleanup
         else:
             stats = split_label_mask(
                 segmentation_data,
