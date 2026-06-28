@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T17:13:13+00:00",
+  "generatedAt": "2026-06-28T17:41:37+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -6995,7 +6995,7 @@
     "structureCount": 54,
     "overlayCount": 54,
     "missingOverlayCount": 0,
-    "targetStructureCount": 99,
+    "targetStructureCount": 97,
     "acceptedOverlayCount": 19
   },
   "sourceFiles": {

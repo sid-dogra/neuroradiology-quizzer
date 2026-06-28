@@ -1790,7 +1790,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": [],
       "sourceDifficulty": "intermediate",
       "curationNote": "Beginner posterior fossa landmark; activated for future manual annotation."
@@ -4683,7 +4683,7 @@
         "FreeSurfer generated inventory",
         "radiology_landmark_candidate_list"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": []
     },
     {
@@ -5702,7 +5702,7 @@
       "references": [
         "Beginner intracranial anatomy checklist"
       ],
-      "includeInViewer": true,
+      "includeInViewer": false,
       "quizQuestions": [],
       "curationNote": "Beginner posterior fossa landmark; broader cerebellum target is already present."
     },
@@ -5798,6 +5798,38 @@
       "includeInViewer": true,
       "quizQuestions": [],
       "curationNote": "Small pineal/posterior commissural region landmark; include if visible enough for teaching."
+    },
+    {
+      "id": "optic_nerve",
+      "preferredName": "Optic nerve",
+      "aliases": [
+        "Optic nerve"
+      ],
+      "acceptedAnswers": [
+        "Optic nerve",
+        "optic nerve"
+      ],
+      "difficulty": "beginner",
+      "systems": [
+        "cranial_nerves",
+        "skull_base",
+        "orbit"
+      ],
+      "laterality": "left",
+      "description": "Draft beginner annotation target for Optic nerve. Add an accepted mask before it appears in the public viewer.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "High-yield anterior skull base/orbital apex structure adjacent to the optic chiasm.",
+        "No overlay is generated until an accepted annotation mask is supplied."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Beginner intracranial anatomy checklist"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "High-yield anterior skull base/orbital apex structure adjacent to the optic chiasm."
     }
   ]
 }

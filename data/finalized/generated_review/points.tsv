@@ -103,3 +103,4 @@ labelValue	id	preferredName	userAction	sourceStrategy	voxel_i	voxel_j	voxel_k	wo
 102	internal_auditory_canal	Internal auditory canal	fully_place_manually	manual							High-yield skull base landmark; useful before adding detailed foraminal contents questions.
 103	subthalamic_region	Subthalamic region	fully_place_manually	manual							Optional beginner-to-intermediate deep gray landmark if it can be shown cleanly on this T1.
 104	habenula	Habenula	fully_place_manually	manual							Small pineal/posterior commissural region landmark; include if visible enough for teaching.
+105	optic_nerve	Optic nerve	fully_place_manually	manual							High-yield anterior skull base/orbital apex structure adjacent to the optic chiasm.

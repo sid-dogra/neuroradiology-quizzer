@@ -103,3 +103,4 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 102	internal_auditory_canal	Internal auditory canal	Internal auditory canal	fully_place_manually	manual_required	manual	beginner	skull_base;cranial_nerves	242	98	122
 103	subthalamic_region	Subthalamic region	Subthalamic region	fully_place_manually	manual_required	manual	beginner	deep_gray;basal_ganglia	118	217	218
 104	habenula	Habenula	Habenula	fully_place_manually	manual_required	manual	beginner	midline;deep_gray	190	214	82
+105	optic_nerve	Optic nerve	Optic nerve	fully_place_manually	manual_required	manual	beginner	cranial_nerves;skull_base;orbit	95	156	242
