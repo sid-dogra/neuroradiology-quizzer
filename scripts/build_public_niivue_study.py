@@ -78,6 +78,7 @@ def normalize_mask_key(value: str) -> str:
     value = nifti_stem(Path(value))
     value = re.sub(r"^\d+_", "", value)
     value = re.sub(r"([._-]edited|[._-]accepted)$", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"^new[_-]+", "", value, flags=re.IGNORECASE)
     return slug(value)
 
 

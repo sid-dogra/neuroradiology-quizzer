@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T02:55:57+00:00",
+  "generatedAt": "2026-06-28T16:56:44+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -1076,11 +1076,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/009_amygdala.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 46643,
-        "sha256": "c95b4e5bf0e50c053c8bd30b031f0cb2d4a59ce5a26f51035e94951e89769e18",
-        "voxelCount": 1563,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46771,
+        "sha256": "62ce870f368ba9ee29d0e8e200e68444afc5132fb137ed4a7e1e09080496ea55",
+        "voxelCount": 2081,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -1090,23 +1090,23 @@
           ],
           "centroidVoxel": {
             "i": 107,
-            "j": 129,
-            "k": 57
+            "j": 130,
+            "k": 56
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 106,
-            "areaVoxelCount": 141,
+            "areaVoxelCount": 180,
             "voxel": {
               "i": 106,
-              "j": 128,
-              "k": 57
+              "j": 130,
+              "k": 56
             }
           },
           "coronal": {
             "axis": 1,
             "sliceIndex": 130,
-            "areaVoxelCount": 196,
+            "areaVoxelCount": 200,
             "voxel": {
               "i": 107,
               "j": 130,
@@ -1115,14 +1115,29 @@
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 58,
-            "areaVoxelCount": 146,
+            "sliceIndex": 55,
+            "areaVoxelCount": 201,
             "voxel": {
-              "i": 108,
-              "j": 129,
-              "k": 58
+              "i": 107,
+              "j": 132,
+              "k": 55
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 70,
+          "removedVoxelCount": 70,
+          "addedVoxelCount": 51,
+          "filledVoxelCount": 51,
+          "netVoxelChange": -19
         }
       },
       "quizTargets": [
@@ -3830,146 +3845,6 @@
       "reviewNote": "Destrieux provides an explicit gyrus rectus label."
     },
     {
-      "id": "uncus",
-      "displayName": "Uncus",
-      "targetName": "Uncus",
-      "laterality": "left",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
-      "systems": [
-        "limbic",
-        "cortex"
-      ],
-      "description": "Draft T1 MPRAGE annotation target for Uncus. This entry needs localization and QC before viewer release.",
-      "relationships": {},
-      "clinicalNotes": [
-        "Source strategy: manual.",
-        "Use nearby labels only as orientation support.",
-        "Review flag: needs_manual_localization.",
-        "Review flag: multiple_source_labels_review.",
-        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
-      ],
-      "acceptedAnswers": [
-        "Uncus",
-        "uncus",
-        "Left Amygdala",
-        "Left entorhinal",
-        "Left parahippocampal",
-        "Left-Amygdala",
-        "entorhinal",
-        "parahippocampal"
-      ],
-      "aliases": [
-        "Left Amygdala",
-        "Left entorhinal",
-        "Left parahippocampal",
-        "Left-Amygdala",
-        "entorhinal",
-        "parahippocampal"
-      ],
-      "references": [
-        "Target tab curation workbook",
-        "FreeSurfer generated inventory",
-        "radiology_landmark_candidate_list"
-      ],
-      "quizQuestions": [],
-      "includeInViewer": true,
-      "sourceLabels": [
-        {
-          "source": "FreeSurfer aseg",
-          "label": "Left-Amygdala",
-          "value": 18
-        },
-        {
-          "source": "FreeSurfer Desikan-Killiany aparc",
-          "label": "entorhinal",
-          "value": 1006
-        },
-        {
-          "source": "FreeSurfer Desikan-Killiany aparc",
-          "label": "parahippocampal",
-          "value": 1016
-        }
-      ],
-      "sourceStrategy": "manual",
-      "userAction": "edit_or_replace_anchor",
-      "localizationStatus": "support_anchor_needs_edit",
-      "labelValue": 44,
-      "color": "#4ef279",
-      "hasOverlay": true,
-      "overlay": {
-        "url": "annotations/044_uncus.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 49258,
-        "sha256": "7994d632b107fd3aa769b3b9bd5fcc42a738bb0a81bd47b8cf8a6d83200d30f1",
-        "voxelCount": 5399,
-        "bestSlices": {
-          "coordinateSpace": "viewer_ras_voxel",
-          "shape": [
-            256,
-            256,
-            160
-          ],
-          "centroidVoxel": {
-            "i": 106,
-            "j": 121,
-            "k": 51
-          },
-          "sagittal": {
-            "axis": 0,
-            "sliceIndex": 107,
-            "areaVoxelCount": 424,
-            "voxel": {
-              "i": 107,
-              "j": 124,
-              "k": 50
-            }
-          },
-          "coronal": {
-            "axis": 1,
-            "sliceIndex": 131,
-            "areaVoxelCount": 266,
-            "voxel": {
-              "i": 106,
-              "j": 131,
-              "k": 52
-            }
-          },
-          "axial": {
-            "axis": 2,
-            "sliceIndex": 57,
-            "areaVoxelCount": 290,
-            "voxel": {
-              "i": 107,
-              "j": 112,
-              "k": 57
-            }
-          }
-        }
-      },
-      "quizTargets": [
-        {
-          "id": "uncus_mpr_1",
-          "view": "mpr",
-          "prompt": "Identify the Uncus.",
-          "status": "draft",
-          "hint": "Support anchor only; move or refine manually before release.",
-          "voxel": {
-            "i": 148,
-            "j": 116,
-            "k": 129
-          },
-          "worldMm": {
-            "x": -20.5,
-            "y": 21.977,
-            "z": 7.977
-          }
-        }
-      ],
-      "reviewNote": "Use nearby labels only as orientation support."
-    },
-    {
       "id": "temporal_horn_of_the_lateral_ventricle",
       "displayName": "Temporal horn of the lateral ventricle",
       "targetName": "Temporal horn of the lateral ventricle",
@@ -4948,6 +4823,153 @@
         }
       ],
       "reviewNote": "May be cleaner as anterior/posterior cingulate or one broader teaching target."
+    },
+    {
+      "id": "septum_pellucidum",
+      "displayName": "Septum pellucidum",
+      "targetName": "Septum pellucidum",
+      "laterality": "midline",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
+      "systems": [
+        "midline",
+        "ventricles",
+        "csf_spaces"
+      ],
+      "description": "Draft T1 MPRAGE annotation target for Septum pellucidum. This entry needs localization and QC before viewer release.",
+      "relationships": {},
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Thin membrane between frontal horns.",
+        "Review flag: needs_manual_localization.",
+        "Review flag: multiple_source_labels_review.",
+        "Localization status: support_anchor_needs_edit (edit_or_replace_anchor) in FreeSurfer conformed T1.mgz space."
+      ],
+      "acceptedAnswers": [
+        "Septum pellucidum",
+        "septum pellucidum",
+        "Left Lateral Ventricle",
+        "Right Lateral Ventricle",
+        "Left-Lateral-Ventricle",
+        "Right-Lateral-Ventricle"
+      ],
+      "aliases": [
+        "Left Lateral Ventricle",
+        "Right Lateral Ventricle",
+        "Left-Lateral-Ventricle",
+        "Right-Lateral-Ventricle"
+      ],
+      "references": [
+        "Target tab curation workbook",
+        "FreeSurfer generated inventory",
+        "radiology_landmark_candidate_list"
+      ],
+      "quizQuestions": [],
+      "includeInViewer": true,
+      "sourceLabels": [
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Left-Lateral-Ventricle",
+          "value": 4
+        },
+        {
+          "source": "FreeSurfer aseg",
+          "label": "Right-Lateral-Ventricle",
+          "value": 43
+        }
+      ],
+      "sourceStrategy": "manual",
+      "userAction": "edit_or_replace_anchor",
+      "localizationStatus": "support_anchor_needs_edit",
+      "labelValue": 71,
+      "color": "#4ef2c2",
+      "hasOverlay": true,
+      "overlay": {
+        "url": "annotations/071_septum_pellucidum.nii.gz",
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46249,
+        "sha256": "91350fc00a21dcae5afa2e5b676887ba4ec4164388d91d5bb473d5470048d8e4",
+        "voxelCount": 394,
+        "bestSlices": {
+          "coordinateSpace": "viewer_ras_voxel",
+          "shape": [
+            256,
+            256,
+            160
+          ],
+          "centroidVoxel": {
+            "i": 127,
+            "j": 138,
+            "k": 84
+          },
+          "sagittal": {
+            "axis": 0,
+            "sliceIndex": 127,
+            "areaVoxelCount": 165,
+            "voxel": {
+              "i": 127,
+              "j": 138,
+              "k": 84
+            }
+          },
+          "coronal": {
+            "axis": 1,
+            "sliceIndex": 141,
+            "areaVoxelCount": 31,
+            "voxel": {
+              "i": 127,
+              "j": 141,
+              "k": 82
+            }
+          },
+          "axial": {
+            "axis": 2,
+            "sliceIndex": 87,
+            "areaVoxelCount": 41,
+            "voxel": {
+              "i": 127,
+              "j": 135,
+              "k": 87
+            }
+          }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 46,
+          "removedVoxelCount": 46,
+          "addedVoxelCount": 2,
+          "filledVoxelCount": 2,
+          "netVoxelChange": -44
+        }
+      },
+      "quizTargets": [
+        {
+          "id": "septum_pellucidum_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Septum pellucidum.",
+          "status": "draft",
+          "hint": "Support anchor only; move or refine manually before release.",
+          "voxel": {
+            "i": 131,
+            "j": 85,
+            "k": 117
+          },
+          "worldMm": {
+            "x": -3.5,
+            "y": 9.977,
+            "z": 38.977
+          }
+        }
+      ],
+      "reviewNote": "Thin membrane between frontal horns."
     },
     {
       "id": "forceps_minor",
@@ -5976,9 +5998,9 @@
         "url": "annotations/079_body_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 46619,
-        "sha256": "6374966f8951985814c33a7990023abfed30849ae46b399556c15ad916110d3a",
-        "voxelCount": 1470,
+        "bytes": 47281,
+        "sha256": "6ed06c14b90c6cf7140d03da50329a12b19d2892962e5a7a1ccf6bfa7f7c54d0",
+        "voxelCount": 3636,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5988,37 +6010,37 @@
           ],
           "centroidVoxel": {
             "i": 127,
-            "j": 126,
-            "k": 91
+            "j": 130,
+            "k": 92
           },
           "sagittal": {
             "axis": 0,
             "sliceIndex": 126,
-            "areaVoxelCount": 326,
+            "areaVoxelCount": 307,
             "voxel": {
               "i": 126,
-              "j": 126,
+              "j": 131,
               "k": 91
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 113,
-            "areaVoxelCount": 42,
+            "sliceIndex": 119,
+            "areaVoxelCount": 105,
             "voxel": {
               "i": 127,
-              "j": 113,
-              "k": 90
+              "j": 119,
+              "k": 93
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 91,
-            "areaVoxelCount": 181,
+            "sliceIndex": 92,
+            "areaVoxelCount": 484,
             "voxel": {
               "i": 127,
-              "j": 128,
-              "k": 91
+              "j": 127,
+              "k": 92
             }
           }
         },
@@ -6029,13 +6051,13 @@
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
-          "removedIslandCount": 0,
-          "removedIslandVoxelCount": 0,
-          "sliceFilledVoxelCount": 87,
-          "removedVoxelCount": 87,
-          "addedVoxelCount": 25,
-          "filledVoxelCount": 25,
-          "netVoxelChange": -62
+          "removedIslandCount": 2,
+          "removedIslandVoxelCount": 8,
+          "sliceFilledVoxelCount": 131,
+          "removedVoxelCount": 139,
+          "addedVoxelCount": 82,
+          "filledVoxelCount": 82,
+          "netVoxelChange": -57
         }
       },
       "quizTargets": [
@@ -6974,7 +6996,7 @@
     "overlayCount": 54,
     "missingOverlayCount": 0,
     "targetStructureCount": 89,
-    "acceptedOverlayCount": 17
+    "acceptedOverlayCount": 19
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",
