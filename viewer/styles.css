@@ -488,6 +488,41 @@ input[type="range"] {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.edit-actions.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mask-operations {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.mask-operations h3 {
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.slice-range-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.slice-range-grid label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.slice-range-grid input {
+  min-width: 0;
+  width: 100%;
+}
+
 @media (max-width: 1180px) {
   .workspace {
     grid-template-columns: 230px minmax(360px, 1fr);

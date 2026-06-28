@@ -1,5 +1,5 @@
 const DEFAULT_STUDY = "../public/studies/nki_a00039636_t1/study.json";
-const APP_BUILD_VERSION = "20260628-02";
+const APP_BUILD_VERSION = "20260628-03";
 const NIVUE_MODULE_URL = "https://cdn.jsdelivr.net/npm/@niivue/niivue@latest/dist/index.js";
 const VIEW_TYPES = {
   axial: 0,
@@ -82,6 +82,13 @@ const els = {
   undoEditButton: document.querySelector("#undoEditButton"),
   resetEditButton: document.querySelector("#resetEditButton"),
   saveEditButton: document.querySelector("#saveEditButton"),
+  clearMaskButton: document.querySelector("#clearMaskButton"),
+  clearSliceButton: document.querySelector("#clearSliceButton"),
+  clearRangeButton: document.querySelector("#clearRangeButton"),
+  fillSliceButton: document.querySelector("#fillSliceButton"),
+  fillRangeButton: document.querySelector("#fillRangeButton"),
+  sliceRangeStart: document.querySelector("#sliceRangeStart"),
+  sliceRangeEnd: document.querySelector("#sliceRangeEnd"),
   canvas: document.querySelector("#niivueCanvas")
 };
 
@@ -342,6 +349,27 @@ function updateSliceControls(voxel = null) {
   els.sliceSlider.max = String(maxIndex);
   els.sliceSlider.value = String(sliceIndex);
   els.sliceValue.textContent = `${sliceIndex + 1} / ${maxIndex + 1}`;
+  updateEditOperationRanges(shape, sliceIndex);
+}
+
+function updateEditOperationRanges(shape = volumeShape(), sliceIndex = null) {
+  if (!els.sliceRangeStart || !els.sliceRangeEnd || !shape) {
+    return;
+  }
+
+  const axis = sliceAxis();
+  const max = Math.max(1, shape[axis]);
+  const current = (sliceIndex ?? currentVoxel()?.[axis] ?? 0) + 1;
+  for (const input of [els.sliceRangeStart, els.sliceRangeEnd]) {
+    input.min = "1";
+    input.max = String(max);
+    input.placeholder = `1-${max}`;
+    if (!input.value) {
+      input.value = String(clamp(current, 1, max));
+    } else {
+      input.value = String(clamp(Number.parseInt(input.value, 10) || current, 1, max));
+    }
+  }
 }
 
 function moveCrosshairToVoxel(voxel) {
@@ -869,11 +897,23 @@ function renderEdit() {
   els.undoEditButton.disabled = !hasStructure;
   els.resetEditButton.disabled = !hasStructure;
   els.saveEditButton.disabled = !hasStructure;
+  for (const button of [
+    els.clearMaskButton,
+    els.clearSliceButton,
+    els.clearRangeButton,
+    els.fillSliceButton,
+    els.fillRangeButton
+  ]) {
+    button.disabled = !hasStructure;
+  }
+  els.sliceRangeStart.disabled = !hasStructure;
+  els.sliceRangeEnd.disabled = !hasStructure;
   document.querySelectorAll("[data-edit-tool]").forEach(button => {
     button.disabled = !hasStructure;
   });
   els.penSizeSlider.disabled = !hasStructure;
   renderEditToolControls();
+  updateEditOperationRanges();
 
   if (!structure) {
     els.editDetails.innerHTML = '<div class="empty-state">No editable masks match these filters.</div>';
@@ -969,6 +1009,208 @@ async function saveEditedNifti() {
     setViewerStatus(`Downloaded ${filename}`);
   } catch (error) {
     setViewerStatus(`Save failed: ${error.message}`);
+  }
+}
+
+function drawingBitmapAndShape() {
+  const bitmap = state.nv?.drawBitmap;
+  const shape = volumeShape();
+  if (!bitmap || !shape) {
+    return null;
+  }
+  const expectedLength = shape[0] * shape[1] * shape[2];
+  if (bitmap.length !== expectedLength) {
+    throw new Error(`Drawing size ${bitmap.length} does not match volume size ${expectedLength}`);
+  }
+  return { bitmap, shape };
+}
+
+function voxelIndex(x, y, z, shape) {
+  return x + y * shape[0] + z * shape[0] * shape[1];
+}
+
+function planeDimensions(axis, shape) {
+  if (axis === 0) {
+    return [shape[1], shape[2]];
+  }
+  if (axis === 1) {
+    return [shape[0], shape[2]];
+  }
+  return [shape[0], shape[1]];
+}
+
+function planeVoxel(axis, slice, a, b) {
+  if (axis === 0) {
+    return [slice, a, b];
+  }
+  if (axis === 1) {
+    return [a, slice, b];
+  }
+  return [a, b, slice];
+}
+
+function setDrawingVoxel(bitmap, shape, x, y, z, value) {
+  const index = voxelIndex(x, y, z, shape);
+  const previous = bitmap[index];
+  if (previous === value) {
+    return 0;
+  }
+  bitmap[index] = value;
+  return 1;
+}
+
+function clearDrawingSlice(bitmap, shape, axis, slice) {
+  const [width, height] = planeDimensions(axis, shape);
+  let changed = 0;
+  for (let b = 0; b < height; b += 1) {
+    for (let a = 0; a < width; a += 1) {
+      const [x, y, z] = planeVoxel(axis, slice, a, b);
+      changed += setDrawingVoxel(bitmap, shape, x, y, z, 0);
+    }
+  }
+  return changed;
+}
+
+function fillDrawingSliceHoles(bitmap, shape, axis, slice) {
+  const [width, height] = planeDimensions(axis, shape);
+  const visited = new Uint8Array(width * height);
+  const queue = [];
+
+  const enqueueZero = (a, b) => {
+    if (a < 0 || b < 0 || a >= width || b >= height) {
+      return;
+    }
+    const planeIndex = a + b * width;
+    if (visited[planeIndex]) {
+      return;
+    }
+    const [x, y, z] = planeVoxel(axis, slice, a, b);
+    if (bitmap[voxelIndex(x, y, z, shape)] !== 0) {
+      return;
+    }
+    visited[planeIndex] = 1;
+    queue.push([a, b]);
+  };
+
+  for (let a = 0; a < width; a += 1) {
+    enqueueZero(a, 0);
+    enqueueZero(a, height - 1);
+  }
+  for (let b = 1; b < height - 1; b += 1) {
+    enqueueZero(0, b);
+    enqueueZero(width - 1, b);
+  }
+
+  for (let cursor = 0; cursor < queue.length; cursor += 1) {
+    const [a, b] = queue[cursor];
+    enqueueZero(a + 1, b);
+    enqueueZero(a - 1, b);
+    enqueueZero(a, b + 1);
+    enqueueZero(a, b - 1);
+  }
+
+  let changed = 0;
+  for (let b = 0; b < height; b += 1) {
+    for (let a = 0; a < width; a += 1) {
+      const planeIndex = a + b * width;
+      if (visited[planeIndex]) {
+        continue;
+      }
+      const [x, y, z] = planeVoxel(axis, slice, a, b);
+      const index = voxelIndex(x, y, z, shape);
+      if (bitmap[index] === 0) {
+        bitmap[index] = 1;
+        changed += 1;
+      }
+    }
+  }
+  return changed;
+}
+
+function selectedSliceRange(singleSlice = false) {
+  const shape = volumeShape();
+  const voxel = currentVoxel();
+  if (!shape || !voxel) {
+    throw new Error("No active slice");
+  }
+  const axis = sliceAxis();
+  const max = shape[axis] - 1;
+  const current = clamp(voxel[axis], 0, max);
+  if (singleSlice) {
+    return { axis, start: current, end: current };
+  }
+
+  const fallback = current + 1;
+  const startInput = Number.parseInt(els.sliceRangeStart.value, 10) || fallback;
+  const endInput = Number.parseInt(els.sliceRangeEnd.value, 10) || startInput;
+  const start = clamp(Math.min(startInput, endInput) - 1, 0, max);
+  const end = clamp(Math.max(startInput, endInput) - 1, 0, max);
+  return { axis, start, end };
+}
+
+function applyDrawingOperation(label, operation) {
+  try {
+    const drawing = drawingBitmapAndShape();
+    if (!drawing) {
+      setViewerStatus("No editable drawing is loaded");
+      return;
+    }
+    const changed = operation(drawing.bitmap, drawing.shape);
+    if (!changed) {
+      setViewerStatus(`${label}: no voxels changed`);
+      return;
+    }
+    state.nv.drawBitmap = drawing.bitmap;
+    state.nv.drawAddUndoBitmap?.();
+    state.nv.refreshDrawing?.(true);
+    setViewerStatus(`${label}: changed ${changed} ${pluralize(changed, "voxel")}`);
+  } catch (error) {
+    setViewerStatus(`${label} failed: ${error.message}`);
+  }
+}
+
+function clearAllDrawing() {
+  applyDrawingOperation("Clear all", bitmap => {
+    let changed = 0;
+    for (let index = 0; index < bitmap.length; index += 1) {
+      if (bitmap[index] !== 0) {
+        bitmap[index] = 0;
+        changed += 1;
+      }
+    }
+    return changed;
+  });
+}
+
+function clearDrawingRange(singleSlice = false) {
+  const label = singleSlice ? "Clear slice" : "Clear range";
+  try {
+    const range = selectedSliceRange(singleSlice);
+    applyDrawingOperation(label, (bitmap, shape) => {
+      let changed = 0;
+      for (let slice = range.start; slice <= range.end; slice += 1) {
+        changed += clearDrawingSlice(bitmap, shape, range.axis, slice);
+      }
+      return changed;
+    });
+  } catch (error) {
+    setViewerStatus(`${label} failed: ${error.message}`);
+  }
+}
+
+function fillDrawingRange(singleSlice = false) {
+  const label = singleSlice ? "Fill slice" : "Fill range";
+  try {
+    const range = selectedSliceRange(singleSlice);
+    applyDrawingOperation(label, (bitmap, shape) => {
+      let changed = 0;
+      for (let slice = range.start; slice <= range.end; slice += 1) {
+        changed += fillDrawingSliceHoles(bitmap, shape, range.axis, slice);
+      }
+      return changed;
+    });
+  } catch (error) {
+    setViewerStatus(`${label} failed: ${error.message}`);
   }
 }
 
@@ -1086,6 +1328,26 @@ els.resetEditButton.addEventListener("click", () => {
 
 els.saveEditButton.addEventListener("click", () => {
   saveEditedNifti();
+});
+
+els.clearMaskButton.addEventListener("click", () => {
+  clearAllDrawing();
+});
+
+els.clearSliceButton.addEventListener("click", () => {
+  clearDrawingRange(true);
+});
+
+els.clearRangeButton.addEventListener("click", () => {
+  clearDrawingRange(false);
+});
+
+els.fillSliceButton.addEventListener("click", () => {
+  fillDrawingRange(true);
+});
+
+els.fillRangeButton.addEventListener("click", () => {
+  fillDrawingRange(false);
 });
 
 els.revealButton.addEventListener("click", () => {

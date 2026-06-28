@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Neuroradiology Quizzer</title>
-    <link rel="stylesheet" href="./styles.css?v=20260628-02" />
+    <link rel="stylesheet" href="./styles.css?v=20260628-03" />
   </head>
   <body>
     <div class="app-shell">
@@ -148,11 +148,34 @@
             <button type="button" id="saveEditButton">Save NIfTI</button>
           </div>
 
+          <section class="mask-operations" aria-label="Mask operations">
+            <h3>Mask Operations</h3>
+            <div class="edit-actions">
+              <button type="button" id="clearMaskButton">Clear All</button>
+              <button type="button" id="clearSliceButton">Clear Slice</button>
+              <button type="button" id="fillSliceButton">Fill Slice</button>
+            </div>
+            <div class="slice-range-grid">
+              <label>
+                <span>From</span>
+                <input id="sliceRangeStart" type="number" min="1" step="1" inputmode="numeric" />
+              </label>
+              <label>
+                <span>To</span>
+                <input id="sliceRangeEnd" type="number" min="1" step="1" inputmode="numeric" />
+              </label>
+            </div>
+            <div class="edit-actions two-up">
+              <button type="button" id="clearRangeButton">Clear Range</button>
+              <button type="button" id="fillRangeButton">Fill Range</button>
+            </div>
+          </section>
+
           <section class="details" id="editDetails" aria-label="Edit structure details"></section>
         </aside>
       </main>
     </div>
 
-    <script type="module" src="./app.js?v=20260628-02"></script>
+    <script type="module" src="./app.js?v=20260628-03"></script>
   </body>
 </html>
