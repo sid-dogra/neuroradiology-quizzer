@@ -5830,6 +5830,39 @@
       "includeInViewer": true,
       "quizQuestions": [],
       "curationNote": "High-yield anterior skull base/orbital apex structure adjacent to the optic chiasm."
+    },
+    {
+      "id": "rostrum_of_the_corpus_callosum",
+      "preferredName": "Rostrum of the corpus callosum",
+      "aliases": [
+        "Rostrum of the corpus callosum",
+        "Corpus callosum rostrum"
+      ],
+      "acceptedAnswers": [
+        "Rostrum of the corpus callosum",
+        "rostrum of the corpus callosum",
+        "Corpus callosum rostrum",
+        "corpus callosum rostrum"
+      ],
+      "difficulty": "advanced",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "laterality": "midline",
+      "description": "Draft annotation target for Rostrum of the corpus callosum. Add or review an accepted mask before treating it as final.",
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small anterior-inferior corpus callosum substructure; useful as an advanced midline white matter landmark."
+      ],
+      "sourceLabels": [],
+      "quizTargets": [],
+      "references": [
+        "Manual browser annotation"
+      ],
+      "includeInViewer": true,
+      "quizQuestions": [],
+      "curationNote": "Added from browser-created accepted mask; review in viewer/ITK-SNAP."
     }
   ]
 }

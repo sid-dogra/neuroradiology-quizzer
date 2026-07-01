@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-06-28T17:41:37+00:00",
+  "generatedAt": "2026-07-01T02:14:33+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -1450,11 +1450,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/012_optic_chiasm.nii.gz",
-        "sourceKind": "freesurfer_seed_split",
-        "reviewStatus": "needs_review",
-        "bytes": 45987,
-        "sha256": "1a8a72708eb13e42161157fde8795131c053013c5dc47fd8a587c94cec323f8c",
-        "voxelCount": 129,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 45927,
+        "sha256": "8bda26c9fe88124dae5b9790d2b1ef61588896ae7bc75194084cba7ae41899e3",
+        "voxelCount": 78,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -1464,39 +1464,54 @@
           ],
           "centroidVoxel": {
             "i": 128,
-            "j": 137,
-            "k": 59
+            "j": 142,
+            "k": 58
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 129,
-            "areaVoxelCount": 17,
+            "sliceIndex": 126,
+            "areaVoxelCount": 8,
             "voxel": {
-              "i": 129,
-              "j": 138,
-              "k": 59
+              "i": 126,
+              "j": 142,
+              "k": 58
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 137,
-            "areaVoxelCount": 36,
+            "sliceIndex": 141,
+            "areaVoxelCount": 23,
             "voxel": {
               "i": 128,
-              "j": 137,
-              "k": 60
+              "j": 141,
+              "k": 59
             }
           },
           "axial": {
             "axis": 2,
-            "sliceIndex": 59,
-            "areaVoxelCount": 53,
+            "sliceIndex": 58,
+            "areaVoxelCount": 39,
             "voxel": {
               "i": 128,
-              "j": 137,
-              "k": 59
+              "j": 142,
+              "k": 58
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 16,
+          "removedVoxelCount": 16,
+          "addedVoxelCount": 0,
+          "filledVoxelCount": 0,
+          "netVoxelChange": -16
         }
       },
       "quizTargets": [
@@ -4320,11 +4335,11 @@
       "hasOverlay": true,
       "overlay": {
         "url": "annotations/060_genu_of_the_corpus_callosum.nii.gz",
-        "sourceKind": "rough_support",
-        "reviewStatus": "needs_review",
-        "bytes": 46260,
-        "sha256": "d250bc9632a809d31cbffe21d9c74cfb9ae3eb19eb89a4d043e9ffbbfc5ea1f3",
-        "voxelCount": 784,
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46591,
+        "sha256": "2c176b2093fe91a80b62ce7cde2bd95d9641b7c64d82fc967600d7fe37a4cbc6",
+        "voxelCount": 1729,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -4334,39 +4349,54 @@
           ],
           "centroidVoxel": {
             "i": 127,
-            "j": 153,
+            "j": 155,
             "k": 81
           },
           "sagittal": {
             "axis": 0,
-            "sliceIndex": 126,
-            "areaVoxelCount": 159,
+            "sliceIndex": 124,
+            "areaVoxelCount": 143,
             "voxel": {
-              "i": 126,
-              "j": 153,
+              "i": 124,
+              "j": 155,
               "k": 81
             }
           },
           "coronal": {
             "axis": 1,
-            "sliceIndex": 149,
-            "areaVoxelCount": 76,
+            "sliceIndex": 153,
+            "areaVoxelCount": 175,
             "voxel": {
-              "i": 127,
-              "j": 149,
-              "k": 82
+              "i": 128,
+              "j": 153,
+              "k": 81
             }
           },
           "axial": {
             "axis": 2,
             "sliceIndex": 78,
-            "areaVoxelCount": 68,
+            "areaVoxelCount": 157,
             "voxel": {
               "i": 127,
-              "j": 154,
+              "j": 155,
               "k": 78
             }
           }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 36,
+          "removedVoxelCount": 36,
+          "addedVoxelCount": 32,
+          "filledVoxelCount": 32,
+          "netVoxelChange": -4
         }
       },
       "quizTargets": [
@@ -6989,14 +7019,122 @@
         }
       ],
       "reviewNote": "Useful for cingulate/paracentral region orientation; may need manual target."
+    },
+    {
+      "id": "rostrum_of_the_corpus_callosum",
+      "displayName": "Rostrum of the corpus callosum",
+      "targetName": "Rostrum of the corpus callosum",
+      "laterality": "midline",
+      "difficulty": "advanced",
+      "audienceLevel": "advanced",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "description": "Draft annotation target for Rostrum of the corpus callosum. Add or review an accepted mask before treating it as final.",
+      "relationships": {},
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small anterior-inferior corpus callosum substructure; useful as an advanced midline white matter landmark."
+      ],
+      "acceptedAnswers": [
+        "Rostrum of the corpus callosum",
+        "rostrum of the corpus callosum",
+        "Corpus callosum rostrum",
+        "corpus callosum rostrum"
+      ],
+      "aliases": [
+        "Rostrum of the corpus callosum",
+        "Corpus callosum rostrum"
+      ],
+      "references": [
+        "Manual browser annotation"
+      ],
+      "quizQuestions": [],
+      "includeInViewer": true,
+      "sourceLabels": [],
+      "sourceStrategy": "manual",
+      "userAction": "fully_place_manually",
+      "localizationStatus": "manual_required",
+      "labelValue": 106,
+      "color": "#f2745f",
+      "hasOverlay": true,
+      "overlay": {
+        "url": "annotations/106_rostrum_of_the_corpus_callosum.nii.gz",
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 46050,
+        "sha256": "c51a026de7568aab73c55c2e135415b2a035e5214c48e4752f035aa8815e1313",
+        "voxelCount": 227,
+        "bestSlices": {
+          "coordinateSpace": "viewer_ras_voxel",
+          "shape": [
+            256,
+            256,
+            160
+          ],
+          "centroidVoxel": {
+            "i": 126,
+            "j": 148,
+            "k": 76
+          },
+          "sagittal": {
+            "axis": 0,
+            "sliceIndex": 125,
+            "areaVoxelCount": 28,
+            "voxel": {
+              "i": 125,
+              "j": 147,
+              "k": 76
+            }
+          },
+          "coronal": {
+            "axis": 1,
+            "sliceIndex": 149,
+            "areaVoxelCount": 39,
+            "voxel": {
+              "i": 126,
+              "j": 149,
+              "k": 76
+            }
+          },
+          "axial": {
+            "axis": 2,
+            "sliceIndex": 75,
+            "areaVoxelCount": 63,
+            "voxel": {
+              "i": 126,
+              "j": 148,
+              "k": 75
+            }
+          }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 15,
+          "removedVoxelCount": 15,
+          "addedVoxelCount": 1,
+          "filledVoxelCount": 1,
+          "netVoxelChange": -14
+        }
+      },
+      "quizTargets": [],
+      "reviewNote": "Small anterior-inferior corpus callosum substructure; added from browser-created accepted mask."
     }
   ],
   "summary": {
-    "structureCount": 54,
-    "overlayCount": 54,
+    "structureCount": 55,
+    "overlayCount": 55,
     "missingOverlayCount": 0,
-    "targetStructureCount": 97,
-    "acceptedOverlayCount": 19
+    "targetStructureCount": 98,
+    "acceptedOverlayCount": 22
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",
