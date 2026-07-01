@@ -50,7 +50,7 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 49	interpeduncular_cistern	Interpeduncular cistern	Interpeduncular cistern	fully_place_manually	manual_required	manual	intermediate	csf_spaces;brainstem	78	242	129
 50	cerebral_crus_cerebral_peduncle	Cerebral crus (cerebral peduncle)	Cerebral crus (cerebral peduncle)	fully_place_manually	manual_required	manual_or_external_atlas	intermediate	white_matter;brainstem	242	78	210
 51	sylvian_fissure	Sylvian fissure	Sylvian fissure	edit_or_replace_anchor	support_anchor_needs_edit	manual	beginner	csf_spaces;cortex	196	78	242
-52	mammillary_bodies	Mammillary bodies	Mammillary bodies	fully_place_manually	manual_required	manual	advanced	limbic;midline	242	78	207
+52	mammillary_bodies	Mammillary bodies	Mammillary bodies	fully_place_manually	manual_required	manual	beginner	limbic;midline	242	78	207
 53	median_interhemispheric_fissure	Median interhemispheric fissure	Median interhemispheric fissure	fully_place_manually	manual_required	manual	beginner	csf_spaces;midline	181	78	242
 54	midbrain	Midbrain	Midbrain	edit_or_replace_anchor	support_anchor_needs_edit	manual_or_external_atlas	beginner	brainstem	78	201	242
 55	ambient_cistern	Ambient cistern	Ambient cistern	fully_place_manually	manual_required	manual	intermediate	csf_spaces;brainstem	212	242	78
@@ -104,4 +104,5 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 103	subthalamic_region	Subthalamic region	Subthalamic region	fully_place_manually	manual_required	manual	beginner	deep_gray;basal_ganglia	118	217	218
 104	habenula	Habenula	Habenula	fully_place_manually	manual_required	manual	beginner	midline;deep_gray	190	214	82
 105	optic_nerve	Optic nerve	Optic nerve	fully_place_manually	manual_required	manual	beginner	cranial_nerves;skull_base;orbit	95	156	242
-106	rostrum_of_the_corpus_callosum	Rostrum of the corpus callosum	Rostrum of the corpus callosum	fully_place_manually	manual_required	manual	advanced	white_matter;midline	242	116	95
+106	rostrum_of_the_corpus_callosum	Rostrum of the corpus callosum	Rostrum of the corpus callosum	fully_place_manually	manual_required	manual	beginner	white_matter;midline	242	116	95
+107	corpus_callosum	Corpus callosum	Corpus callosum	generated_composite	composite_from_accepted_masks	accepted_composite	beginner	white_matter;midline	210	242	78

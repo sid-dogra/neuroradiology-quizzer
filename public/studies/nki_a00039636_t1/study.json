@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-07-01T02:14:33+00:00",
+  "generatedAt": "2026-07-01T02:21:22+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -4148,6 +4148,125 @@
       "reviewNote": "Destrieux fissure components can support, but a simple manual target may teach better."
     },
     {
+      "id": "mammillary_bodies",
+      "displayName": "Mammillary bodies",
+      "targetName": "Mammillary bodies",
+      "laterality": "bilateral",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
+      "systems": [
+        "limbic",
+        "midline"
+      ],
+      "description": "Draft T1 MPRAGE annotation target for Mammillary bodies. This entry needs localization and QC before viewer release.",
+      "relationships": {},
+      "clinicalNotes": [
+        "Source strategy: manual.",
+        "Small hypothalamic structures.",
+        "Review flag: needs_manual_localization.",
+        "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
+      ],
+      "acceptedAnswers": [
+        "Mammillary bodies",
+        "mammillary bodies"
+      ],
+      "aliases": [],
+      "references": [
+        "Target tab curation workbook",
+        "radiology_landmark_candidate_list"
+      ],
+      "quizQuestions": [],
+      "includeInViewer": true,
+      "sourceLabels": [
+        {
+          "source": "manual_t1_annotation",
+          "label": "Mammillary bodies"
+        }
+      ],
+      "sourceStrategy": "manual",
+      "userAction": "fully_place_manually",
+      "localizationStatus": "manual_required",
+      "labelValue": 52,
+      "color": "#f24ecf",
+      "hasOverlay": true,
+      "overlay": {
+        "url": "annotations/052_mammillary_bodies.nii.gz",
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 45975,
+        "sha256": "72a81bc59365d0f5241086b475e0884176f46ff2efe1457f1cb366a02ad5e381",
+        "voxelCount": 83,
+        "bestSlices": {
+          "coordinateSpace": "viewer_ras_voxel",
+          "shape": [
+            256,
+            256,
+            160
+          ],
+          "centroidVoxel": {
+            "i": 126,
+            "j": 126,
+            "k": 60
+          },
+          "sagittal": {
+            "axis": 0,
+            "sliceIndex": 125,
+            "areaVoxelCount": 25,
+            "voxel": {
+              "i": 125,
+              "j": 126,
+              "k": 60
+            }
+          },
+          "coronal": {
+            "axis": 1,
+            "sliceIndex": 126,
+            "areaVoxelCount": 19,
+            "voxel": {
+              "i": 126,
+              "j": 126,
+              "k": 60
+            }
+          },
+          "axial": {
+            "axis": 2,
+            "sliceIndex": 61,
+            "areaVoxelCount": 22,
+            "voxel": {
+              "i": 126,
+              "j": 126,
+              "k": 61
+            }
+          }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 12,
+          "removedVoxelCount": 12,
+          "addedVoxelCount": 0,
+          "filledVoxelCount": 0,
+          "netVoxelChange": -12
+        }
+      },
+      "quizTargets": [
+        {
+          "id": "mammillary_bodies_mpr_1",
+          "view": "mpr",
+          "prompt": "Identify the Mammillary bodies.",
+          "status": "needs_localization",
+          "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
+        }
+      ],
+      "reviewNote": "Small hypothalamic structures."
+    },
+    {
       "id": "midbrain",
       "displayName": "Midbrain",
       "targetName": "Midbrain",
@@ -7025,8 +7144,8 @@
       "displayName": "Rostrum of the corpus callosum",
       "targetName": "Rostrum of the corpus callosum",
       "laterality": "midline",
-      "difficulty": "advanced",
-      "audienceLevel": "advanced",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
       "systems": [
         "white_matter",
         "midline"
@@ -7127,14 +7246,119 @@
       },
       "quizTargets": [],
       "reviewNote": "Small anterior-inferior corpus callosum substructure; added from browser-created accepted mask."
+    },
+    {
+      "id": "corpus_callosum",
+      "displayName": "Corpus callosum",
+      "targetName": "Corpus callosum",
+      "laterality": "midline",
+      "difficulty": "beginner",
+      "audienceLevel": "beginner",
+      "systems": [
+        "white_matter",
+        "midline"
+      ],
+      "description": "Composite beginner annotation target for the Corpus callosum, generated by unioning rostrum, genu, body, and splenium masks.",
+      "relationships": {},
+      "clinicalNotes": [
+        "Source strategy: accepted composite.",
+        "Voxelwise union of accepted rostrum, genu, body, and splenium corpus callosum masks."
+      ],
+      "acceptedAnswers": [
+        "Corpus callosum",
+        "corpus callosum"
+      ],
+      "aliases": [
+        "Corpus callosum"
+      ],
+      "references": [
+        "Accepted component annotations"
+      ],
+      "quizQuestions": [],
+      "includeInViewer": true,
+      "sourceLabels": [],
+      "sourceStrategy": "accepted_composite",
+      "userAction": "generated_composite",
+      "localizationStatus": "composite_from_accepted_masks",
+      "labelValue": 107,
+      "color": "#d2f24e",
+      "hasOverlay": true,
+      "overlay": {
+        "url": "annotations/107_corpus_callosum.nii.gz",
+        "sourceKind": "accepted_annotation",
+        "reviewStatus": "accepted",
+        "bytes": 49850,
+        "sha256": "09f3b9a03e8fef912e940b7771c73b4e99d0426135a807334181595129d0e1ed",
+        "voxelCount": 10866,
+        "bestSlices": {
+          "coordinateSpace": "viewer_ras_voxel",
+          "shape": [
+            256,
+            256,
+            160
+          ],
+          "centroidVoxel": {
+            "i": 128,
+            "j": 117,
+            "k": 84
+          },
+          "sagittal": {
+            "axis": 0,
+            "sliceIndex": 126,
+            "areaVoxelCount": 651,
+            "voxel": {
+              "i": 126,
+              "j": 125,
+              "k": 86
+            }
+          },
+          "coronal": {
+            "axis": 1,
+            "sliceIndex": 94,
+            "areaVoxelCount": 400,
+            "voxel": {
+              "i": 128,
+              "j": 94,
+              "k": 80
+            }
+          },
+          "axial": {
+            "axis": 2,
+            "sliceIndex": 76,
+            "areaVoxelCount": 617,
+            "voxel": {
+              "i": 129,
+              "j": 109,
+              "k": 76
+            }
+          }
+        },
+        "maskCleanup": {
+          "enabled": true,
+          "minIslandVoxels": 12,
+          "sliceFillAxis": "axial",
+          "smoothSigma": 0.75,
+          "smoothThreshold": 0.5,
+          "closeIterations": 1,
+          "removedIslandCount": 2,
+          "removedIslandVoxelCount": 8,
+          "sliceFilledVoxelCount": 341,
+          "removedVoxelCount": 349,
+          "addedVoxelCount": 287,
+          "filledVoxelCount": 287,
+          "netVoxelChange": -62
+        }
+      },
+      "quizTargets": [],
+      "reviewNote": "Composite union of rostrum, genu, body, and splenium accepted masks."
     }
   ],
   "summary": {
-    "structureCount": 55,
-    "overlayCount": 55,
+    "structureCount": 57,
+    "overlayCount": 57,
     "missingOverlayCount": 0,
-    "targetStructureCount": 98,
-    "acceptedOverlayCount": 22
+    "targetStructureCount": 99,
+    "acceptedOverlayCount": 24
   },
   "sourceFiles": {
     "finalizedDir": "data/finalized",
