@@ -1486,7 +1486,7 @@
     },
     {
       "id": "insular_cortex",
-      "preferredName": "Insular cortex",
+      "preferredName": "Insula",
       "aliases": [
         "Left insula",
         "Left G Ins lg and S cent ins",
@@ -1496,8 +1496,8 @@
         "G_insular_short"
       ],
       "acceptedAnswers": [
-        "Insular cortex",
-        "insular cortex",
+        "Insula",
+        "insula",
         "Left insula",
         "left insula",
         "Left G Ins lg and S cent ins",
@@ -1511,7 +1511,7 @@
         "cortex"
       ],
       "laterality": "left",
-      "description": "Draft T1 MPRAGE annotation target for Insular cortex. This entry needs localization and QC before viewer release.",
+      "description": "Draft T1 MPRAGE annotation target for Insula. This entry needs localization and QC before viewer release.",
       "clinicalNotes": [
         "Source strategy: freesurfer_seed.",
         "Good cortical target; use learner-facing name.",
@@ -1540,7 +1540,7 @@
         {
           "id": "insular_cortex_mpr_1",
           "view": "mpr",
-          "prompt": "Identify the Insular cortex.",
+          "prompt": "Identify the Insula.",
           "status": "draft",
           "hint": "Auto-populated from FreeSurfer label; QC before release.",
           "voxel": {
@@ -2779,11 +2779,11 @@
     },
     {
       "id": "mammillary_bodies",
-      "preferredName": "Mammillary bodies",
+      "preferredName": "Mammillary body",
       "aliases": [],
       "acceptedAnswers": [
-        "Mammillary bodies",
-        "mammillary bodies"
+        "Mammillary body",
+        "mammillary body"
       ],
       "difficulty": "advanced",
       "systems": [
@@ -2791,7 +2791,7 @@
         "midline"
       ],
       "laterality": "bilateral",
-      "description": "Draft T1 MPRAGE annotation target for Mammillary bodies. This entry needs localization and QC before viewer release.",
+      "description": "Draft T1 MPRAGE annotation target for Mammillary body. This entry needs localization and QC before viewer release.",
       "clinicalNotes": [
         "Source strategy: manual.",
         "Small hypothalamic structures.",
@@ -2801,14 +2801,14 @@
       "sourceLabels": [
         {
           "source": "manual_t1_annotation",
-          "label": "Mammillary bodies"
+          "label": "Mammillary body"
         }
       ],
       "quizTargets": [
         {
           "id": "mammillary_bodies_mpr_1",
           "view": "mpr",
-          "prompt": "Identify the Mammillary bodies.",
+          "prompt": "Identify the Mammillary body.",
           "status": "needs_localization",
           "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
         }

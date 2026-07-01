@@ -25,7 +25,7 @@ labelValue	id	preferredName	userAction	sourceStrategy	voxel_i	voxel_j	voxel_k	wo
 24	superior_frontal_gyrus	Superior frontal gyrus	qc_auto_point	freesurfer_seed	137	60	149	-9.5	41.977	63.977	
 25	supramarginal_gyrus	Supramarginal gyrus	qc_auto_point	freesurfer_seed	177	76	91	-49.5	-16.023	47.977	
 26	temporal_pole	Temporal pole	qc_auto_point	freesurfer_seed	155	130	150	-27.5	42.977	-6.023	Rename from atlas display name and hide laterality in viewer.
-27	insular_cortex	Insular cortex	qc_auto_point	freesurfer_seed	164	102	132	-36.5	24.977	21.977	Good cortical target; use learner-facing name.
+27	insular_cortex	Insula	qc_auto_point	freesurfer_seed	164	102	132	-36.5	24.977	21.977	Good cortical target; use learner-facing name.
 28	foramen_magnum	Foramen magnum	fully_place_manually	manual							Large skull-base landmark; manual point or contour.
 29	medulla_oblongata	Medulla oblongata	edit_or_replace_anchor	manual_or_external_atlas	127	131	106	0.5	-1.023	-7.023	FreeSurfer has only a coarse brainstem label in this run.
 30	cerebellar_tonsil	Cerebellar tonsil	edit_or_replace_anchor	manual	151	136	78	-23.5	-29.023	-12.023	Stock FreeSurfer cerebellum label is too coarse for tonsil.
@@ -50,7 +50,7 @@ labelValue	id	preferredName	userAction	sourceStrategy	voxel_i	voxel_j	voxel_k	wo
 49	interpeduncular_cistern	Interpeduncular cistern	fully_place_manually	manual							CSF space between cerebral peduncles.
 50	cerebral_crus_cerebral_peduncle	Cerebral crus (cerebral peduncle)	fully_place_manually	manual_or_external_atlas							Use midbrain-level manual target.
 51	sylvian_fissure	Sylvian fissure	edit_or_replace_anchor	manual	165	91	110	-37.5	2.977	32.977	Destrieux fissure components can support, but a simple manual target may teach better.
-52	mammillary_bodies	Mammillary bodies	fully_place_manually	manual							Small hypothalamic structures.
+52	mammillary_bodies	Mammillary body	fully_place_manually	manual							Small hypothalamic structures.
 53	median_interhemispheric_fissure	Median interhemispheric fissure	fully_place_manually	manual							Useful orientation landmark.
 54	midbrain	Midbrain	edit_or_replace_anchor	manual_or_external_atlas	127	131	106	0.5	-1.023	-7.023	Split manually from coarse brainstem label.
 55	ambient_cistern	Ambient cistern	fully_place_manually	manual							Cistern lateral to midbrain.

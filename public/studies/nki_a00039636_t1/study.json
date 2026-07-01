@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-07-01T02:28:47+00:00",
+  "generatedAt": "2026-07-01T02:35:51+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -3198,15 +3198,15 @@
     },
     {
       "id": "insular_cortex",
-      "displayName": "Insular cortex",
-      "targetName": "Left insula",
+      "displayName": "Insula",
+      "targetName": "Insula",
       "laterality": "left",
       "difficulty": "beginner",
       "audienceLevel": "beginner",
       "systems": [
         "cortex"
       ],
-      "description": "Draft T1 MPRAGE annotation target for Insular cortex. This entry needs localization and QC before viewer release.",
+      "description": "Draft T1 MPRAGE annotation target for Insula. This entry needs localization and QC before viewer release.",
       "relationships": {},
       "clinicalNotes": [
         "Source strategy: freesurfer_seed.",
@@ -3216,13 +3216,12 @@
         "Localization status: auto_point_from_freesurfer (qc_auto_point) in FreeSurfer conformed T1.mgz space."
       ],
       "acceptedAnswers": [
-        "Insular cortex",
-        "insular cortex",
+        "Insula",
+        "insula",
         "Left insula",
         "left insula",
         "Left G Ins lg and S cent ins",
         "Left G insular short",
-        "insula",
         "G_Ins_lg_and_S_cent_ins",
         "G_insular_short"
       ],
@@ -3265,7 +3264,7 @@
       "color": "#e94ef2",
       "hasOverlay": true,
       "overlay": {
-        "url": "annotations/027_insular_cortex.nii.gz",
+        "url": "annotations/027_insula.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
         "bytes": 48185,
@@ -3334,7 +3333,7 @@
         {
           "id": "insular_cortex_mpr_1",
           "view": "mpr",
-          "prompt": "Identify the Insular cortex.",
+          "prompt": "Identify the Insula.",
           "status": "draft",
           "hint": "Auto-populated from FreeSurfer label; QC before release.",
           "voxel": {
@@ -4149,16 +4148,16 @@
     },
     {
       "id": "mammillary_bodies",
-      "displayName": "Mammillary bodies",
-      "targetName": "Mammillary bodies",
-      "laterality": "bilateral",
+      "displayName": "Mammillary body",
+      "targetName": "Mammillary body",
+      "laterality": "left",
       "difficulty": "beginner",
       "audienceLevel": "beginner",
       "systems": [
         "limbic",
         "midline"
       ],
-      "description": "Draft T1 MPRAGE annotation target for Mammillary bodies. This entry needs localization and QC before viewer release.",
+      "description": "Draft T1 MPRAGE annotation target for Mammillary body. This entry needs localization and QC before viewer release.",
       "relationships": {},
       "clinicalNotes": [
         "Source strategy: manual.",
@@ -4167,8 +4166,8 @@
         "Localization status: manual_required (fully_place_manually) in FreeSurfer conformed T1.mgz space."
       ],
       "acceptedAnswers": [
-        "Mammillary bodies",
-        "mammillary bodies"
+        "Mammillary body",
+        "mammillary body"
       ],
       "aliases": [],
       "references": [
@@ -4180,7 +4179,7 @@
       "sourceLabels": [
         {
           "source": "manual_t1_annotation",
-          "label": "Mammillary bodies"
+          "label": "Mammillary body"
         }
       ],
       "sourceStrategy": "manual",
@@ -4190,7 +4189,7 @@
       "color": "#f24ecf",
       "hasOverlay": true,
       "overlay": {
-        "url": "annotations/052_mammillary_bodies.nii.gz",
+        "url": "annotations/052_mammillary_body.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
         "bytes": 45975,
@@ -4259,7 +4258,7 @@
         {
           "id": "mammillary_bodies_mpr_1",
           "view": "mpr",
-          "prompt": "Identify the Mammillary bodies.",
+          "prompt": "Identify the Mammillary body.",
           "status": "needs_localization",
           "hint": "Use the T1 MPRAGE anatomy and neighboring landmarks."
         }

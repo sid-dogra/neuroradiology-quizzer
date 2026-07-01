@@ -221,7 +221,7 @@
     },
     {
       "id": "insular_cortex",
-      "preferredName": "Insular cortex",
+      "preferredName": "Insula",
       "labelValue": 27,
       "voxelCount": 15182
     },
@@ -942,7 +942,7 @@
     },
     {
       "id": "insular_cortex",
-      "preferredName": "Insular cortex",
+      "preferredName": "Insula",
       "components": [
         {
           "atlas": "aparc",
@@ -1449,7 +1449,7 @@
     },
     {
       "id": "mammillary_bodies",
-      "preferredName": "Mammillary bodies",
+      "preferredName": "Mammillary body",
       "labelValue": 52
     },
     {

@@ -45,7 +45,7 @@ Generated candidate localization points in FreeSurfer conformed T1 space.
 | Superior frontal gyrus | `freesurfer_seed` | 137,60,149 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz` |  |
 | Supramarginal gyrus | `freesurfer_seed` | 177,76,91 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz` |  |
 | Temporal pole | `freesurfer_seed` | 155,130,150 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz` | Rename from atlas display name and hide laterality in viewer. |
-| Insular cortex | `freesurfer_seed` | 164,102,132 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz` | Good cortical target; use learner-facing name. |
+| Insula | `freesurfer_seed` | 164,102,132 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc+aseg.mgz` | Good cortical target; use learner-facing name. |
 | Gyrus rectus | `freesurfer_seed` | 131,111,172 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc.a2009s+aseg.mgz` | Destrieux provides an explicit gyrus rectus label. |
 | Central sulcus | `freesurfer_seed` | 162,66,105 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc.a2009s+aseg.mgz` | Excellent landmark; Destrieux explicit sulcal label. |
 | Marginal sulcus (pars marginalis) | `freesurfer_seed` | 140,70,89 in `data/processed/freesurfer_subjects/annotated_t1_nki_A00039636/mri/aparc.a2009s+aseg.mgz` | Useful for paracentral lobule/cingulate anatomy. |
@@ -108,7 +108,7 @@ Generated candidate localization points in FreeSurfer conformed T1 space.
 | Tentorium cerebelli | `manual` | none | Dural reflection; visible as boundary rather than segmented tissue. |
 | Interpeduncular cistern | `manual` | none | CSF space between cerebral peduncles. |
 | Cerebral crus (cerebral peduncle) | `manual_or_external_atlas` | none | Use midbrain-level manual target. |
-| Mammillary bodies | `manual` | none | Small hypothalamic structures. |
+| Mammillary body | `manual` | none | Small hypothalamic structures. |
 | Median interhemispheric fissure | `manual` | none | Useful orientation landmark. |
 | Ambient cistern | `manual` | none | Cistern lateral to midbrain. |
 | Cerebral aqueduct | `manual` | none | High-yield small CSF channel between third and fourth ventricles. |

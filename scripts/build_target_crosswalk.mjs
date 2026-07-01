@@ -55,7 +55,7 @@ const LEARNER_NAME_OVERRIDES = new Map([
   ["Left cuneus", "Cuneus"],
   ["Left entorhinal", "Entorhinal cortex"],
   ["Left fusiform", "Fusiform gyrus"],
-  ["Left insula", "Insular cortex"],
+  ["Left insula", "Insula"],
   ["Left lingual", "Lingual gyrus"],
   ["Left Pallidum", "Globus pallidus"],
   ["Left parsopercularis", "Pars opercularis"],

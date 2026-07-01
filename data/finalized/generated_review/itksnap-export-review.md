@@ -56,7 +56,7 @@ These overlaps were skipped in the combined auto labelmap so earlier labels were
 - Tentorium cerebelli (`tentorium_cerebelli`)
 - Interpeduncular cistern (`interpeduncular_cistern`)
 - Cerebral crus (cerebral peduncle) (`cerebral_crus_cerebral_peduncle`)
-- Mammillary bodies (`mammillary_bodies`)
+- Mammillary body (`mammillary_bodies`)
 - Median interhemispheric fissure (`median_interhemispheric_fissure`)
 - Ambient cistern (`ambient_cistern`)
 - Cerebral aqueduct (`cerebral_aqueduct`)
@@ -121,7 +121,7 @@ These overlaps were skipped in the combined auto labelmap so earlier labels were
 - Superior frontal gyrus (`superior_frontal_gyrus`): 41234 voxels, 1 WM component(s), `data/working/itksnap/full_gyrus_masks/024_superior_frontal_gyrus.nii.gz`
 - Supramarginal gyrus (`supramarginal_gyrus`): 17560 voxels, 1 WM component(s), `data/working/itksnap/full_gyrus_masks/025_supramarginal_gyrus.nii.gz`
 - Temporal pole (`temporal_pole`): 3672 voxels, 1 WM component(s), `data/working/itksnap/full_gyrus_masks/026_temporal_pole.nii.gz`
-- Insular cortex (`insular_cortex`): 15182 voxels, 1 WM component(s), `data/working/itksnap/full_gyrus_masks/027_insular_cortex.nii.gz`
+- Insula (`insular_cortex`): 15182 voxels, 1 WM component(s), `data/working/itksnap/full_gyrus_masks/027_insular_cortex.nii.gz`
 - Gyrus rectus (`gyrus_rectus`): 2039 voxels, cortical parcel only; no exact WM parcel, `data/working/itksnap/full_gyrus_masks/041_gyrus_rectus.nii.gz`
 - Cingulate gyrus (`cingulate_gyrus`): 21368 voxels, 4 WM component(s), `data/working/itksnap/full_gyrus_masks/070_cingulate_gyrus.nii.gz`
 - Angular gyrus (`angular_gyrus`): 7079 voxels, cortical parcel only; no exact WM parcel, `data/working/itksnap/full_gyrus_masks/085_angular_gyrus.nii.gz`

@@ -25,7 +25,7 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 24	superior_frontal_gyrus	Superior frontal gyrus	Left superiorfrontal	qc_auto_point	auto_point_from_freesurfer	freesurfer_seed	intermediate	cortex	242	175	78
 25	supramarginal_gyrus	Supramarginal gyrus	Left supramarginal	qc_auto_point	auto_point_from_freesurfer	freesurfer_seed	intermediate	cortex	78	155	242
 26	temporal_pole	Temporal pole	Left temporalpole	qc_auto_point	auto_point_from_freesurfer	freesurfer_seed	intermediate	cortex	242	78	128
-27	insular_cortex	Insular cortex	Left insula	qc_auto_point	auto_point_from_freesurfer	freesurfer_seed	beginner	cortex	233	78	242
+27	insular_cortex	Insula	Insula	qc_auto_point	auto_point_from_freesurfer	freesurfer_seed	beginner	cortex	233	78	242
 28	foramen_magnum	Foramen magnum	Foramen magnum	fully_place_manually	manual_required	manual	beginner	skull_base	78	181	242
 29	medulla_oblongata	Medulla oblongata	Medulla oblongata	edit_or_replace_anchor	support_anchor_needs_edit	manual_or_external_atlas	beginner	brainstem	242	96	78
 30	cerebellar_tonsil	Cerebellar tonsil	Cerebellar tonsil	edit_or_replace_anchor	support_anchor_needs_edit	manual	intermediate	cerebellum	171	78	242
@@ -50,7 +50,7 @@ labelValue	id	preferredName	targetName	userAction	localizationStatus	sourceStrat
 49	interpeduncular_cistern	Interpeduncular cistern	Interpeduncular cistern	fully_place_manually	manual_required	manual	intermediate	csf_spaces;brainstem	78	242	129
 50	cerebral_crus_cerebral_peduncle	Cerebral crus (cerebral peduncle)	Cerebral crus (cerebral peduncle)	fully_place_manually	manual_required	manual_or_external_atlas	intermediate	white_matter;brainstem	242	78	210
 51	sylvian_fissure	Sylvian fissure	Sylvian fissure	edit_or_replace_anchor	support_anchor_needs_edit	manual	beginner	csf_spaces;cortex	196	78	242
-52	mammillary_bodies	Mammillary bodies	Mammillary bodies	fully_place_manually	manual_required	manual	beginner	limbic;midline	242	78	207
+52	mammillary_bodies	Mammillary body	Mammillary body	fully_place_manually	manual_required	manual	beginner	limbic;midline	242	78	207
 53	median_interhemispheric_fissure	Median interhemispheric fissure	Median interhemispheric fissure	fully_place_manually	manual_required	manual	beginner	csf_spaces;midline	181	78	242
 54	midbrain	Midbrain	Midbrain	edit_or_replace_anchor	support_anchor_needs_edit	manual_or_external_atlas	beginner	brainstem	78	201	242
 55	ambient_cistern	Ambient cistern	Ambient cistern	fully_place_manually	manual_required	manual	intermediate	csf_spaces;brainstem	212	242	78
