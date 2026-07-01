@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "kind": "niivue_static_study",
-  "generatedAt": "2026-07-01T02:21:22+00:00",
+  "generatedAt": "2026-07-01T02:28:47+00:00",
   "study": {
     "id": "nki_a00039636_t1",
     "title": "Neuroradiology Quizzer Review Build",
@@ -5596,9 +5596,9 @@
         "url": "annotations/075_splenium_of_the_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 47541,
-        "sha256": "fb09a389afbb2a52e7e19f7f7366c9faf72b9ad6721d89abcc307bb3cf763a95",
-        "voxelCount": 5314,
+        "bytes": 47478,
+        "sha256": "319e9d8f9067351a5a795ba2241748b6512ad99fccf9686b1174e4ee12c7ab23",
+        "voxelCount": 5181,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -5614,7 +5614,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 121,
-            "areaVoxelCount": 227,
+            "areaVoxelCount": 219,
             "voxel": {
               "i": 121,
               "j": 96,
@@ -5624,7 +5624,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 94,
-            "areaVoxelCount": 400,
+            "areaVoxelCount": 390,
             "voxel": {
               "i": 128,
               "j": 94,
@@ -5634,7 +5634,7 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 76,
-            "areaVoxelCount": 445,
+            "areaVoxelCount": 429,
             "voxel": {
               "i": 130,
               "j": 92,
@@ -5651,11 +5651,11 @@
           "closeIterations": 1,
           "removedIslandCount": 0,
           "removedIslandVoxelCount": 0,
-          "sliceFilledVoxelCount": 222,
-          "removedVoxelCount": 222,
-          "addedVoxelCount": 152,
-          "filledVoxelCount": 152,
-          "netVoxelChange": -70
+          "sliceFilledVoxelCount": 77,
+          "removedVoxelCount": 77,
+          "addedVoxelCount": 16,
+          "filledVoxelCount": 16,
+          "netVoxelChange": -61
         }
       },
       "quizTargets": [
@@ -7287,9 +7287,9 @@
         "url": "annotations/107_corpus_callosum.nii.gz",
         "sourceKind": "accepted_annotation",
         "reviewStatus": "accepted",
-        "bytes": 49850,
-        "sha256": "09f3b9a03e8fef912e940b7771c73b4e99d0426135a807334181595129d0e1ed",
-        "voxelCount": 10866,
+        "bytes": 49632,
+        "sha256": "575a28e045ce333cce79272305214068151dbfc090d83fefd71e7e99e61f2056",
+        "voxelCount": 10705,
         "bestSlices": {
           "coordinateSpace": "viewer_ras_voxel",
           "shape": [
@@ -7305,7 +7305,7 @@
           "sagittal": {
             "axis": 0,
             "sliceIndex": 126,
-            "areaVoxelCount": 651,
+            "areaVoxelCount": 645,
             "voxel": {
               "i": 126,
               "j": 125,
@@ -7315,7 +7315,7 @@
           "coronal": {
             "axis": 1,
             "sliceIndex": 94,
-            "areaVoxelCount": 400,
+            "areaVoxelCount": 397,
             "voxel": {
               "i": 128,
               "j": 94,
@@ -7325,7 +7325,7 @@
           "axial": {
             "axis": 2,
             "sliceIndex": 76,
-            "areaVoxelCount": 617,
+            "areaVoxelCount": 587,
             "voxel": {
               "i": 129,
               "j": 109,
@@ -7340,17 +7340,16 @@
           "smoothSigma": 0.75,
           "smoothThreshold": 0.5,
           "closeIterations": 1,
-          "removedIslandCount": 2,
-          "removedIslandVoxelCount": 8,
-          "sliceFilledVoxelCount": 341,
-          "removedVoxelCount": 349,
-          "addedVoxelCount": 287,
-          "filledVoxelCount": 287,
-          "netVoxelChange": -62
+          "removedIslandCount": 0,
+          "removedIslandVoxelCount": 0,
+          "sliceFilledVoxelCount": 133,
+          "removedVoxelCount": 133,
+          "addedVoxelCount": 27,
+          "filledVoxelCount": 27,
+          "netVoxelChange": -106
         }
       },
-      "quizTargets": [],
-      "reviewNote": "Composite union of rostrum, genu, body, and splenium accepted masks."
+      "quizTargets": []
     }
   ],
   "summary": {
